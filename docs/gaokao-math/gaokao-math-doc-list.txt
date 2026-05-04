@@ -1,0 +1,10 @@
+高考数学解答文档目录
+
+示例命名：
+- gaokao-math-2024-paper1-q12-solution.pdf
+- gaokao-math-2023-paper2-q20-analytic-geometry.docx
+- gaokao-math-sequence-topic-review.pdf
+
+建议结构：
+- docs/gaokao-math/years/ (按年份)
+- docs/gaokao-math/topics/ (按专题)

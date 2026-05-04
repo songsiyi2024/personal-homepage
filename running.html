@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="宋思逸 的跑步记录" />
+    <title data-i18n="title-running">跑步记录 | 宋思逸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+    <header class="site-header container">
+      <a class="logo" href="index.html" aria-label="返回首页" data-i18n-aria-label="logo-aria">SS</a>
+      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="main-nav" data-i18n-aria-label="menu-aria">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <div class="nav-primary" aria-label="核心导航" data-i18n-aria-label="nav-core-label">
+          <a href="index.html" data-i18n="nav-home">首页</a>
+          <a href="about.html" data-i18n="nav-about">关于我</a>
+          <a href="projects.html" data-i18n="nav-projects">项目</a>
+          <a href="articles.html" data-i18n="nav-articles">文章</a>
+        </div>
+        <div class="nav-secondary">
+          <button class="more-toggle" aria-expanded="false" aria-controls="more-menu" data-i18n="nav-more">更多</button>
+          <div class="more-menu" id="more-menu" aria-label="更多内容" data-i18n-aria-label="nav-more-label">
+            <a href="calendar.html" data-i18n="nav-calendar">Calendar</a>
+            <a href="skills.html" data-i18n="nav-skills">技能</a>
+            <a href="coursework.html" data-i18n="nav-coursework">课程作业</a>
+            <a href="gaokao.html" data-i18n="nav-gaokao">高考解答</a>
+            <a href="running.html" data-i18n="nav-running">跑步记录</a>
+          </div>
+        </div>
+        <a href="contact.html" class="pill" data-i18n="nav-contact">联系我</a>
+        <button id="lang-toggle" class="lang-toggle" data-i18n="lang-btn" data-i18n-aria-label="lang-aria">EN</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="running section-reveal">
+        <div class="section-head running-head">
+          <div>
+            <h2 data-i18n="run-h2">全部跑步记录</h2>
+            <p class="hero-copy" data-i18n="run-copy">
+              这个页面集中展示你的赛事记录。后续只需要继续补充新的比赛卡片，就能把它维护成自己的完赛档案。
+            </p>
+          </div>
+          <a href="index.html" class="text-link" data-i18n="run-back">返回首页</a>
+        </div>
+
+        <div class="running-layout">
+          <article class="card running-overview">
+            <p class="running-kicker" data-i18n="idx-running-kicker">年度概览</p>
+            <h3 data-i18n="run-overview-title">把每一场比赛都沉淀成长期记录</h3>
+            <p data-i18n="run-overview-desc">
+              你可以把已跑完的赛事、正在准备的目标赛，和每次参赛后的感受都放在这里，形成清晰的个人跑步时间线。
+            </p>
+            <div class="running-stat-grid">
+              <div class="running-stat" data-stat="finished">
+                <span>累计参赛</span>
+                <strong>待更新</strong>
+              </div>
+              <div class="running-stat" data-stat="longest">
+                <span>最长距离</span>
+                <strong>待更新</strong>
+              </div>
+              <div class="running-stat" data-stat="next">
+                <span>下一目标</span>
+                <strong>待更新</strong>
+              </div>
+            </div>
+          </article>
+
+          <div class="race-list" id="running-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> <span data-i18n="global-footer">宋思逸。用心构建。</span></p>
+    </footer>
+
+    <script src="data-projects.js"></script>
+    <script src="data-articles.js"></script>
+    <script src="data-running.js"></script>
+    <script src="data-calendar.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

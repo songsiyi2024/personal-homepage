@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="宋思逸 的技能栈" />
+    <title data-i18n="title-skills">技能 | 宋思逸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+    <header class="site-header container">
+      <a class="logo" href="index.html" aria-label="返回首页" data-i18n-aria-label="logo-aria">SS</a>
+      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="main-nav" data-i18n-aria-label="menu-aria">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <div class="nav-primary" aria-label="核心导航" data-i18n-aria-label="nav-core-label">
+          <a href="index.html" data-i18n="nav-home">首页</a>
+          <a href="about.html" data-i18n="nav-about">关于我</a>
+          <a href="projects.html" data-i18n="nav-projects">项目</a>
+          <a href="articles.html" data-i18n="nav-articles">文章</a>
+        </div>
+        <div class="nav-secondary">
+          <button class="more-toggle" aria-expanded="false" aria-controls="more-menu" data-i18n="nav-more">更多</button>
+          <div class="more-menu" id="more-menu" aria-label="更多内容" data-i18n-aria-label="nav-more-label">
+            <a href="calendar.html" data-i18n="nav-calendar">Calendar</a>
+            <a href="skills.html" data-i18n="nav-skills">技能</a>
+            <a href="coursework.html" data-i18n="nav-coursework">课程作业</a>
+            <a href="gaokao.html" data-i18n="nav-gaokao">高考解答</a>
+            <a href="running.html" data-i18n="nav-running">跑步记录</a>
+          </div>
+        </div>
+        <a href="contact.html" class="pill" data-i18n="nav-contact">联系我</a>
+        <button id="lang-toggle" class="lang-toggle" data-i18n="lang-btn" data-i18n-aria-label="lang-aria">EN</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="skills section-reveal">
+        <h2 data-i18n="skl-h2">技能</h2>
+        <p class="hero-copy" data-i18n="skl-copy">你可以在这个独立页面详细展示工具链、技术深度和业务能力。</p>
+        <div class="skill-list">
+          <span data-i18n="skl-1">前端工程</span>
+          <span data-i18n="skl-2">后端工程</span>
+          <span data-i18n="skl-3">云与运维</span>
+          <span data-i18n="skl-4">AI 应用</span>
+          <span data-i18n="skl-5">数据分析</span>
+          <span data-i18n="skl-6">英文协作</span>
+        </div>
+        <div class="hero-cta" style="margin-top: 20px">
+          <a class="btn btn-primary" href="contact.html" data-i18n="skl-cta-primary">联系我</a>
+          <a class="btn btn-ghost" href="index.html" data-i18n="skl-cta-ghost">返回首页</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> <span data-i18n="global-footer">宋思逸。用心构建。</span></p>
+    </footer>
+
+    <script src="data-projects.js"></script>
+    <script src="data-articles.js"></script>
+    <script src="data-running.js"></script>
+    <script src="data-calendar.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

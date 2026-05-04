@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="宋思逸 的近期计划与阶段安排" />
+    <title data-i18n="title-calendar">Calendar | 宋思逸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+    <header class="site-header container">
+      <a class="logo" href="index.html" aria-label="返回首页" data-i18n-aria-label="logo-aria">SS</a>
+      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="main-nav" data-i18n-aria-label="menu-aria">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <div class="nav-primary" aria-label="核心导航" data-i18n-aria-label="nav-core-label">
+          <a href="index.html" data-i18n="nav-home">首页</a>
+          <a href="about.html" data-i18n="nav-about">关于我</a>
+          <a href="projects.html" data-i18n="nav-projects">项目</a>
+          <a href="articles.html" data-i18n="nav-articles">文章</a>
+        </div>
+        <div class="nav-secondary">
+          <button class="more-toggle" aria-expanded="false" aria-controls="more-menu" data-i18n="nav-more">更多</button>
+          <div class="more-menu" id="more-menu" aria-label="更多内容" data-i18n-aria-label="nav-more-label">
+            <a href="calendar.html" data-i18n="nav-calendar">Calendar</a>
+            <a href="skills.html" data-i18n="nav-skills">技能</a>
+            <a href="coursework.html" data-i18n="nav-coursework">课程作业</a>
+            <a href="gaokao.html" data-i18n="nav-gaokao">高考解答</a>
+            <a href="running.html" data-i18n="nav-running">跑步记录</a>
+          </div>
+        </div>
+        <a href="contact.html" class="pill" data-i18n="nav-contact">联系我</a>
+        <button id="lang-toggle" class="lang-toggle" data-i18n="lang-btn" data-i18n-aria-label="lang-aria">EN</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="calendar-page section-reveal">
+        <div class="section-head running-head">
+          <div>
+            <h2 data-i18n="cal-h2">近期计划</h2>
+            <p class="hero-copy" data-i18n="cal-copy">
+              这里不放很细的日历，只列未来一段时间里我想推进的几件大事、对应时间和当前进度。
+            </p>
+          </div>
+          <a href="index.html" class="text-link" data-i18n="cal-back">返回首页</a>
+        </div>
+
+        <div class="calendar-layout">
+          <article class="card calendar-summary">
+            <p class="running-kicker" data-i18n="cal-summary-kicker">近况概览</p>
+            <h3 data-i18n="cal-summary-title">把未来一段时间最重要的几件事收成一页</h3>
+            <p data-i18n="cal-summary-desc">
+              重点是保留方向感，而不是管理细节。等事情真正做完后，再把值得留下的部分转入 Timeline 或对应栏目。
+            </p>
+            <div class="calendar-stat-grid">
+              <div class="calendar-stat" data-stat="planned">
+                <span data-i18n="cal-stat-planned">待进行</span>
+                <strong>0</strong>
+              </div>
+              <div class="calendar-stat" data-stat="in-progress">
+                <span data-i18n="cal-stat-doing">进行中</span>
+                <strong>0</strong>
+              </div>
+              <div class="calendar-stat" data-stat="done">
+                <span data-i18n="cal-stat-done">已完成</span>
+                <strong>0</strong>
+              </div>
+            </div>
+            <div class="calendar-legend" aria-label="状态图例" data-i18n-aria-label="cal-legend-aria">
+              <span class="calendar-legend-item"><i class="status-dot planned"></i><span data-i18n="cal-status-planned">计划中</span></span>
+              <span class="calendar-legend-item"><i class="status-dot in-progress"></i><span data-i18n="cal-status-doing">进行中</span></span>
+              <span class="calendar-legend-item"><i class="status-dot done"></i><span data-i18n="cal-status-done">已完成</span></span>
+            </div>
+          </article>
+
+          <div class="calendar-plan-list" id="calendar-plan-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> <span data-i18n="global-footer">宋思逸。用心构建。</span></p>
+    </footer>
+
+    <script src="data-projects.js"></script>
+    <script src="data-articles.js"></script>
+    <script src="data-running.js"></script>
+    <script src="data-calendar.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

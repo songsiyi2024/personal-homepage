@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="gk-doc-title">高考数学解答 PDF 目录</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+    <header class="site-header container">
+      <a class="logo" href="../../index.html" aria-label="返回首页" data-i18n-aria-label="logo-aria">SS</a>
+      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="main-nav" data-i18n-aria-label="menu-aria">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <div class="nav-primary" aria-label="核心导航" data-i18n-aria-label="nav-core-label">
+          <a href="../../index.html" data-i18n="nav-home">首页</a>
+          <a href="../../about.html" data-i18n="nav-about">关于我</a>
+          <a href="../../projects.html" data-i18n="nav-projects">项目</a>
+          <a href="../../articles.html" data-i18n="nav-articles">文章</a>
+        </div>
+        <div class="nav-secondary">
+          <button class="more-toggle" aria-expanded="false" aria-controls="more-menu" data-i18n="nav-more">更多</button>
+          <div class="more-menu" id="more-menu" aria-label="更多内容" data-i18n-aria-label="nav-more-label">
+            <a href="../../skills.html" data-i18n="nav-skills">技能</a>
+            <a href="../../coursework.html" data-i18n="nav-coursework">课程作业</a>
+            <a href="../../gaokao.html" data-i18n="nav-gaokao">高考解答</a>
+            <a href="../../running.html" data-i18n="nav-running">跑步记录</a>
+          </div>
+        </div>
+        <a href="../../contact.html" class="pill" data-i18n="nav-contact">联系我</a>
+        <button id="lang-toggle" class="lang-toggle" data-i18n="lang-btn" data-i18n-aria-label="lang-aria">EN</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero section-reveal">
+        <p class="eyebrow">DOCS / PDF</p>
+        <h1><span data-i18n="gk-doc-hero-title">高考数学解答 PDF 目录</span></h1>
+        <p class="hero-copy" data-i18n="gk-doc-hero-copy">
+          这里直接展示目录清单。后续新增文件时，只需要维护 entries.js。
+        </p>
+      </section>
+
+      <section class="projects section-reveal">
+        <div class="section-head">
+          <h3 data-i18n="gk-directory-h3">目录清单</h3>
+        </div>
+        <p class="section-copy" data-i18n="gk-doc-naming-tip">建议命名：年份-地区-试卷-题号-主题-solution.pdf。</p>
+        <div class="article-actions" style="margin-top: 10px">
+          <label for="gaokao-year-filter" data-i18n="gk-filter-year">按年份筛选</label>
+          <select id="gaokao-year-filter" class="lang-toggle" style="min-width: 120px">
+            <option value="all" data-i18n="gk-filter-all">全部</option>
+          </select>
+          <label for="gaokao-region-filter" data-i18n="gk-filter-region">按地区筛选</label>
+          <select id="gaokao-region-filter" class="lang-toggle" style="min-width: 120px">
+            <option value="all" data-i18n="gk-filter-all">全部</option>
+          </select>
+        </div>
+        <ul id="gaokao-doc-list" style="display: grid; gap: 10px; margin-top: 16px"></ul>
+
+        <div class="hero-cta" style="margin-top: 20px">
+          <a class="btn btn-primary" href="../../gaokao.html" data-i18n="gk-doc-back-gaokao">返回高考解答</a>
+          <a class="btn btn-ghost" href="../../index.html" data-i18n="gk-doc-back-home">返回首页</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="entries.js"></script>
+    <script src="index.js"></script>
+    <script src="../../data-projects.js"></script>
+    <script src="../../data-articles.js"></script>
+    <script src="../../data-running.js"></script>
+    <script src="../../script.js"></script>
+  </body>
+</html>

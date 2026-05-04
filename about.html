@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="关于 宋思逸" />
+    <title data-i18n="title-about">关于 | 宋思逸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+    <header class="site-header container">
+      <a class="logo" href="index.html" aria-label="返回首页" data-i18n-aria-label="logo-aria">SS</a>
+      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="main-nav" data-i18n-aria-label="menu-aria">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <div class="nav-primary" aria-label="核心导航" data-i18n-aria-label="nav-core-label">
+          <a href="index.html" data-i18n="nav-home">首页</a>
+          <a href="about.html" data-i18n="nav-about">关于我</a>
+          <a href="projects.html" data-i18n="nav-projects">项目</a>
+          <a href="articles.html" data-i18n="nav-articles">文章</a>
+        </div>
+        <div class="nav-secondary">
+          <button class="more-toggle" aria-expanded="false" aria-controls="more-menu" data-i18n="nav-more">更多</button>
+          <div class="more-menu" id="more-menu" aria-label="更多内容" data-i18n-aria-label="nav-more-label">
+            <a href="calendar.html" data-i18n="nav-calendar">Calendar</a>
+            <a href="skills.html" data-i18n="nav-skills">技能</a>
+            <a href="coursework.html" data-i18n="nav-coursework">课程作业</a>
+            <a href="gaokao.html" data-i18n="nav-gaokao">高考解答</a>
+            <a href="running.html" data-i18n="nav-running">跑步记录</a>
+          </div>
+        </div>
+        <a href="contact.html" class="pill" data-i18n="nav-contact">联系我</a>
+        <button id="lang-toggle" class="lang-toggle" data-i18n="lang-btn" data-i18n-aria-label="lang-aria">EN</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero section-reveal">
+        <p class="eyebrow" data-i18n="abt-eyebrow">关于我</p>
+        <h1><span data-i18n="abt-h1-prefix">关于</span> <span data-i18n="name-full">宋思逸</span></h1>
+        <p class="hero-copy" data-i18n="abt-hero-copy">
+          这里是独立的关于我页面。你可以放个人简介、教育经历、工作经历、价值观和长期目标。
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="projects.html" data-i18n="abt-cta-primary">查看项目</a>
+          <a class="btn btn-ghost" href="index.html" data-i18n="abt-cta-ghost">返回首页</a>
+        </div>
+      </section>
+
+      <section class="projects section-reveal">
+        <div class="section-head">
+          <h2 data-i18n="abt-resume-h2">个人简历</h2>
+        </div>
+        <p class="hero-copy" data-i18n="abt-resume-copy">这里提供网页版个人简历和可下载的文件版简历。</p>
+        <div class="project-grid article-grid" style="grid-template-columns: 1fr">
+          <article class="card article-card">
+            <div class="article-headline">
+              <h3 data-i18n="abt-resume-card-title">简历入口</h3>
+              <span class="meta-badge">CV</span>
+            </div>
+            <p data-i18n="abt-resume-card-desc">网页版简历适合在线浏览，文件版简历适合投递或本地保存。</p>
+            <div class="article-actions">
+              <a class="btn btn-primary" href="resume.html" data-i18n="abt-resume-open-web">查看网页版简历</a>
+              <a class="btn btn-ghost" href="docs/resume/personal-resume.pdf" download data-i18n="abt-resume-download-pdf">下载 PDF 简历</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> <span data-i18n="global-footer">宋思逸。用心构建。</span></p>
+    </footer>
+
+    <script src="data-projects.js"></script>
+    <script src="data-articles.js"></script>
+    <script src="data-running.js"></script>
+    <script src="data-calendar.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

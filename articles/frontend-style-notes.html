@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>前端样式笔记</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+    <header class="site-header container">
+      <a class="logo" href="../index.html" aria-label="返回首页" data-i18n-aria-label="logo-aria">SS</a>
+      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="main-nav" data-i18n-aria-label="menu-aria">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <div class="nav-primary" aria-label="核心导航" data-i18n-aria-label="nav-core-label">
+          <a href="../index.html" data-i18n="nav-home">首页</a>
+          <a href="../about.html" data-i18n="nav-about">关于我</a>
+          <a href="../projects.html" data-i18n="nav-projects">项目</a>
+          <a href="../articles.html" data-i18n="nav-articles">文章</a>
+        </div>
+        <div class="nav-secondary">
+          <button class="more-toggle" aria-expanded="false" aria-controls="more-menu" data-i18n="nav-more">更多</button>
+          <div class="more-menu" id="more-menu" aria-label="更多内容" data-i18n-aria-label="nav-more-label">
+            <a href="../skills.html" data-i18n="nav-skills">技能</a>
+            <a href="../coursework.html" data-i18n="nav-coursework">课程作业</a>
+            <a href="../gaokao.html" data-i18n="nav-gaokao">高考解答</a>
+            <a href="../running.html" data-i18n="nav-running">跑步记录</a>
+          </div>
+        </div>
+        <a href="../contact.html" class="pill" data-i18n="nav-contact">联系我</a>
+        <button id="lang-toggle" class="lang-toggle" data-i18n="lang-btn" data-i18n-aria-label="lang-aria">EN</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero section-reveal">
+        <p class="eyebrow">文章示例</p>
+        <h1><span>前端样式笔记</span></h1>
+        <p class="hero-copy">
+          这是第二篇本地文章示例，用来展示你可以在站内直接托管自己的笔记和文章文件。
+        </p>
+      </section>
+
+      <section class="about section-reveal">
+        <h2>我会怎么组织这些文件</h2>
+        <p>一种简单做法是按主题命名，例如 frontend-style-notes.html、project-retrospective.html、book-notes.html。</p>
+        <p>如果以后文章变多，还可以把 articles 文件夹再按年份或主题继续拆分，比如 articles/2026/ 或 articles/study/。</p>
+      </section>
+
+      <section class="projects section-reveal">
+        <h2>发布流程</h2>
+        <p>新增一个文章文件后，只需要在 articles.html 里再添加一张卡片，链接到新文件即可，不需要改脚本逻辑。</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="../articles.html">返回文章页</a>
+          <a class="btn btn-ghost" href="../index.html">返回首页</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>高考数学试题解答</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+    <header class="site-header container">
+      <a class="logo" href="../index.html" aria-label="返回首页" data-i18n-aria-label="logo-aria">SS</a>
+      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="main-nav" data-i18n-aria-label="menu-aria">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <div class="nav-primary" aria-label="核心导航" data-i18n-aria-label="nav-core-label">
+          <a href="../index.html" data-i18n="nav-home">首页</a>
+          <a href="../about.html" data-i18n="nav-about">关于我</a>
+          <a href="../projects.html" data-i18n="nav-projects">项目</a>
+          <a href="../articles.html" data-i18n="nav-articles">文章</a>
+        </div>
+        <div class="nav-secondary">
+          <button class="more-toggle" aria-expanded="false" aria-controls="more-menu" data-i18n="nav-more">更多</button>
+          <div class="more-menu" id="more-menu" aria-label="更多内容" data-i18n-aria-label="nav-more-label">
+            <a href="../skills.html" data-i18n="nav-skills">技能</a>
+            <a href="../coursework.html" data-i18n="nav-coursework">课程作业</a>
+            <a href="../gaokao.html" data-i18n="nav-gaokao">高考解答</a>
+            <a href="../running.html" data-i18n="nav-running">跑步记录</a>
+          </div>
+        </div>
+        <a href="../contact.html" class="pill" data-i18n="nav-contact">联系我</a>
+        <button id="lang-toggle" class="lang-toggle" data-i18n="lang-btn" data-i18n-aria-label="lang-aria">EN</button>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero section-reveal">
+        <p class="eyebrow">高考解答 / 数学</p>
+        <h1><span>高考数学试题解答</span></h1>
+        <p class="hero-copy">
+          题目示例：已知函数 f(x)=x^3-3x^2+2，求函数在区间 [0,3] 上的最小值与对应的 x。
+        </p>
+      </section>
+
+      <section class="about section-reveal">
+        <h2>解题思路</h2>
+        <p>先用导数判断单调区间，再对驻点和区间端点逐一代值比较，得到最小值。</p>
+        <p>
+          f'(x)=3x^2-6x=3x(x-2)，所以驻点为 x=0 与 x=2。区间端点是 x=0, x=3。
+          计算函数值：f(0)=2，f(2)=8-12+2=-2，f(3)=27-27+2=2。
+        </p>
+      </section>
+
+      <section class="projects section-reveal">
+        <h2>结论与复盘</h2>
+        <p>区间 [0,3] 上最小值为 -2，对应 x=2。</p>
+        <p>
+          这类题的关键是：区间最值不能只看驻点，必须同时检查端点值。
+          后续我会继续补充更多题目，按函数、数列、解析几何等主题整理。
+        </p>
+      </section>
+
+      <section class="projects section-reveal">
+        <h2>文档附件</h2>
+        <p>这个栏目后续会持续挂 PDF 文档，下面提供目录页入口和文档清单入口。</p>
+        <div class="project-grid article-grid">
+          <article class="card article-card">
+            <div class="article-headline">
+              <h3>解答 PDF 目录</h3>
+              <span class="meta-badge">PDF</span>
+            </div>
+            <p>用于集中展示已发布的高考数学解答 PDF。</p>
+            <div class="article-actions">
+              <a
+                class="btn btn-primary"
+                href="../docs/gaokao-math/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >查看目录</a
+              >
+              <a class="btn btn-ghost" href="../docs/gaokao-math/gaokao-math-doc-list.txt" download>下载文件</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="../gaokao.html">返回高考解答</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

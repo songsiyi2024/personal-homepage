@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="个人主页 - 展示个人介绍、项目作品、技能和联系方式"
+    />
+    <title data-i18n="title-index">宋思逸 | 个人主页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+    <header class="site-header container">
+      <a class="logo" href="index.html" aria-label="返回首页" data-i18n-aria-label="logo-aria">SS</a>
+      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="main-nav" data-i18n-aria-label="menu-aria">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <div class="nav-primary" aria-label="核心导航" data-i18n-aria-label="nav-core-label">
+          <a href="index.html" data-i18n="nav-home">首页</a>
+          <a href="about.html" data-i18n="nav-about">关于我</a>
+          <a href="projects.html" data-i18n="nav-projects">项目</a>
+          <a href="articles.html" data-i18n="nav-articles">文章</a>
+        </div>
+        <div class="nav-secondary">
+          <button class="more-toggle" aria-expanded="false" aria-controls="more-menu" data-i18n="nav-more">更多</button>
+          <div class="more-menu" id="more-menu" aria-label="更多内容" data-i18n-aria-label="nav-more-label">
+            <a href="calendar.html" data-i18n="nav-calendar">Calendar</a>
+            <a href="skills.html" data-i18n="nav-skills">技能</a>
+            <a href="coursework.html" data-i18n="nav-coursework">课程作业</a>
+            <a href="gaokao.html" data-i18n="nav-gaokao">高考解答</a>
+            <a href="running.html" data-i18n="nav-running">跑步记录</a>
+          </div>
+        </div>
+        <a href="contact.html" class="pill" data-i18n="nav-contact">联系我</a>
+        <button id="lang-toggle" class="lang-toggle" data-i18n="lang-btn" data-i18n-aria-label="lang-aria">EN</button>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero container section-reveal">
+        <!-- <p class="eyebrow" data-i18n="idx-eyebrow">个人主页框架</p> -->
+        <h1>
+          <span data-i18n="idx-hero-title-prefix">你好，我是</span>
+          <span data-i18n="name-full">宋思逸</span>
+        </h1>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="projects.html" data-i18n="idx-cta-primary">查看作品</a>
+          <a class="btn btn-ghost" href="contact.html" data-i18n="idx-cta-ghost">合作联系</a>
+        </div>
+      </section>
+
+      <section id="about" class="about container section-reveal">
+        <h2 data-i18n="idx-about-h2">关于我</h2>
+        <p data-i18n="idx-about-p">
+          在这里写一段 3-5 行的自我介绍：你的方向、经验、擅长领域，以及你想解决的问题。
+        </p>
+        <a href="about.html" class="text-link" data-i18n="idx-about-link">查看关于我详情</a>
+      </section>
+
+      <section id="projects" class="projects container section-reveal">
+        <div class="section-head">
+          <h2 data-i18n="idx-projects-h2">精选项目</h2>
+          <a href="projects.html" class="text-link" data-i18n="idx-viewall">查看全部</a>
+        </div>
+        <div class="project-grid" id="home-project-list" data-limit="3"></div>
+      </section>
+
+      <section id="articles" class="projects container section-reveal">
+        <div class="section-head">
+          <h2 data-i18n="idx-articles-h2">文章与笔记</h2>
+          <a href="articles.html" class="text-link" data-i18n="idx-articles-viewall">查看全部</a>
+        </div>
+        <div class="project-grid article-grid" id="home-article-list" data-limit="2"></div>
+      </section>
+
+      <section id="calendar" class="projects container section-reveal">
+        <div class="section-head running-head">
+          <div>
+            <h2 data-i18n="idx-calendar-h2">近期计划</h2>
+            <p class="section-copy" data-i18n="idx-calendar-copy">
+              不做很细的日历，只保留未来一段时间里想推进的几件大事和对应时间。
+            </p>
+          </div>
+          <div class="running-head-actions">
+            <a href="calendar.html" class="text-link" data-i18n="idx-calendar-viewall">查看计划</a>
+          </div>
+        </div>
+
+        <div class="calendar-home-grid">
+          <article class="card calendar-home-copy">
+            <p class="running-kicker" data-i18n="idx-calendar-kicker">近期节奏</p>
+            <h3 data-i18n="idx-calendar-title">把接下来真正重要的几件事先摆清楚</h3>
+            <p data-i18n="idx-calendar-desc">
+              这里展示的是高层计划，不追求具体到某一天，而是把方向、时间和进度说清楚。
+            </p>
+          </article>
+          <div class="calendar-upcoming-list" id="home-calendar-list" data-limit="2"></div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills container section-reveal">
+        <h2 data-i18n="idx-skills-h2">技能栈</h2>
+        <div class="skill-list">
+          <span data-i18n="idx-skill-1">前端开发</span>
+          <span data-i18n="idx-skill-2">后端开发</span>
+          <span data-i18n="idx-skill-3">数据分析</span>
+          <span data-i18n="idx-skill-4">产品思维</span>
+          <span data-i18n="idx-skill-5">英文协作</span>
+          <span data-i18n="idx-skill-6">AI 应用</span>
+        </div>
+      </section>
+
+      <section id="coursework" class="projects container section-reveal">
+        <div class="section-head">
+          <h2 data-i18n="idx-coursework-h2">课程作业</h2>
+          <a href="coursework.html" class="text-link" data-i18n="idx-coursework-viewall">查看全部</a>
+        </div>
+        <p class="section-copy" data-i18n="idx-coursework-copy">
+          把课程作业按学期和科目整理成长期可追溯的学习档案。
+        </p>
+        <div class="project-grid article-grid" id="home-coursework-list" data-limit="3"></div>
+      </section>
+
+      <section id="gaokao" class="projects container section-reveal">
+        <div class="section-head">
+          <h2 data-i18n="idx-gaokao-h2">高考解答</h2>
+          <a href="gaokao.html" class="text-link" data-i18n="idx-gaokao-viewall">查看全部</a>
+        </div>
+        <p class="section-copy" data-i18n="idx-gaokao-copy">
+          高考数学解答独立成栏，专门收录每道题的 PDF 解答与复盘。
+        </p>
+        <div class="project-grid article-grid" id="home-gaokao-list" data-limit="2"></div>
+      </section>
+
+      <section id="running" class="running container section-reveal">
+        <div class="section-head running-head">
+          <div>
+            <h2 data-i18n="idx-running-h2">跑步记录</h2>
+            <p class="section-copy" data-i18n="idx-running-copy">
+              用这个版块记录自己跑过的比赛、完赛成绩，以及下一次想挑战的目标。
+            </p>
+          </div>
+          <div class="running-head-actions">
+            <a href="running.html" class="text-link" data-i18n="idx-running-viewall">查看全部</a>
+          </div>
+        </div>
+
+        <div class="running-layout">
+          <article class="card running-overview">
+            <p class="running-kicker" data-i18n="idx-running-kicker">年度概览</p>
+            <h3 data-i18n="idx-running-overview-title">把比赛经历整理成自己的赛历</h3>
+            <p data-i18n="idx-running-overview-desc">
+              现在先放一个可编辑模板，后续你只要把赛事名称、日期、项目和成绩替换掉，就能一直累积自己的跑步档案。
+            </p>
+            <div class="running-stat-grid">
+              <div class="running-stat" data-stat="finished">
+                <span>累计参赛</span>
+                <strong>待更新</strong>
+              </div>
+              <div class="running-stat" data-stat="longest">
+                <span>最长距离</span>
+                <strong>待更新</strong>
+              </div>
+              <div class="running-stat" data-stat="next">
+                <span>下一目标</span>
+                <strong>待更新</strong>
+              </div>
+            </div>
+          </article>
+
+          <div class="race-list" id="home-running-list" data-limit="2"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container section-reveal">
+        <h2 data-i18n="idx-contact-h2">联系我</h2>
+        <p data-i18n="idx-contact-email">邮箱：songsiyi_2024@outlook.com</p>
+        <p data-i18n="idx-contact-github">GitHub：github.com/songsiyi2024</p>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> <span data-i18n="idx-footer">宋思逸。用心构建。</span></p>
+    </footer>
+
+    <script src="data-projects.js"></script>
+    <script src="data-articles.js"></script>
+    <script src="data-running.js"></script>
+    <script src="data-calendar.js"></script>
+    <script src="docs/coursework/entries.js"></script>
+    <script src="docs/gaokao-math/entries.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

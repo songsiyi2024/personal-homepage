@@ -1,0 +1,11 @@
+课程作业文档目录
+
+可按以下命名方式维护：
+- 2026-spring-calculus-homework-01.pdf
+- 2026-spring-linear-algebra-lab-report-01.docx
+- 2026-spring-data-structure-project-summary.pdf
+
+建议每次新增文档后：
+1. 把文件放在 docs/coursework/ 目录
+2. 在 coursework.html 新增或更新一张文档卡片
+3. 补充发布日期与简要说明
