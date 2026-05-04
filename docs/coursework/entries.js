@@ -73,12 +73,12 @@ window.courseworkCourses = [
       en: "Spring 2026",
     },
     description: {
-      zh: "项目总结与相关作业文件。",
-      en: "Project summaries and related assignment files.",
+      zh: "课程作业",
+      en: "Coursework assignments.",
     },
     entries: [
       {
-        title: "2026 Spring CSB hw1",
+        title: "2026 Spring CSB hw1 solution",
         file: "hw1.pdf",
       },
     ],
