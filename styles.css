@@ -267,6 +267,15 @@ h1 span[data-i18n="name-full"] {
   text-underline-offset: 3px;
 }
 
+#coursework-doc-list a,
+#coursework-doc-list a:visited,
+#gaokao-doc-list a,
+#gaokao-doc-list a:visited,
+#gaokao-doc-list-main a,
+#gaokao-doc-list-main a:visited {
+  color: var(--brand);
+}
+
 .project-grid {
   margin-top: 18px;
   display: grid;
