@@ -95,4 +95,25 @@ window.courseworkCourses = [
       },
     ],
   },
+  {
+    id: "university-level-chinese",
+    title: {
+      zh: "大学国文",
+      en: "University-level Chinese",
+    },
+    subtitle: {
+      zh: "2026 春季学期",
+      en: "Spring 2026",
+    },
+    description: {
+      zh: "作业",
+      en: "Homework",
+    },
+    entries: [
+      {
+        title: "2026 Spring University-level Chinese Homework",
+        file: "UChw.pdf",
+      },
+    ],
+  },
 ];
