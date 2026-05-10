@@ -93,6 +93,28 @@ window.courseworkCourses = [
         title: "2026 Spring CSB hw2 solution",
         file: "CSBhw2.pdf",
       },
+      {
+        title: "2026 Spring CSB hw3",
+        file: "CSBHomework3.pdf",
+      },
+      {
+        title: "2026 Spring CSB hw3 solution",
+        file: "CSBhw3.pdf",
+      },{
+        title: "2026 Spring CSB hw4",
+        file: "CSBHomework4.pdf",
+      },
+      {
+        title: "2026 Spring CSB hw4 solution",
+        file: "CSBhw4.pdf",
+      },{
+        title: "2026 Spring CSB hw5",
+        file: "CSBHomework5.pdf",
+      },
+      {
+        title: "2026 Spring CSB hw5 solution",
+        file: "CSBhw5.pdf",
+      },
     ],
   },
   {
