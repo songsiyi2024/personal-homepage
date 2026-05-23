@@ -9,6 +9,7 @@ const translations = {
     "title-coursework": "课程作业 | 宋思逸",
     "title-gaokao": "高考解答 | 宋思逸",
     "title-running": "跑步记录 | 宋思逸",
+    "title-english-test": "英语测试体验 | 宋思逸",
     "title-calendar": "近期计划 | 宋思逸",
     "title-skills": "技能 | 宋思逸",
     "title-resume": "简历 | 宋思逸",
@@ -20,6 +21,7 @@ const translations = {
     "meta-coursework": "宋思逸的课程作业与学习成果归档",
     "meta-gaokao": "宋思逸整理的高考数学解答与 PDF 目录",
     "meta-running": "宋思逸的跑步记录、赛事结果和目标赛历",
+    "meta-english-test": "宋思逸的英语测试体验、成绩记录与备考反思",
     "meta-calendar": "宋思逸未来一段时间的高层计划，记录较重要的事情、时间和进度",
     "meta-skills": "宋思逸的技能栈、工具链与协作能力",
     "meta-resume": "宋思逸的网页版个人简历与下载版简历",
@@ -33,6 +35,7 @@ const translations = {
     "nav-coursework": "课程作业",
     "nav-gaokao": "高考解答",
     "nav-running": "跑步记录",
+    "nav-english-test": "英语测试体验",
     "nav-contact": "联系我",
     "nav-more": "更多",
     "nav-core-label": "核心导航",
@@ -89,6 +92,20 @@ const translations = {
     "idx-running-distance-label": "项目",
     "idx-running-location-label": "地点",
     "idx-running-note-label": "备注",
+    "idx-english-test-h2": "英语测试体验",
+    "idx-english-test-copy": "用这个版块记录英语考试时间、成绩结果和每次考试后的复盘体验。",
+    "idx-english-test-viewall": "查看全部",
+    "idx-english-test-kicker": "考试概览",
+    "idx-english-test-overview-title": "把每一次英语测试沉淀成长期档案",
+    "idx-english-test-overview-desc": "持续记录考试类型、时间、分数和总结，方便回看进步轨迹与下一步备考重点。",
+    "english-test-stat-finished": "已参加",
+    "english-test-stat-best": "最高成绩",
+    "english-test-stat-next": "下一目标",
+    "english-test-no-goal": "待补充",
+    "idx-english-test-date-label": "日期",
+    "idx-english-test-type-label": "类型",
+    "idx-english-test-score-label": "成绩",
+    "idx-english-test-note-label": "备注",
     "idx-contact-h2": "联系我",
     "idx-contact-email": "邮箱：songsiyi_2024@outlook.com",
     "idx-contact-github": "GitHub：github.com/songsiyi2024",
@@ -205,6 +222,11 @@ const translations = {
     "run-copy": "这个页面集中展示你的赛事记录。后续只需要继续补充新的比赛卡片，就能把它维护成自己的完赛档案。",
     "run-overview-title": "把每一场比赛都沉淀成长期记录",
     "run-overview-desc": "你可以把已跑完的赛事、正在准备的目标赛，和每次参赛后的感受都放在这里，形成清晰的个人跑步时间线。",
+    "eng-h2": "全部英语测试体验",
+    "eng-back": "返回首页",
+    "eng-copy": "这个页面集中展示你的英语测试体验。后续只需要补充新的测试卡片，就能维护成长期可追溯的学习档案。",
+    "eng-overview-title": "把每一次英语测试都沉淀成长期记录",
+    "eng-overview-desc": "你可以把已参加的测试、正在准备的目标考试，以及每次测试后的复盘体验都放在这里。",
     "cal-h2": "近期计划",
     "cal-back": "返回首页",
     "cal-copy": "这里按事项来列计划。每一条只对应一件事、一个时间，以及它现在的进度。",
@@ -240,6 +262,7 @@ const translations = {
     "title-coursework": "Coursework | Siyi Song",
     "title-gaokao": "Gaokao Solutions | Siyi Song",
     "title-running": "Running | Siyi Song",
+    "title-english-test": "English Test Experience | Siyi Song",
     "title-calendar": "Plans | Siyi Song",
     "title-skills": "Skills | Siyi Song",
     "title-resume": "Resume | Siyi Song",
@@ -251,6 +274,7 @@ const translations = {
     "meta-coursework": "Coursework and study outcomes archived by Siyi Song.",
     "meta-gaokao": "Gaokao math solutions and PDF directory by Siyi Song.",
     "meta-running": "Running records, race results, and target calendar of Siyi Song.",
+    "meta-english-test": "English test experiences, scores, and preparation reflections by Siyi Song.",
     "meta-calendar": "A high-level plans page for the next stretch of work, focused on bigger items, timing, and progress.",
     "meta-skills": "Skills, toolchains, and collaboration abilities of Siyi Song.",
     "meta-resume": "Web resume and downloadable resume file of Siyi Song.",
@@ -264,6 +288,7 @@ const translations = {
     "nav-coursework": "Coursework",
     "nav-gaokao": "Gaokao Solutions",
     "nav-running": "Running",
+    "nav-english-test": "English Tests",
     "nav-contact": "Contact",
     "nav-more": "More",
     "nav-core-label": "Primary navigation",
@@ -320,6 +345,20 @@ const translations = {
     "idx-running-distance-label": "Distance",
     "idx-running-location-label": "Location",
     "idx-running-note-label": "Notes",
+    "idx-english-test-h2": "English Test Experience",
+    "idx-english-test-copy": "Use this section to track test dates, score results, and reflections after each English test.",
+    "idx-english-test-viewall": "View All",
+    "idx-english-test-kicker": "Test Snapshot",
+    "idx-english-test-overview-title": "Turn each English test into a long-term learning record",
+    "idx-english-test-overview-desc": "Keep test type, date, score, and review notes in one place so your progress and next focus stay clear.",
+    "english-test-stat-finished": "Tests Taken",
+    "english-test-stat-best": "Best Score",
+    "english-test-stat-next": "Next Target",
+    "english-test-no-goal": "To be added",
+    "idx-english-test-date-label": "Date",
+    "idx-english-test-type-label": "Type",
+    "idx-english-test-score-label": "Score",
+    "idx-english-test-note-label": "Notes",
     "idx-contact-h2": "Contact",
     "idx-contact-email": "Email: songsiyi_2024@outlook.com",
     "idx-contact-github": "GitHub: github.com/songsiyi2024",
@@ -436,6 +475,11 @@ const translations = {
     "run-copy": "This page gathers your race history in one place. Keep adding new event cards here and it becomes a long-term archive of your finishes.",
     "run-overview-title": "Turn each race into a long-term personal record",
     "run-overview-desc": "Use this page for completed events, upcoming goal races, and the reflections you want to keep after each finish.",
+    "eng-h2": "Full English Test Experience",
+    "eng-back": "Back to Home",
+    "eng-copy": "This page gathers your English test experiences in one place. Keep adding test cards to maintain a long-term and traceable study archive.",
+    "eng-overview-title": "Turn each English test into a long-term record",
+    "eng-overview-desc": "Use this page for completed tests, upcoming target exams, and reflections after each attempt.",
     "cal-h2": "Plans",
     "cal-back": "Back to Home",
     "cal-copy": "This page lists plans as items. Each row maps to one thing, one time, and its current progress.",
@@ -473,6 +517,7 @@ const pageMetaKeys = {
   "coursework.html": { title: "title-coursework", description: "meta-coursework" },
   "gaokao.html": { title: "title-gaokao", description: "meta-gaokao" },
   "running.html": { title: "title-running", description: "meta-running" },
+  "english-test.html": { title: "title-english-test", description: "meta-english-test" },
   "calendar.html": { title: "title-calendar", description: "meta-calendar" },
   "skills.html": { title: "title-skills", description: "meta-skills" },
   "resume.html": { title: "title-resume", description: "meta-resume" },
@@ -971,12 +1016,91 @@ function renderRunning() {
   renderRunningStats();
 }
 
+function renderEnglishTestCard(test) {
+  const card = createEl("article", "card race-card");
+  const top = createEl("div", "race-card-top");
+  const titleWrap = createEl("div");
+  const tag = createEl("p", "race-tag", getLocalizedValue(test.testType));
+  const title = createEl("h3", "", getLocalizedValue(test.title));
+  const result = createEl("span", "race-result", getLocalizedValue(test.score));
+  const meta = createEl("dl", "race-meta-grid");
+  const rows = [
+    ["idx-english-test-date-label", getLocalizedValue(test.date)],
+    ["idx-english-test-type-label", getLocalizedValue(test.provider)],
+    ["idx-english-test-score-label", getLocalizedValue(test.score)],
+    ["idx-english-test-note-label", getLocalizedValue(test.note)],
+  ];
+
+  titleWrap.append(tag, title);
+  top.append(titleWrap, result);
+
+  rows.forEach(([labelKey, value]) => {
+    const item = createEl("div");
+    item.append(createEl("dt", "", t(labelKey)), createEl("dd", "", value));
+    meta.appendChild(item);
+  });
+
+  card.append(top, meta);
+  return card;
+}
+
+function renderEnglishTestStats() {
+  const entries = Array.isArray(window.englishTestEntries) ? window.englishTestEntries : [];
+  const finished = entries.filter((item) => item.status === "finished");
+  const bestScore = finished.reduce((max, item) => Math.max(max, Number(item.scoreValue) || 0), 0);
+  const nextGoal = entries.find((item) => item.status === "planned");
+
+  document.querySelectorAll(".english-test-stat[data-stat]").forEach((item) => {
+    const label = item.querySelector("span");
+    const value = item.querySelector("strong");
+    const stat = item.dataset.stat;
+
+    if (stat === "finished") {
+      label.textContent = t("english-test-stat-finished");
+      value.textContent = currentLang === "zh" ? `${finished.length}场` : String(finished.length);
+    }
+
+    if (stat === "best") {
+      label.textContent = t("english-test-stat-best");
+      value.textContent = bestScore ? String(bestScore) : t("english-test-no-goal");
+    }
+
+    if (stat === "next") {
+      label.textContent = t("english-test-stat-next");
+      value.textContent = nextGoal ? getLocalizedValue(nextGoal.title) : t("english-test-no-goal");
+    }
+  });
+}
+
+function renderEnglishTests() {
+  const entries = Array.isArray(window.englishTestEntries) ? window.englishTestEntries : [];
+  const homeList = document.getElementById("home-english-test-list");
+  const fullList = document.getElementById("english-test-list");
+
+  if (homeList) {
+    homeList.innerHTML = "";
+    entries.slice(0, Number(homeList.dataset.limit || 2)).forEach((test) => {
+      homeList.appendChild(renderEnglishTestCard(test));
+    });
+  }
+
+  if (fullList) {
+    fullList.innerHTML = "";
+    entries.forEach((test) => {
+      fullList.appendChild(renderEnglishTestCard(test));
+    });
+  }
+
+  renderEnglishTestStats();
+}
+
 function renderDynamicContent() {
   renderProjects();
   renderArticles();
   renderCoursework();
   renderGaokaoHome();
   renderRunning();
+  renderEnglishTests();
   renderCalendar();
 }
 
