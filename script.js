@@ -102,6 +102,7 @@ const translations = {
     "engtest-stat-best": "最高分",
     "engtest-stat-next": "下一目标",
     "idx-engtest-date-label": "日期",
+    "idx-engtest-location-label": "测试地点",
     "idx-engtest-score-label": "成绩",
     "idx-engtest-note-label": "备注",
     "idx-contact-h2": "联系我",
@@ -353,6 +354,7 @@ const translations = {
     "engtest-stat-best": "Best Score",
     "engtest-stat-next": "Next Goal",
     "idx-engtest-date-label": "Date",
+    "idx-engtest-location-label": "Location",
     "idx-engtest-score-label": "Score",
     "idx-engtest-note-label": "Notes",
     "idx-contact-h2": "Contact",
@@ -1022,6 +1024,7 @@ function renderEnglishTestCard(test) {
   const meta = createEl("dl", "race-meta-grid");
   const rows = [
     ["idx-engtest-date-label", getLocalizedValue(test.date)],
+    ["idx-engtest-location-label", getLocalizedValue(test.location) || t("running-no-goal")],
     ["idx-engtest-score-label", getLocalizedValue(test.scoreText)],
     ["idx-engtest-note-label", getLocalizedValue(test.note)],
   ];
