@@ -29,16 +29,16 @@ window.gaokaoEntries = [
   },
   {
     title: {
-      zh: "2023 专题复盘示例（待上传）",
-      en: "2023 Topic Review Sample (Pending Upload)",
+      zh: "2025 北京卷 数学解答",
+      en: "2025 Beijing Math Solution",
     },
-    file: "",
-    year: "2023",
-    regionKey: "jiangsu",
+    file: "2025北京卷.pdf",
+    year: "2025",
+    regionKey: "beijing",
     region: {
-      zh: "江苏卷",
-      en: "Jiangsu",
+      zh: "北京卷",
+      en: "Beijing",
     },
-    difficulty: 3.8,
+    difficulty: 4.8,
   },
 ];
