@@ -9,7 +9,7 @@ window.runningEntries = [
     location: { zh: "江苏省/常州市/溧阳市", en: "Jiangsu / Changzhou / Liyang" },
     result: { zh: "目标待设定", en: "Set target" },
     note: { zh: "ITRA 2",en: "ITRA 2",},
-    status: "planned",
+    status: "planned"
   },
   {
     id: "2026-jilin-half",
