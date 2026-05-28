@@ -20,7 +20,7 @@ window.runningEntries = [
     distanceText: { zh: "21.0975 km", en: "21.0975 km" },
     location: { zh: "吉林省/吉林市", en: "Jilin / Jilin" },
     result: { zh: "目标待设定", en: "Set target" },
-    note: { zh: "计划中", en: "Planned"},
+    note: { zh: "世界田联标牌赛事，中国田协A类赛事", en: "World Athletics Label Race, Chinese Athletics Association A-level Race" },
     status: "planned",
   },
   {
@@ -32,7 +32,7 @@ window.runningEntries = [
     distanceText: { zh: "21.0975 km", en: "21.0975 km" },
     location: { zh: "湖北省/襄阳市/宜城市", en: "Hubei / Xiangyang / Yicheng" },
     result: { zh: "枪时1:52:06，净时1:50:47", en: "gun time 1:52:06, net time 1:50:47" },
-    note: { zh: "PB", en: "PB" },
+    note: { zh: "中国田协A类赛事，PB", en: "Chinese Athletics Association A-level Race, PB" },
     status: "finished",
   },
   {
@@ -74,7 +74,7 @@ window.runningEntries = [
     distanceText: { zh: "21.0975km", en: "21.0975km" },
     location: { zh: "广西壮族自治区/南宁市/良庆区", en: "Guangxi / Nanning / Liangqing" },
     result: { zh: "枪时2:00:34，净时1:57:33", en: "gun time 2:00:34, net time 1:57:33" },
-    note: { zh: "首半马，PB", en: "First half marathon, PB" },
+    note: { zh: "中国田协C类赛事，首半马，PB", en: "Chinese Athletics Association C-level Race, First half marathon, PB" },
     status: "finished",
   },
   {
