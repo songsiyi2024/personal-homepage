@@ -333,6 +333,67 @@ h1 span[data-i18n="name-full"] {
   color: var(--ink-soft);
 }
 
+.resume-edu-list {
+  display: grid;
+  gap: 18px;
+}
+
+.resume-edu-item {
+  display: grid;
+  grid-template-columns: minmax(140px, 180px) minmax(0, 1fr);
+  gap: 8px 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px dashed var(--line);
+}
+
+.resume-edu-item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.resume-edu-time,
+.resume-edu-school-major,
+.resume-edu-detail,
+.resume-edu-note {
+  margin: 0;
+}
+
+.resume-edu-time,
+.resume-edu-school-major {
+  color: var(--ink);
+}
+
+.resume-edu-main {
+  display: grid;
+  gap: 5px;
+}
+
+.resume-edu-school-major {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 8px;
+}
+
+.resume-edu-separator {
+  color: var(--ink-soft);
+}
+
+.resume-edu-detail {
+  color: var(--ink-soft);
+}
+
+.resume-edu-note {
+  margin-top: 6px;
+}
+
+@media (max-width: 760px) {
+  .resume-edu-item {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
+
 .article-meta {
   display: flex;
   flex-wrap: wrap;
