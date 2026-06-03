@@ -1,17 +1,5 @@
 window.runningEntries = [
   {
-    id: "2026-caoshan-trail",
-    type: { zh: "越野赛", en: "Trail Race" },
-    title: { zh: "2026Go野社区赛·风起曹山", en: "2026 Go Wild Community Race · Wind Rises in Caoshan" },
-    date: { zh: "2026.9.27", en: "2026.9.27" },
-    distanceKm: 30,
-    distanceText: { zh: "30 km, 1100m+", en: "30 km, 1100m+" },
-    location: { zh: "江苏省/常州市/溧阳市", en: "Jiangsu / Changzhou / Liyang" },
-    result: { zh: "目标待设定", en: "Set target" },
-    note: { zh: "ITRA 2",en: "ITRA 2",},
-    status: "planned"
-  },
-  {
     id: "2026-jilin-half",
     type: { zh: "半程马拉松", en: "Half Marathon" },
     title: { zh: "2026吉林市马拉松", en: "2026 Jilin Marathon" },
