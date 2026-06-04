@@ -59,27 +59,40 @@
         </div>
 
         <div class="running-layout">
-          <article class="card running-overview">
-            <p class="running-kicker" data-i18n="idx-running-kicker">年度概览</p>
-            <h3 data-i18n="run-overview-title">把每一场比赛都沉淀成长期记录</h3>
-            <p data-i18n="run-overview-desc">
-              你可以把已跑完的赛事、正在准备的目标赛，和每次参赛后的感受都放在这里，形成清晰的个人跑步时间线。
-            </p>
-            <div class="running-stat-grid">
-              <div class="running-stat" data-stat="finished">
-                <span>累计参赛</span>
-                <strong>待更新</strong>
+          <div class="running-side">
+            <article class="card running-overview">
+              <p class="running-kicker" data-i18n="idx-running-kicker">年度概览</p>
+              <h3 data-i18n="run-overview-title">把每一场比赛都沉淀成长期记录</h3>
+              <p data-i18n="run-overview-desc">
+                你可以把已跑完的赛事、正在准备的目标赛，和每次参赛后的感受都放在这里，形成清晰的个人跑步时间线。
+              </p>
+              <div class="running-stat-grid">
+                <div class="running-stat" data-stat="finished">
+                  <span>累计参赛</span>
+                  <strong>待更新</strong>
+                </div>
+                <div class="running-stat" data-stat="longest">
+                  <span>最长距离</span>
+                  <strong>待更新</strong>
+                </div>
+                <div class="running-stat" data-stat="next">
+                  <span>下一目标</span>
+                  <strong>待更新</strong>
+                </div>
               </div>
-              <div class="running-stat" data-stat="longest">
-                <span>最长距离</span>
-                <strong>待更新</strong>
+            </article>
+
+            <article class="card running-race-hub-card">
+              <div class="running-race-hub">
+                <p class="running-race-hub-title" data-i18n="run-race-hub-title">赛事名单入口</p>
+                <p class="running-race-hub-copy" data-i18n="run-race-hub-copy">按赛历拆分为路跑与越野两个页面，均支持筛选和排序。</p>
+                <div class="running-race-hub-actions">
+                  <a class="btn btn-primary" href="road-races.html" data-i18n="run-race-hub-road">路跑赛事名单</a>
+                  <a class="btn btn-ghost" href="trail-races.html" data-i18n="run-race-hub-trail">越野赛事名单</a>
+                </div>
               </div>
-              <div class="running-stat" data-stat="next">
-                <span>下一目标</span>
-                <strong>待更新</strong>
-              </div>
-            </div>
-          </article>
+            </article>
+          </div>
 
           <div class="race-list" id="running-list"></div>
         </div>

@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="越野赛事名单，可筛选和排序" />
+    <title data-i18n="title-trail-races">越野赛事名单 | 宋思逸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+    <header class="site-header container">
+      <a class="logo" href="index.html" aria-label="返回首页" data-i18n-aria-label="logo-aria">SS</a>
+      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="main-nav" data-i18n-aria-label="menu-aria">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="main-nav">
+        <div class="nav-primary" aria-label="核心导航" data-i18n-aria-label="nav-core-label">
+          <a href="index.html" data-i18n="nav-home">首页</a>
+          <a href="about.html" data-i18n="nav-about">关于我</a>
+          <a href="projects.html" data-i18n="nav-projects">项目</a>
+          <a href="articles.html" data-i18n="nav-articles">文章</a>
+        </div>
+        <div class="nav-secondary">
+          <button class="more-toggle" aria-expanded="false" aria-controls="more-menu" data-i18n="nav-more">更多</button>
+          <div class="more-menu" id="more-menu" aria-label="更多内容" data-i18n-aria-label="nav-more-label">
+            <a href="calendar.html" data-i18n="nav-calendar">Calendar</a>
+            <a href="skills.html" data-i18n="nav-skills">技能</a>
+            <a href="coursework.html" data-i18n="nav-coursework">课程作业</a>
+            <a href="gaokao.html" data-i18n="nav-gaokao">高考解答</a>
+            <a href="running.html" data-i18n="nav-running">跑步记录</a>
+            <a href="english-tests.html" data-i18n="nav-english-tests">英语测试记录</a>
+          </div>
+        </div>
+        <a href="contact.html" class="pill" data-i18n="nav-contact">联系我</a>
+        <button id="lang-toggle" class="lang-toggle" data-i18n="lang-btn" data-i18n-aria-label="lang-aria">EN</button>
+      </nav>
+    </header>
+
+    <main class="container race-calendar-page">
+      <section class="section-reveal">
+        <div class="section-head running-head">
+          <div>
+            <h2 data-i18n="run-race-hub-trail">越野赛事名单</h2>
+            <p class="hero-copy" data-i18n="race-copy">数据来自《路跑及越野赛赛历》。你可以按赛事类别、地区、参赛状态筛选，并按日期或名称排序。</p>
+          </div>
+          <div class="running-head-actions">
+            <a href="road-races.html" class="text-link" data-i18n="run-race-hub-road">路跑赛事名单</a>
+            <a href="running.html" class="text-link" data-i18n="race-back-running">返回跑步记录</a>
+          </div>
+        </div>
+
+        <article class="card race-toolbar">
+          <div class="race-toolbar-grid">
+            <label class="race-field">
+              <span data-i18n="race-filter-region">地区</span>
+              <select id="race-filter-region"></select>
+            </label>
+
+            <label class="race-field">
+              <span data-i18n="race-filter-status">参与状态</span>
+              <select id="race-filter-status">
+                <option value="all" data-i18n="race-opt-all">全部</option>
+                <option value="joined" data-i18n="race-opt-joined">已参与</option>
+                <option value="not-joined" data-i18n="race-opt-not-joined">未参与</option>
+              </select>
+            </label>
+
+            <label class="race-field">
+              <span data-i18n="race-filter-search">赛事名称关键词</span>
+              <input id="race-filter-search" type="search" data-i18n-placeholder="race-search-placeholder" placeholder="输入赛事名称" />
+            </label>
+
+            <label class="race-field">
+              <span data-i18n="race-sort-by">排序方式</span>
+              <select id="race-sort-by">
+                <option value="seq-asc" data-i18n="race-sort-seq-asc">序号从小到大</option>
+                <option value="seq-desc" data-i18n="race-sort-seq-desc">序号从大到小</option>
+                <option value="date-asc" data-i18n="race-sort-date-asc">日期从早到晚</option>
+                <option value="date-desc" data-i18n="race-sort-date-desc">日期从晚到早</option>
+                <option value="name-asc" data-i18n="race-sort-name-asc">名称 A-Z</option>
+                <option value="name-desc" data-i18n="race-sort-name-desc">名称 Z-A</option>
+              </select>
+            </label>
+          </div>
+        </article>
+
+        <div class="race-stat-row" id="race-stat-row"></div>
+
+        <article class="card race-table-wrap">
+          <div class="race-count" id="race-count"></div>
+          <div class="race-table-scroll">
+            <table class="race-table">
+              <thead>
+                <tr>
+                  <th data-i18n="race-col-seq">序号</th>
+                  <th data-i18n="race-col-name">赛事名称</th>
+                  <th data-i18n="race-col-region">地区</th>
+                  <th data-i18n="race-col-date">日期</th>
+                  <th data-i18n="race-col-status">参与状态</th>
+                </tr>
+              </thead>
+              <tbody id="race-tbody"></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© <span id="year"></span> <span data-i18n="global-footer">宋思逸。用心构建。</span></p>
+    </footer>
+
+    <script src="data-projects.js"></script>
+    <script src="data-articles.js"></script>
+    <script src="data-running.js"></script>
+    <script src="data-english-tests.js"></script>
+    <script src="data-calendar.js"></script>
+    <script src="data-race-calendar.js"></script>
+    <script src="script.js"></script>
+    <script>
+      (function () {
+        const rawEntries = (Array.isArray(window.raceCalendarEntries) ? window.raceCalendarEntries : []).filter((item) => item.category === "trail");
+        const entries = rawEntries
+          .slice()
+          .sort((left, right) => {
+            const leftSeq = Number(left.seq);
+            const rightSeq = Number(right.seq);
+            const safeLeft = Number.isFinite(leftSeq) ? leftSeq : Number.MAX_SAFE_INTEGER;
+            const safeRight = Number.isFinite(rightSeq) ? rightSeq : Number.MAX_SAFE_INTEGER;
+            return safeLeft - safeRight || String(left.name || "").localeCompare(String(right.name || ""), "zh-Hans-CN");
+          })
+          .map((item, index) => ({
+            ...item,
+            seq: index + 1,
+          }));
+        const els = {
+          region: document.getElementById("race-filter-region"),
+          status: document.getElementById("race-filter-status"),
+          search: document.getElementById("race-filter-search"),
+          sortBy: document.getElementById("race-sort-by"),
+          count: document.getElementById("race-count"),
+          tbody: document.getElementById("race-tbody"),
+          statRow: document.getElementById("race-stat-row"),
+        };
+
+        function parseDateCode(dateCode) {
+          const raw = String(dateCode || "").padStart(4, "0");
+          const month = Number(raw.slice(0, 2));
+          const day = Number(raw.slice(2));
+          const unknownDay = day === 99;
+          const safeMonth = month >= 1 && month <= 12 ? month : 1;
+          const safeDay = unknownDay ? 99 : Math.max(1, Math.min(day || 1, 31));
+          return {
+            month: safeMonth,
+            day: safeDay,
+            unknownDay,
+            sortValue: safeMonth * 100 + safeDay,
+          };
+        }
+
+        function formatDate(dateCode, lang) {
+          const parsed = parseDateCode(dateCode);
+          if (lang === "en") {
+            return parsed.unknownDay
+              ? `${String(parsed.month).padStart(2, "0")} (TBD)`
+              : `${String(parsed.month).padStart(2, "0")}-${String(parsed.day).padStart(2, "0")}`;
+          }
+          return parsed.unknownDay ? `${parsed.month}月（日期待定）` : `${parsed.month}月${parsed.day}日`;
+        }
+
+        function statusLabel(joined, lang) {
+          return lang === "en" ? (joined ? "Joined" : "Not joined") : joined ? "已参与" : "未参与";
+        }
+
+        function buildRegionOptions() {
+          const regions = Array.from(new Set(entries.map((item) => item.region).filter(Boolean))).sort((a, b) =>
+            a.localeCompare(b, "zh-Hans-CN")
+          );
+          const previous = els.region.value || "all";
+          els.region.innerHTML = "";
+          const all = document.createElement("option");
+          all.value = "all";
+          all.textContent = window.currentLang === "en" ? "All" : "全部";
+          els.region.appendChild(all);
+          regions.forEach((region) => {
+            const option = document.createElement("option");
+            option.value = region;
+            option.textContent = region;
+            els.region.appendChild(option);
+          });
+          if (Array.from(els.region.options).some((opt) => opt.value === previous)) {
+            els.region.value = previous;
+          }
+        }
+
+        function getFiltered() {
+          const filters = {
+            region: els.region.value,
+            status: els.status.value,
+            keyword: els.search.value.trim().toLowerCase(),
+            sortBy: els.sortBy.value,
+          };
+
+          let filtered = entries.filter((item) => {
+            if (filters.region !== "all" && item.region !== filters.region) return false;
+            if (filters.status === "joined" && !item.participated) return false;
+            if (filters.status === "not-joined" && item.participated) return false;
+            if (filters.keyword && !String(item.name || "").toLowerCase().includes(filters.keyword)) return false;
+            return true;
+          });
+
+          filtered = filtered.sort((a, b) => {
+            const ad = parseDateCode(a.dateCode).sortValue;
+            const bd = parseDateCode(b.dateCode).sortValue;
+            if (filters.sortBy === "seq-asc") return a.seq - b.seq;
+            if (filters.sortBy === "seq-desc") return b.seq - a.seq;
+            if (filters.sortBy === "date-asc") return ad - bd || a.seq - b.seq;
+            if (filters.sortBy === "date-desc") return bd - ad || a.seq - b.seq;
+            if (filters.sortBy === "name-asc") return String(a.name).localeCompare(String(b.name), "zh-Hans-CN");
+            if (filters.sortBy === "name-desc") return String(b.name).localeCompare(String(a.name), "zh-Hans-CN");
+            return a.seq - b.seq;
+          });
+
+          return filtered;
+        }
+
+        function renderStats(filtered) {
+          const lang = window.currentLang || "zh";
+          const joined = filtered.filter((item) => item.participated).length;
+          const labels = lang === "en"
+            ? [["Current total", filtered.length], ["Joined", joined], ["Not joined", filtered.length - joined]]
+            : [["当前筛选总数", filtered.length], ["已参与", joined], ["未参与", filtered.length - joined]];
+          els.statRow.innerHTML = "";
+          labels.forEach(([title, value]) => {
+            const item = document.createElement("article");
+            item.className = "card race-stat";
+            const label = document.createElement("span");
+            const strong = document.createElement("strong");
+            label.textContent = title;
+            strong.textContent = String(value);
+            item.append(label, strong);
+            els.statRow.appendChild(item);
+          });
+        }
+
+        function renderTable(filtered) {
+          const lang = window.currentLang || "zh";
+          els.count.textContent = lang === "en" ? `Showing ${filtered.length} events` : `共 ${filtered.length} 场赛事`;
+          els.tbody.innerHTML = "";
+
+          if (!filtered.length) {
+            const tr = document.createElement("tr");
+            const td = document.createElement("td");
+            td.colSpan = 5;
+            td.className = "race-empty";
+            td.textContent = lang === "en" ? "No events match current filters." : "当前筛选条件下没有匹配赛事。";
+            tr.appendChild(td);
+            els.tbody.appendChild(tr);
+            return;
+          }
+
+          filtered.forEach((item) => {
+            const tr = document.createElement("tr");
+            const seqTd = document.createElement("td");
+            seqTd.className = "race-seq";
+            seqTd.textContent = String(item.seq);
+            const nameTd = document.createElement("td");
+            const name = document.createElement("div");
+            name.className = "race-name";
+            name.textContent = item.name;
+            nameTd.appendChild(name);
+            const regionTd = document.createElement("td");
+            regionTd.textContent = item.region || "-";
+            const dateTd = document.createElement("td");
+            dateTd.textContent = formatDate(item.dateCode, lang);
+            const statusTd = document.createElement("td");
+            const badge = document.createElement("span");
+            badge.className = item.participated ? "race-pill joined" : "race-pill not-joined";
+            badge.textContent = statusLabel(item.participated, lang);
+            statusTd.appendChild(badge);
+            tr.append(seqTd, nameTd, regionTd, dateTd, statusTd);
+            els.tbody.appendChild(tr);
+          });
+        }
+
+        function render() {
+          const filtered = getFiltered();
+          renderStats(filtered);
+          renderTable(filtered);
+        }
+
+        buildRegionOptions();
+        [els.region, els.status, els.sortBy].forEach((el) => el.addEventListener("change", render));
+        els.search.addEventListener("input", render);
+        document.addEventListener("languagechange", () => {
+          buildRegionOptions();
+          render();
+        });
+        render();
+      })();
+    </script>
+  </body>
+</html>
