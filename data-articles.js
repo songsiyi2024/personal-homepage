@@ -1,5 +1,29 @@
 window.articleEntries = [
   {
+    id: "marathon-health-check-2026",
+    featured: true,
+    type: "pdf",
+    title: {
+      zh: "路跑运动员赛前体检表",
+      en: "Marathon Health Check Form",
+    },
+    homeTitle: {
+      zh: "路跑运动员赛前体检表",
+      en: "Marathon Health Check Form",
+    },
+    description: {
+      zh: "这是一份放在站内 articles 文件夹里的 PDF 文档，适合挂通知、论文或资料汇编。",
+      en: "A PDF document stored in the on-site articles folder, suitable for notices, papers, or compiled materials.",
+    },
+    listDescription: {
+      zh: "用于参加路跑赛事的运动员赛前体检表格",
+      en: "A health check form for marathon participants.",
+    },
+    publishedAt: "2026-06-04",
+    href: "articles/路跑运动员赛前体检表.pdf",
+    downloadable: false,
+  },
+  {
     id: "marathon-catalog-2026",
     featured: true,
     type: "pdf",
