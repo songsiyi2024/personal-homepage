@@ -259,7 +259,23 @@
             if (key === "caaCert" && !values.includes("B")) {
               values.push("B");
             }
-            values.sort((a, b) => a.localeCompare(b, "zh-Hans-CN"));
+            if (key === "waCert") {
+              const waPriority = {
+                platinum: 1,
+                gold: 2,
+                elite: 3,
+                label: 4,
+              };
+              values.sort((a, b) => {
+                const aKey = String(a || "").trim().toLowerCase();
+                const bKey = String(b || "").trim().toLowerCase();
+                const aRank = waPriority[aKey] || Number.MAX_SAFE_INTEGER;
+                const bRank = waPriority[bKey] || Number.MAX_SAFE_INTEGER;
+                return aRank - bRank || aKey.localeCompare(bKey, "en");
+              });
+            } else {
+              values.sort((a, b) => a.localeCompare(b, "zh-Hans-CN"));
+            }
             const previous = element.value || "all";
 
             element.innerHTML = "";
@@ -277,7 +293,26 @@
             values.forEach((value) => {
               const option = document.createElement("option");
               option.value = value;
-              option.textContent = value;
+              if (key === "waCert") {
+                const certKey = String(value || "").trim().toLowerCase();
+                const waLabelZh = {
+                  platinum: "白金",
+                  gold: "金标",
+                  elite: "精英",
+                  label: "标牌",
+                };
+                const waLabelEn = {
+                  platinum: "Platinum",
+                  gold: "Gold",
+                  elite: "Elite",
+                  label: "Label",
+                };
+                option.textContent = window.currentLang === "en"
+                  ? (waLabelEn[certKey] || value)
+                  : (waLabelZh[certKey] || value);
+              } else {
+                option.textContent = window.currentLang === "en" ? value : `${value}类`;
+              }
               element.appendChild(option);
             });
 
