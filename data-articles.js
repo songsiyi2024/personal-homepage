@@ -40,8 +40,8 @@ window.articleEntries = [
       en: "A PDF document stored in the on-site articles folder, suitable for notices, papers, or compiled materials.",
     },
     listDescription: {
-      zh: "这是你新加入的 PDF 文件，点击后会在浏览器中打开；如果浏览器不支持预览，也会直接下载。",
-      en: "This PDF opens in the browser when supported, or downloads if preview is unavailable.",
+      zh: "2026年中国田径协会公布的马拉松赛事名单。",
+      en: "The list of marathon events published by the Chinese Athletics Association in 2026.",
     },
     publishedAt: "2026-04-22",
     href: "articles/关于公布2026年马拉松赛事目录的通知.pdf",
