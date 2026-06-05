@@ -1440,6 +1440,18 @@
         "participated":  false
     },
     {
+        "id":  "road-28.5",
+        "seq":  28.5,
+        "category":  "road",
+        "name":  "中俄跨境马拉松暨黑河马拉松",
+        "region":  "黑龙江",
+        "type":  "全/半",
+        "dateCode":  "0621",
+        "caaCert":  "C",
+        "waCert":  "",
+        "participated":  false
+    },
+    {
         "id":  "trail-18",
         "seq":  18,
         "category":  "trail",
