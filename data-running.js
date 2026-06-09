@@ -9,7 +9,7 @@ window.runningEntries = [
     location: { zh: "甘肃省/张掖市/临泽县", en: "Gansu / Zhangye / Linze" },
     result: { zh: "DNS", en: "DNS" },
     note: { zh: "中国田协A类赛事", en: "Chinese Athletics Association A-level Race" },
-    status: "finished",
+    status: "dns",
   },
   {
     id: "2026-jilin-half",
