@@ -1153,8 +1153,8 @@ function renderRunningCard(race) {
 
 function renderRunningStats() {
   const entries = Array.isArray(window.runningEntries) ? window.runningEntries : [];
-  const finished = entries.filter((item) => item.status === "finished");
-  const longest = finished.reduce((max, item) => Math.max(max, Number(item.distanceKm) || 0), 0);
+  const finished = entries.filter((item) => String(item.status || "finished").toLowerCase() === "finished");
+  const longest = entries.reduce((max, item) => Math.max(max, Number(item.distanceKm) || 0), 0);
   const nextGoal = getNearestPlannedEntry(entries);
   const statItems = document.querySelectorAll(".running-overview:not(.english-test-overview) .running-stat[data-stat]");
 

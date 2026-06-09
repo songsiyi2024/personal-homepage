@@ -1,5 +1,17 @@
 window.runningEntries = [
   {
+    id: "2026-linze-half",
+    type: { zh: "半程马拉松", en: "Half Marathon" },
+    title: { zh: "2026临泽马拉松", en: "2026 Linze Marathon" },
+    date: { zh: "2026.6.28", en: "2026.6.28" },
+    distanceKm: 21.0975,
+    distanceText: { zh: "21.0975 km", en: "21.0975 km" },
+    location: { zh: "甘肃省/张掖市/临泽县", en: "Gansu / Zhangye / Linze" },
+    result: { zh: "DNS", en: "DNS" },
+    note: { zh: "中国田协A类赛事", en: "Chinese Athletics Association A-level Race" },
+    status: "dns",
+  },
+  {
     id: "2026-jilin-half",
     type: { zh: "半程马拉松", en: "Half Marathon" },
     title: { zh: "2026吉林市马拉松", en: "2026 Jilin Marathon" },
@@ -76,5 +88,17 @@ window.runningEntries = [
     result: { zh: "枪时55:54，净时55:07", en: "gun time 55:54, net time 55:07" },
     note: { zh: "PB", en: "PB" },
     status: "finished",
+  },
+  {
+    id: "2025-TianmuLake-half",
+    type: { zh: "半程马拉松", en: "Half Marathon" },
+    title: { zh: "2025天目湖马拉松", en: "2025 Tianmu Lake Marathon" },
+    date: { zh: "2025.11.15", en: "2025.11.15" },
+    distanceKm: 21.0975,
+    distanceText: { zh: "21.0975 km", en: "21.0975 km" },
+    location: { zh: "江苏省/常州市/溧阳市", en: "Jiangsu / Changzhou / Liyang" },
+    result: { zh: "DNS", en: "DNS" },
+    note: { zh: "中国田协A类赛事", en: "Chinese Athletics Association A-level Race" },
+    status: "dns",
   },
 ];
