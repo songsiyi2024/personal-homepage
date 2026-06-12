@@ -1738,6 +1738,18 @@
         "caaCert":  "",
         "waCert":  "",
         "participated":  false
+    },
+    {
+        "id":  "trail-25",
+        "seq":  25,
+        "category":  "trail",
+        "name":  "柴古唐斯括苍越野赛",
+        "region":  "浙江",
+        "type":  "越野",
+        "dateCode":  "1030",
+        "caaCert":  "",
+        "waCert":  "",
+        "participated":  false
     }
 ];
 
