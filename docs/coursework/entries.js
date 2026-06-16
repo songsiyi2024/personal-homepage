@@ -170,4 +170,25 @@ window.courseworkCourses = [
       },
     ],
   },
+  {
+    id: "ethnicity-and-society",
+    title: {
+      zh: "民族与社会",
+      en: "Ethnicity and Society",
+    },
+    subtitle: {
+      zh: "2026 春季学期",
+      en: "Spring 2026",
+    },
+    description: {
+      zh: "期中作业",
+      en: "Midterm Homework",
+    },
+    entries: [
+      {
+        title: "2026 Spring Ethnicity and Society Homework",
+        file: "ethnicity-and-society/midterm-homework.pdf",
+      },
+    ],
+  },
 ];
