@@ -1,5 +1,17 @@
 window.runningEntries = [
   {
+    id: "2026-tianjin-tuanbolake-half",
+    type: { zh: "半程马拉松", en: "Half Marathon" },
+    title: { zh: "2026天津团泊湖半程马拉松", en: "2026 Tianjin Tuanbo Lake Half Marathon" },
+    date: { zh: "2026.9.27", en: "2026.9.27" },
+    distanceKm: 21.0975,
+    distanceText: { zh: "21.0975 km", en: "21.0975 km" },
+    location: { zh: "天津市/静海区", en: "Tianjin / Jinghai" },
+    result: { zh: "计划中", en: "planned" },
+    note: { zh: "中国田协A类赛事", en: "Chinese Athletics Association A-level Race" },
+    status: "planned",
+  },
+  {
     id: "2026-linze-half",
     type: { zh: "半程马拉松", en: "Half Marathon" },
     title: { zh: "2026临泽马拉松", en: "2026 Linze Marathon" },
