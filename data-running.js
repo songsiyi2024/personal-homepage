@@ -12,6 +12,18 @@ window.runningEntries = [
     status: "planned",
   },
   {
+    id: "2026-chuxiong-half",
+    type: { zh: "半程马拉松", en: "Half Marathon" },
+    title: { zh: "2026楚雄马拉松", en: "2026 Chuxiong Marathon" },
+    date: { zh: "2026.8.2", en: "2026.8.2" },
+    distanceKm: 21.0975,
+    distanceText: { zh: "21.0975 km", en: "21.0975 km" },
+    location: { zh: "云南省/楚雄彝族自治州/楚雄市", en: "Yunnan / Chuxiong Yi Autonomous Prefecture / Chuxiong" },
+    result: { zh: "计划中", en: "planned" },
+    note: { zh: "中国田协A类赛事", en: "Chinese Athletics Association A-level Race" },
+    status: "planned",
+  },
+  {
     id: "2026-linze-half",
     type: { zh: "半程马拉松", en: "Half Marathon" },
     title: { zh: "2026临泽马拉松", en: "2026 Linze Marathon" },
