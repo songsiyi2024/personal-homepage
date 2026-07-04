@@ -12,6 +12,18 @@ window.runningEntries = [
     status: "planned",
   },
   {
+    id: "2026-lanzhou-newarea-half",
+    type: { zh: "半程马拉松", en: "Half Marathon" },
+    title: { zh: "2026兰州新区马拉松", en: "2026 Lanzhou New Area Marathon" },
+    date: { zh: "2026.8.30", en: "2026.8.30" },
+    distanceKm: 21.0975,
+    distanceText: { zh: "21.0975 km", en: "21.0975 km" },
+    location: { zh: "甘肃省/兰州市/兰州新区", en: "Gansu / Lanzhou / Lanzhou New Area" },
+    result: { zh: "计划中", en: "planned" },
+    note: { zh: "中国田协C类赛事", en: "Chinese Athletics Association C-level Race" },
+    status: "planned",
+  },
+  {
     id: "2026-chuxiong-half",
     type: { zh: "半程马拉松", en: "Half Marathon" },
     title: { zh: "2026楚雄马拉松", en: "2026 Chuxiong Marathon" },

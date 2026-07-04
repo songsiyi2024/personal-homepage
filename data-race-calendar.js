@@ -1452,6 +1452,18 @@
         "participated":  false
     },
     {
+        "id":  "road-113.5",
+        "seq":  113.5,
+        "category":  "road",
+        "name":  "兰州新区马拉松",
+        "region":  "甘肃",
+        "type":  "全/半",
+        "dateCode":  "0830",
+        "caaCert":  "C",
+        "waCert":  "",
+        "participated":  false
+    },
+    {
         "id":  "trail-18",
         "seq":  18,
         "category":  "trail",
