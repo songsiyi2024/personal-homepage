@@ -15,7 +15,7 @@ window.englishTestEntries = [
     type: { zh: "剑桥商务英语考试", en: "BEC" },
     title: { zh: "剑桥英语BCE中级考试", en: "BEC Vantage" },
     date: "2026.5.23",
-    location: { zh: "北京市/海淀区", en: "Haidian District, Beijing" },
+    location: { zh: "北京市/海淀区", en: "Haidian, Beijing" },
     scoreText: { zh: "182", en: "182" },
     score: 182,
     note: { zh: "CEFR C1", en: "CEFR C1" },
