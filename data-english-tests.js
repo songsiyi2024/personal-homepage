@@ -13,7 +13,7 @@ window.englishTestEntries = [
   {
     id: "2026-becv-may",
     type: { zh: "剑桥商务英语考试", en: "BEC" },
-    title: { zh: "剑桥英语BCE中级考试", en: "BEC Vantage" },
+    title: { zh: "剑桥英语BEC中级考试", en: "BEC Vantage" },
     date: "2026.5.23",
     location: { zh: "北京市/海淀区", en: "Haidian, Beijing" },
     scoreText: { zh: "182", en: "182" },
