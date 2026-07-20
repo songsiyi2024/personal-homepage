@@ -13,26 +13,25 @@
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <div class="bg-orb orb-1" aria-hidden="true"></div>
-    <div class="bg-orb orb-2" aria-hidden="true"></div>
 
-    <header class="site-header container">
+<!-- site-shell:header:start -->
+    <header class="site-header">
       <a class="logo" href="../index.html" aria-label="返回首页" data-i18n-aria-label="logo-aria">SS</a>
-      <button class="menu-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="main-nav" data-i18n-aria-label="menu-aria">
+      <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="main-nav" data-i18n-aria-label="menu-aria">
         <span></span>
         <span></span>
       </button>
-      <nav class="nav" id="main-nav">
-        <div class="nav-primary" aria-label="核心导航" data-i18n-aria-label="nav-core-label">
+      <nav class="nav" id="main-nav" aria-label="核心导航" data-i18n-aria-label="nav-core-label">
+        <div class="nav-primary">
           <a href="../index.html" data-i18n="nav-home">首页</a>
           <a href="../about.html" data-i18n="nav-about">关于我</a>
           <a href="../projects.html" data-i18n="nav-projects">项目</a>
           <a href="../articles.html" data-i18n="nav-articles">文章</a>
         </div>
         <div class="nav-secondary">
-          <button class="more-toggle" aria-expanded="false" aria-controls="more-menu" data-i18n="nav-more">更多</button>
-          <div class="more-menu" id="more-menu" aria-label="更多内容" data-i18n-aria-label="nav-more-label">
-            <a href="../calendar.html" data-i18n="nav-calendar">Calendar</a>
+          <button class="more-toggle" type="button" aria-expanded="false" aria-controls="more-menu" data-i18n="nav-more">更多</button>
+          <div class="more-menu" id="more-menu">
+            <a href="../calendar.html" data-i18n="nav-calendar">计划</a>
             <a href="../skills.html" data-i18n="nav-skills">技能</a>
             <a href="../coursework.html" data-i18n="nav-coursework">课程作业</a>
             <a href="../gaokao.html" data-i18n="nav-gaokao">高考解答</a>
@@ -41,9 +40,10 @@
           </div>
         </div>
         <a href="../contact.html" class="pill" data-i18n="nav-contact">联系我</a>
-        <button id="lang-toggle" class="lang-toggle" data-i18n="lang-btn" data-i18n-aria-label="lang-aria">EN</button>
+        <button id="lang-toggle" class="lang-toggle" type="button" data-i18n="lang-btn" data-i18n-aria-label="lang-aria">EN</button>
       </nav>
     </header>
+<!-- site-shell:header:end -->
 
     <main class="container">
       <section class="hero section-reveal">
@@ -69,6 +69,23 @@
         </div>
       </section>
     </main>
+
+<!-- site-shell:footer:start -->
+    <footer class="site-footer">
+      <div class="footer-inner container">
+        <div class="footer-brand-row">
+          <a class="footer-brand" href="../index.html" aria-label="返回首页" data-i18n-aria-label="logo-aria">SS</a>
+          <nav class="footer-nav" aria-label="页脚导航" data-i18n-aria-label="nav-footer-label">
+          <a href="../about.html" data-i18n="nav-about">关于我</a>
+          <a href="../projects.html" data-i18n="nav-projects">项目</a>
+          <a href="../articles.html" data-i18n="nav-articles">文章</a>
+          <a href="../contact.html" data-i18n="nav-contact">联系我</a>
+          </nav>
+        </div>
+        <p>© <span id="year"></span> <span data-i18n="global-footer">宋思逸。用心构建。</span></p>
+      </div>
+    </footer>
+<!-- site-shell:footer:end -->
 
     <script src="../script.js"></script>
   </body>

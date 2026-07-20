@@ -46,6 +46,7 @@ const translations = {
     "nav-more": "更多",
     "nav-core-label": "核心导航",
     "nav-more-label": "更多内容",
+    "nav-footer-label": "页脚导航",
     "lang-btn": "EN",
     "lang-aria": "Switch to English",
     "menu-aria": "打开菜单",
@@ -362,6 +363,7 @@ const translations = {
     "nav-more": "More",
     "nav-core-label": "Primary navigation",
     "nav-more-label": "More sections",
+    "nav-footer-label": "Footer navigation",
     "lang-btn": "中文",
     "lang-aria": "切换到中文",
     "menu-aria": "Open menu",
@@ -688,9 +690,11 @@ function syncSeoMeta() {
   }
 
   const currentPath = getCurrentPath();
-  const meta = pageMetaKeys[currentPath] || pageMetaKeys[""];
-  const title = t(meta.title);
-  const description = t(meta.description);
+  const meta = pageMetaKeys[currentPath];
+  const title = meta ? t(meta.title) : document.title;
+  const description = meta
+    ? t(meta.description)
+    : document.querySelector('meta[name="description"]')?.getAttribute("content") || "";
   const canonicalUrl = `${window.location.origin}${window.location.pathname}`;
   const descriptionEl = document.querySelector('meta[name="description"]');
 
@@ -719,32 +723,40 @@ function syncSeoMeta() {
 }
 
 function applyTranslations(lang) {
-  currentLang = lang;
-  window.currentLang = lang;
-  document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+  const currentPath = getCurrentPath();
+  const isDocsPage = window.location.pathname.includes("/docs/");
+  const supportsPageTranslation = Boolean(pageMetaKeys[currentPath]) || isDocsPage;
+  const effectiveLang = supportsPageTranslation ? lang : "zh";
+
+  currentLang = effectiveLang;
+  window.currentLang = effectiveLang;
+  document.documentElement.lang = effectiveLang === "zh" ? "zh-CN" : "en";
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.dataset.i18n;
-    if (translations[lang]?.[key] !== undefined) {
-      el.textContent = translations[lang][key];
+    if (translations[effectiveLang]?.[key] !== undefined) {
+      el.textContent = translations[effectiveLang][key];
     }
   });
 
   document.querySelectorAll("[data-i18n-aria-label]").forEach((el) => {
-    el.setAttribute("aria-label", t(el.dataset.i18nAriaLabel, lang));
+    el.setAttribute("aria-label", t(el.dataset.i18nAriaLabel, effectiveLang));
   });
 
   document.querySelectorAll("[data-i18n-title]").forEach((el) => {
-    el.setAttribute("title", t(el.dataset.i18nTitle, lang));
+    el.setAttribute("title", t(el.dataset.i18nTitle, effectiveLang));
   });
 
   document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
-    el.setAttribute("placeholder", t(el.dataset.i18nPlaceholder, lang));
+    el.setAttribute("placeholder", t(el.dataset.i18nPlaceholder, effectiveLang));
   });
+
+  const langButton = document.getElementById("lang-toggle");
+  if (langButton) langButton.hidden = !supportsPageTranslation;
 
   syncSeoMeta();
   renderDynamicContent();
-  document.dispatchEvent(new CustomEvent("languagechange", { detail: { lang } }));
+  document.dispatchEvent(new CustomEvent("languagechange", { detail: { lang: effectiveLang } }));
 }
 
 function createEl(tag, className, text) {
@@ -1286,7 +1298,12 @@ function renderDynamicContent() {
 }
 
 function updateCurrentNavState() {
-  const currentPath = getCurrentPath();
+  const pathname = window.location.pathname;
+  let currentPath = getCurrentPath();
+  if (pathname.includes("/articles/")) currentPath = "articles.html";
+  if (pathname.includes("/docs/coursework/")) currentPath = "coursework.html";
+  if (pathname.includes("/docs/gaokao-math/")) currentPath = "gaokao.html";
+
   document.querySelectorAll(".nav a[href]").forEach((link) => {
     const targetPath = link.getAttribute("href").split("/").pop();
     if (targetPath === currentPath) {
