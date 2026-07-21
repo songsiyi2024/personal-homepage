@@ -5,6 +5,7 @@
   "scripts": {
     "build": "node tools/sync-shell.mjs",
     "check": "node tools/check-site.mjs",
+    "dev": "node tools/serve.mjs",
     "validate": "npm run build && npm run check"
   }
 }

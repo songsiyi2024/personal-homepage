@@ -756,6 +756,7 @@ function applyTranslations(lang) {
 
   syncSeoMeta();
   renderDynamicContent();
+  updateCurrentNavState();
   document.dispatchEvent(new CustomEvent("languagechange", { detail: { lang: effectiveLang } }));
 }
 
@@ -1312,6 +1313,16 @@ function updateCurrentNavState() {
       link.removeAttribute("aria-current");
     }
   });
+
+  const moreButton = document.querySelector(".more-toggle");
+  const currentMoreLink = document.querySelector('.more-menu a[aria-current="page"]');
+
+  if (moreButton) {
+    moreButton.classList.toggle("has-current", Boolean(currentMoreLink));
+    moreButton.textContent = currentMoreLink
+      ? `${t("nav-more", currentLang)} · ${currentMoreLink.textContent.trim()}`
+      : t("nav-more", currentLang);
+  }
 }
 
 function closeMenus() {

@@ -59,7 +59,25 @@ function renderCourseEntries(course) {
   (course.entries || []).forEach((item) => {
     const li = document.createElement("li");
     const displayName = item.title || item.file;
-    li.innerHTML = `<a href="${item.file}" target="_blank" rel="noopener noreferrer">${displayName}</a>`;
+    const link = document.createElement("a");
+    const title = document.createElement("span");
+    const arrow = document.createElement("span");
+
+    link.className = "document-link";
+    link.href = item.file;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.setAttribute("aria-label", displayName);
+
+    title.className = "document-link-title";
+    title.textContent = displayName;
+
+    arrow.className = "document-link-arrow";
+    arrow.setAttribute("aria-hidden", "true");
+    arrow.textContent = "↗";
+
+    link.append(title, arrow);
+    li.appendChild(link);
     list.appendChild(li);
   });
 }
