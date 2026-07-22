@@ -54,7 +54,7 @@ const translations = {
     "idx-cta-primary": "查看作品",
     "idx-cta-ghost": "合作联系",
     "idx-about-h2": "关于我",
-    "idx-about-p": "在这里写一段 3-5 行的自我介绍：你的方向、经验、擅长领域，以及你想解决的问题。",
+    "idx-about-p": "北京大学数学科学学院数学类本科生，兼修社会学，关注数学建模、数据分析、形式化验证与 AI 应用，希望用定量方法理解并解决真实问题。",
     "idx-about-link": "查看关于我详情",
     "idx-projects-h2": "精选项目",
     "idx-viewall": "查看全部",
@@ -165,20 +165,20 @@ const translations = {
     "race-col-cert": "认证",
     "race-col-status": "参与状态",
     "project-empty": "项目内容待补充。",
-    "abt-hero-copy": "这里是独立的关于我页面。你可以放个人简介、教育经历、工作经历、价值观和长期目标。",
+    "abt-hero-copy": "北京大学数学科学学院数学类本科生，兼修社会学。我的兴趣横跨数学建模、数据分析、形式化验证与定量社会研究，也持续通过课程项目和竞赛探索这些方法的实际应用。",
     "abt-eyebrow": "关于我",
     "abt-h1-prefix": "关于",
     "abt-cta-primary": "查看项目",
     "abt-cta-ghost": "返回首页",
     "abt-resume-h2": "个人简历",
-    "abt-resume-copy": "这里提供网页版个人简历和可下载的文件版简历。",
+    "abt-resume-copy": "网页版简历集中展示我的教育背景、项目经历与技能摘要。",
     "abt-resume-card-title": "简历入口",
-    "abt-resume-card-desc": "网页版简历适合在线浏览，文件版简历适合投递或本地保存。",
+    "abt-resume-card-desc": "查看教育背景、代表项目、竞赛成果与技能摘要。",
     "abt-resume-open-web": "查看网页版简历",
     "abt-resume-download-pdf": "下载 PDF 简历",
     "resume-eyebrow": "RESUME",
     "resume-h1": "个人简历",
-    "resume-hero-copy": "此页面展示个人基本信息、教育背景、项目与技能摘要，可作为网页版投递资料。",
+    "resume-hero-copy": "北京大学数学类本科生，兼修社会学；关注数学建模、数据分析、形式化验证与 AI 应用。",
     "resume-download-pdf": "下载 PDF 简历",
     "resume-back-about": "返回关于我",
     "resume-basic-h2": "基本信息",
@@ -186,7 +186,7 @@ const translations = {
     "resume-email-label": "邮箱：",
     "resume-github-label": "GitHub：",
     "resume-focus-label": "方向：",
-    "resume-focus-value": "数据分析、AI 应用、生物数学、定量社会学",
+    "resume-focus-value": "数学建模、数据分析、形式化验证、AI 应用、定量社会学",
     "resume-edu-h2": "教育背景",
     "resume-edu-1-time": "2024.09 - 至今",
     "resume-edu-1-school": "北京大学",
@@ -202,15 +202,28 @@ const translations = {
     "resume-edu-2-school": "江苏省溧阳中学",
     "resume-edu-2-major": "语数英物化生",
     "resume-projects-h2": "代表项目与作品",
-    "resume-projects-copy": "个人主页：持续维护多栏目静态站点，覆盖项目、文章、课程作业、高考解答与跑步记录。",
+    "resume-project-mcm-title": "MCM 2026 A 题：智能手机电池耗电建模",
+    "resume-project-mcm-meta": "2026.01 · MCM 团队项目",
+    "resume-project-mcm-summary": "主要负责论文撰写与模型改进思路的提出，并完成部分数据处理和图表绘制。",
+    "resume-project-mcm-point-1": "使用 Ridge Regression 完成多因素耗电建模、特征消融与敏感性分析。",
+    "resume-project-mcm-point-2": "结合 Weibull 阻抗修正、二阶 Thevenin 等效电路和 SOH 耦合描述非线性放电与电池老化。",
+    "resume-project-mcm-point-3": "测试集 R² 达 0.943，中高耗电场景 MAPE 低于 10%；识别屏幕使用时间与处理器负载为主要耗电驱动。",
+    "resume-project-mediator-title": "Mediator 到 Z3 的模型转换与性质验证工具",
+    "resume-project-mediator-meta": "2025.09 - 2025.12 · 两人课程项目",
+    "resume-project-mediator-summary": "负责课程论文写作，并参与转换工具的实现思路设计。",
+    "resume-project-mediator-point-1": "以 Java 遍历 Mediator AST，将类型、变量、转移和时序性质转换为时刻索引的 Z3Py 约束。",
+    "resume-project-mediator-point-2": "支持核心类型、复合类型递归扁平化、帧条件、G/F/X/U 性质与有界整数安全检查。",
+    "resume-project-mediator-point-3": "在 40 步 Testbench 与 60 步医疗系统模型上完成有界模型检查，分别输出第 21、60 步反例轨迹。",
+    "resume-project-detail-link": "查看项目详情",
+    "resume-project-paper-link": "查看论文 PDF",
     "resume-view-projects": "查看项目页",
     "resume-view-articles": "查看文章页",
     "resume-skills-h2": "技能摘要",
-    "resume-skill-1": "HTML / CSS / JavaScript",
-    "resume-skill-2": "页面信息架构与内容组织",
-    "resume-skill-3": "Git / GitHub 协作",
-    "resume-skill-4": "英文文档阅读与写作",
-    "resume-skill-5": "AI 工具辅助开发",
+    "resume-skill-1": "Python / 数据分析 / 数学建模",
+    "resume-skill-2": "Java / AST 处理 / DSL 转换",
+    "resume-skill-3": "Z3 / SMT / 有界模型检查",
+    "resume-skill-4": "回归分析 / 敏感性分析 / 不确定性量化",
+    "resume-skill-5": "中英文技术写作 / 团队协作",
     "prj-h2": "全部项目",
     "prj-back": "返回首页",
     "art-h2": "我的文章",
@@ -371,7 +384,7 @@ const translations = {
     "idx-cta-primary": "View Works",
     "idx-cta-ghost": "Get in Touch",
     "idx-about-h2": "About",
-    "idx-about-p": "Write a 3-5 line introduction: your focus, experience, strengths, and the problems you want to solve.",
+    "idx-about-p": "I study Mathematics at Peking University and pursue a double major in Sociology. My interests include mathematical modeling, data analysis, formal verification, and AI applications, with an emphasis on quantitative approaches to real-world problems.",
     "idx-about-link": "Read More About Me",
     "idx-projects-h2": "Featured Projects",
     "idx-viewall": "View All",
@@ -482,20 +495,20 @@ const translations = {
     "race-col-cert": "Certification",
     "race-col-status": "Status",
     "project-empty": "Project content to be added.",
-    "abt-hero-copy": "This is the standalone About page. Add your bio, education, work experience, values, and long-term goals here.",
+    "abt-hero-copy": "I study Mathematics at Peking University and pursue a double major in Sociology. My interests span mathematical modeling, data analysis, formal verification, and quantitative social research, which I explore through coursework and competitions.",
     "abt-eyebrow": "ABOUT ME",
     "abt-h1-prefix": "About",
     "abt-cta-primary": "View Projects",
     "abt-cta-ghost": "Back to Home",
     "abt-resume-h2": "Resume",
-    "abt-resume-copy": "This section provides a web resume and a downloadable file resume.",
+    "abt-resume-copy": "The web resume brings together my education, selected projects, and skills.",
     "abt-resume-card-title": "Resume Entry",
-    "abt-resume-card-desc": "The web resume is for online viewing, while the file resume is for applications and local storage.",
+    "abt-resume-card-desc": "Explore my education, selected projects, competition work, and skills.",
     "abt-resume-open-web": "Open Web Resume",
     "abt-resume-download-pdf": "Download PDF Resume",
     "resume-eyebrow": "RESUME",
     "resume-h1": "Resume",
-    "resume-hero-copy": "This page presents profile highlights, education, projects, and skills as a web resume.",
+    "resume-hero-copy": "Mathematics undergraduate and Sociology double-major student at Peking University, focused on mathematical modeling, data analysis, formal verification, and AI applications.",
     "resume-download-pdf": "Download PDF Resume",
     "resume-back-about": "Back to About",
     "resume-basic-h2": "Profile",
@@ -503,7 +516,7 @@ const translations = {
     "resume-email-label": "Email:",
     "resume-github-label": "GitHub:",
     "resume-focus-label": "Focus:",
-    "resume-focus-value": "Data analysis, AI application, Computational Biology, Quantitative Sociology",
+    "resume-focus-value": "Mathematical modeling, data analysis, formal verification, AI applications, quantitative sociology",
     "resume-edu-h2": "Education & Learning",
     "resume-edu-1-time": "Sep 2024 - Present",
     "resume-edu-1-school": "Peking University",
@@ -519,15 +532,28 @@ const translations = {
     "resume-edu-2-school": "Liyang Senior High of Jiangsu Province",
     "resume-edu-2-major": "Chinese, Math, English, Physics, Chemistry, Biology",
     "resume-projects-h2": "Selected Projects",
-    "resume-projects-copy": "Personal website: a continuously maintained multi-section site covering projects, articles, coursework, Gaokao solutions, and running logs.",
+    "resume-project-mcm-title": "MCM 2026 Problem A: Smartphone Battery Drain Modeling",
+    "resume-project-mcm-meta": "Jan 2026 · MCM team project",
+    "resume-project-mcm-summary": "Led the paper writing, proposed model refinements, and completed part of the data processing and figure production.",
+    "resume-project-mcm-point-1": "Applied Ridge Regression to multivariate battery-drain modeling, feature ablation, and sensitivity analysis.",
+    "resume-project-mcm-point-2": "Combined a Weibull impedance correction, a second-order Thevenin equivalent circuit, and SOH coupling to model nonlinear discharge and ageing.",
+    "resume-project-mcm-point-3": "Achieved R² = 0.943 on the test set and under 10% MAPE in medium-to-high drain scenarios; identified screen-on time and processor load as the dominant drivers.",
+    "resume-project-mediator-title": "Mediator-to-Z3 Model Translation and Verification Tool",
+    "resume-project-mediator-meta": "Sep - Dec 2025 · Two-person course project",
+    "resume-project-mediator-summary": "Led the course-paper writing and contributed ideas to the implementation design.",
+    "resume-project-mediator-point-1": "Traversed the Mediator AST in Java and translated types, variables, transitions, and temporal properties into time-indexed Z3Py constraints.",
+    "resume-project-mediator-point-2": "Supported core types, recursive composite-type flattening, frame conditions, G/F/X/U properties, and bounded-integer safety checks.",
+    "resume-project-mediator-point-3": "Ran bounded model checking on a 40-step Testbench model and a 60-step medical-system model, producing counterexamples at steps 21 and 60.",
+    "resume-project-detail-link": "View project details",
+    "resume-project-paper-link": "View paper PDF",
     "resume-view-projects": "View Projects",
     "resume-view-articles": "View Articles",
     "resume-skills-h2": "Skills Summary",
-    "resume-skill-1": "HTML / CSS / JavaScript",
-    "resume-skill-2": "Information architecture and content organization",
-    "resume-skill-3": "Git / GitHub collaboration",
-    "resume-skill-4": "English technical reading and writing",
-    "resume-skill-5": "AI-assisted development",
+    "resume-skill-1": "Python / data analysis / mathematical modeling",
+    "resume-skill-2": "Java / AST processing / DSL translation",
+    "resume-skill-3": "Z3 / SMT / bounded model checking",
+    "resume-skill-4": "Regression / sensitivity analysis / uncertainty quantification",
+    "resume-skill-5": "Chinese-English technical writing / teamwork",
     "prj-h2": "All Projects",
     "prj-back": "Back to Home",
     "art-h2": "Writing",
@@ -948,20 +974,31 @@ function renderCalendar() {
 function renderProjectCard(project, mode = "home") {
   const article = createEl("article", "card");
   const title = createEl("h3", "", getLocalizedValue(project.title));
+  const meta = createEl("p", "project-meta");
   const desc = createEl("p", "", getLocalizedValue(mode === "home" ? project.description : project.detail || project.description));
   const list = createEl("ul");
+
+  article.id = project.id || "";
+  [project.period, project.context]
+    .map((value) => getLocalizedValue(value))
+    .filter(Boolean)
+    .forEach((value) => meta.appendChild(createEl("span", "", value)));
 
   (project.tags || []).forEach((tag) => {
     list.appendChild(createEl("li", "", tag));
   });
 
-  article.append(title, desc, list);
+  article.append(title, meta, desc, list);
 
   if (Array.isArray(project.links) && project.links.length) {
     const actions = createEl("div", "article-actions");
     project.links.forEach((link) => {
       const a = createEl("a", "btn btn-ghost", getLocalizedValue(link.label));
       a.href = link.href;
+      if (link.newTab) {
+        a.target = "_blank";
+        a.rel = "noopener noreferrer";
+      }
       actions.appendChild(a);
     });
     article.appendChild(actions);

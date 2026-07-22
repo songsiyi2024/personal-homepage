@@ -50,9 +50,9 @@
       <section class="hero section-reveal">
         <p class="eyebrow" data-i18n="resume-eyebrow">RESUME</p>
         <h1><span data-i18n="resume-h1">个人简历</span></h1>
-        <p class="hero-copy" data-i18n="resume-hero-copy">此页面展示个人基本信息、教育背景、项目与技能摘要，可作为网页版投递资料。</p>
+        <p class="hero-copy" data-i18n="resume-hero-copy">北京大学数学类本科生，兼修社会学；关注数学建模、数据分析、形式化验证与 AI 应用。</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="docs/resume/personal-resume.pdf" download data-i18n="resume-download-pdf">下载 PDF 简历</a>
+          <a class="btn btn-primary" href="projects.html" data-i18n="resume-view-projects">查看项目页</a>
           <a class="btn btn-ghost" href="about.html" data-i18n="resume-back-about">返回关于我</a>
         </div>
       </section>
@@ -64,9 +64,9 @@
         <div class="project-grid article-grid single-column-grid">
           <article class="card article-card">
             <p><strong data-i18n="resume-name-label">姓名：</strong><span data-i18n="name-full">宋思逸</span></p>
-            <p><strong data-i18n="resume-email-label">邮箱：</strong>songsiyi_2024@outlook.com</p>
-            <p><strong data-i18n="resume-github-label">GitHub：</strong>github.com/songsiyi2024</p>
-            <p><strong data-i18n="resume-focus-label">方向：</strong><span data-i18n="resume-focus-value">数据分析、AI 应用、生物数学、定量社会学</span></p>
+            <p><strong data-i18n="resume-email-label">邮箱：</strong><a href="mailto:songsiyi_2024@outlook.com">songsiyi_2024@outlook.com</a></p>
+            <p><strong data-i18n="resume-github-label">GitHub：</strong><a href="https://github.com/songsiyi2024">github.com/songsiyi2024</a></p>
+            <p><strong data-i18n="resume-focus-label">方向：</strong><span data-i18n="resume-focus-value">数学建模、数据分析、形式化验证、AI 应用、定量社会学</span></p>
           </article>
         </div>
       </section>
@@ -125,12 +125,37 @@
         <div class="section-head">
           <h2 data-i18n="resume-projects-h2">代表项目与作品</h2>
         </div>
-        <div class="project-grid article-grid single-column-grid">
+        <div class="project-grid article-grid resume-project-grid">
           <article class="card article-card">
-            <p data-i18n="resume-projects-copy">个人主页：持续维护多栏目静态站点，覆盖项目、文章、课程作业、高考解答与跑步记录。</p>
+            <div class="article-headline">
+              <h3 data-i18n="resume-project-mediator-title">Mediator 到 Z3 的模型转换与性质验证工具</h3>
+              <span class="meta-badge" data-i18n="resume-project-mediator-meta">2025.09 - 2025.12 · 两人课程项目</span>
+            </div>
+            <p data-i18n="resume-project-mediator-summary">负责课程论文写作，并参与转换工具的实现思路设计。</p>
+            <ul class="resume-project-highlights">
+              <li data-i18n="resume-project-mediator-point-1">以 Java 遍历 Mediator AST，将类型、变量、转移和时序性质转换为时刻索引的 Z3Py 约束。</li>
+              <li data-i18n="resume-project-mediator-point-2">支持核心类型、复合类型递归扁平化、帧条件、G/F/X/U 性质与有界整数安全检查。</li>
+              <li data-i18n="resume-project-mediator-point-3">在 40 步 Testbench 与 60 步医疗系统模型上完成有界模型检查，分别输出第 21、60 步反例轨迹。</li>
+            </ul>
             <div class="article-actions">
-              <a class="btn btn-ghost" href="projects.html" data-i18n="resume-view-projects">查看项目页</a>
-              <a class="btn btn-ghost" href="articles.html" data-i18n="resume-view-articles">查看文章页</a>
+              <a class="btn btn-ghost" href="projects.html#mediator-z3-translator" data-i18n="resume-project-detail-link">查看项目详情</a>
+              <a class="btn btn-ghost" href="docs/projects/mediator-to-z3-course-paper.pdf" target="_blank" rel="noopener noreferrer" data-i18n="resume-project-paper-link">查看论文 PDF</a>
+            </div>
+          </article>
+          <article class="card article-card">
+            <div class="article-headline">
+              <h3 data-i18n="resume-project-mcm-title">MCM 2026 A 题：智能手机电池耗电建模</h3>
+              <span class="meta-badge" data-i18n="resume-project-mcm-meta">2026.01 · MCM 团队项目</span>
+            </div>
+            <p data-i18n="resume-project-mcm-summary">主要负责论文撰写与模型改进思路的提出，并完成部分数据处理和图表绘制。</p>
+            <ul class="resume-project-highlights">
+              <li data-i18n="resume-project-mcm-point-1">使用 Ridge Regression 完成多因素耗电建模、特征消融与敏感性分析。</li>
+              <li data-i18n="resume-project-mcm-point-2">结合 Weibull 阻抗修正、二阶 Thevenin 等效电路和 SOH 耦合描述非线性放电与电池老化。</li>
+              <li data-i18n="resume-project-mcm-point-3">测试集 R² 达 0.943，中高耗电场景 MAPE 低于 10%；识别屏幕使用时间与处理器负载为主要耗电驱动。</li>
+            </ul>
+            <div class="article-actions">
+              <a class="btn btn-ghost" href="projects.html#mcm-2026-battery" data-i18n="resume-project-detail-link">查看项目详情</a>
+              <a class="btn btn-ghost" href="docs/projects/mcm-2026-smartphone-battery.pdf" target="_blank" rel="noopener noreferrer" data-i18n="resume-project-paper-link">查看论文 PDF</a>
             </div>
           </article>
         </div>
@@ -141,11 +166,11 @@
           <h2 data-i18n="resume-skills-h2">技能摘要</h2>
         </div>
         <div class="card skill-list">
-          <span data-i18n="resume-skill-1">HTML / CSS / JavaScript</span>
-          <span data-i18n="resume-skill-2">页面信息架构与内容组织</span>
-          <span data-i18n="resume-skill-3">Git / GitHub 协作</span>
-          <span data-i18n="resume-skill-4">英文文档阅读与写作</span>
-          <span data-i18n="resume-skill-5">AI 工具辅助开发</span>
+          <span data-i18n="resume-skill-1">Python / 数据分析 / 数学建模</span>
+          <span data-i18n="resume-skill-2">Java / AST 处理 / DSL 转换</span>
+          <span data-i18n="resume-skill-3">Z3 / SMT / 有界模型检查</span>
+          <span data-i18n="resume-skill-4">回归分析 / 敏感性分析 / 不确定性量化</span>
+          <span data-i18n="resume-skill-5">中英文技术写作 / 团队协作</span>
         </div>
       </section>
     </main>
