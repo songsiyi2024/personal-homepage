@@ -26,6 +26,7 @@ npm.cmd run validate
 
 - 项目：`data-projects.js`
 - 文章：`data-articles.js`
+- 随笔：`data-notes.js`
 - 近期计划：`data-calendar.js`
 - 跑步记录：`data-running.js`
 - 英语测试：`data-english-tests.js`
@@ -42,6 +43,12 @@ npm.cmd run validate
 
 修改 `site.config.mjs` 后运行 `npm.cmd run build`，所有 HTML 页面会同步更新。页面中的
 `site-shell` 标记之间属于自动生成区域，不应直接手工编辑。
+
+## 新增随笔
+
+1. 在 `articles/` 中新建一篇独立 HTML 页面，可参考现有随笔页面的结构。
+2. 在 `data-notes.js` 的 `window.noteEntries` 数组中增加一条记录，填写 `title`、`listDescription`、`publishedAt` 和正文页 `href`。
+3. 新记录放在数组最前面时，它会同时作为首页“随笔”区展示的最新一篇；完整列表显示在 `notes.html`。
 
 ## 页面约定
 

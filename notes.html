@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="宋思逸 的近期计划与阶段安排" />
-    <title data-i18n="title-calendar">Calendar | 宋思逸</title>
+    <meta name="description" content="宋思逸的个人随笔与日常记录" />
+    <title data-i18n="title-notes">随笔 | 宋思逸</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
-<!-- site-shell:header:start -->
+    <!-- site-shell:header:start -->
     <header class="site-header">
       <a class="logo" href="index.html" aria-label="返回首页" data-i18n-aria-label="logo-aria">SS</a>
       <button class="menu-toggle" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="main-nav" data-i18n-aria-label="menu-aria">
@@ -48,51 +47,20 @@
 <!-- site-shell:header:end -->
 
     <main class="container">
-      <section class="calendar-page section-reveal">
-        <div class="section-head running-head">
-          <div>
-            <h1 data-i18n="cal-h2">近期计划</h1>
-            <p class="hero-copy" data-i18n="cal-copy">
-              这里不放很细的日历，只列未来一段时间里我想推进的几件大事、对应时间和当前进度。
-            </p>
-          </div>
-          <a href="index.html" class="text-link" data-i18n="cal-back">返回首页</a>
+      <section class="projects section-reveal">
+        <div class="section-head">
+          <h1 data-i18n="notes-h2">随笔</h1>
+          <a href="index.html" class="text-link" data-i18n="notes-back">返回首页</a>
         </div>
-
-        <div class="calendar-layout">
-          <article class="card calendar-summary">
-            <p class="running-kicker" data-i18n="cal-summary-kicker">近况概览</p>
-            <h3 data-i18n="cal-summary-title">把未来一段时间最重要的几件事收成一页</h3>
-            <p data-i18n="cal-summary-desc">
-              重点是保留方向感，而不是管理细节。等事情真正做完后，再把值得留下的部分转入 Timeline 或对应栏目。
-            </p>
-            <div class="calendar-stat-grid">
-              <div class="calendar-stat" data-stat="planned">
-                <span data-i18n="cal-stat-planned">待进行</span>
-                <strong>0</strong>
-              </div>
-              <div class="calendar-stat" data-stat="in-progress">
-                <span data-i18n="cal-stat-doing">进行中</span>
-                <strong>0</strong>
-              </div>
-              <div class="calendar-stat" data-stat="done">
-                <span data-i18n="cal-stat-done">已完成</span>
-                <strong>0</strong>
-              </div>
-            </div>
-            <div class="calendar-legend" aria-label="状态图例" data-i18n-aria-label="cal-legend-aria">
-              <span class="calendar-legend-item"><i class="status-dot planned"></i><span data-i18n="cal-status-planned">计划中</span></span>
-              <span class="calendar-legend-item"><i class="status-dot in-progress"></i><span data-i18n="cal-status-doing">进行中</span></span>
-              <span class="calendar-legend-item"><i class="status-dot done"></i><span data-i18n="cal-status-done">已完成</span></span>
-            </div>
-          </article>
-
-          <div class="calendar-plan-list" id="calendar-plan-list"></div>
-        </div>
+        <p class="hero-copy" data-i18n="notes-copy">
+          记录一闪而过的想法、日常观察，以及尚未长成文章的片段。
+        </p>
+        <p id="notes-empty" class="hero-copy" data-i18n="notes-empty">第一篇随笔正在酝酿中。</p>
+        <div class="project-grid article-grid" id="notes-list"></div>
       </section>
     </main>
 
-<!-- site-shell:footer:start -->
+    <!-- site-shell:footer:start -->
     <footer class="site-footer">
       <div class="footer-inner container">
         <div class="footer-brand-row">
@@ -109,11 +77,7 @@
     </footer>
 <!-- site-shell:footer:end -->
 
-    <script src="data-projects.js"></script>
-    <script src="data-articles.js"></script>
-    <script src="data-running.js"></script>
-    <script src="data-english-tests.js"></script>
-    <script src="data-calendar.js"></script>
+    <script src="data-notes.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

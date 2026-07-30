@@ -6,6 +6,7 @@ const translations = {
     "title-about": "关于 | 宋思逸",
     "title-projects": "项目 | 宋思逸",
     "title-articles": "文章 | 宋思逸",
+    "title-notes": "随笔 | 宋思逸",
     "title-coursework": "课程作业 | 宋思逸",
     "title-gaokao": "高考解答 | 宋思逸",
     "title-running": "跑步记录 | 宋思逸",
@@ -21,6 +22,7 @@ const translations = {
     "meta-about": "关于宋思逸的个人简介、经历和长期目标",
     "meta-projects": "宋思逸的项目作品与技术实践",
     "meta-articles": "宋思逸的文章、笔记和 PDF 资料归档",
+    "meta-notes": "宋思逸的个人随笔与日常记录",
     "meta-coursework": "宋思逸的课程作业与学习成果归档",
     "meta-gaokao": "宋思逸整理的高考数学解答与 PDF 目录",
     "meta-running": "宋思逸的跑步记录、赛事结果和目标赛历",
@@ -36,6 +38,7 @@ const translations = {
     "nav-about": "关于我",
     "nav-projects": "项目",
     "nav-articles": "文章",
+    "nav-notes": "随笔",
     "nav-skills": "技能",
     "nav-calendar": "计划",
     "nav-coursework": "课程作业",
@@ -60,6 +63,8 @@ const translations = {
     "idx-viewall": "查看全部",
     "idx-articles-h2": "文章与笔记",
     "idx-articles-viewall": "查看全部",
+    "idx-notes-h2": "随笔",
+    "idx-notes-viewall": "查看全部",
     "idx-calendar-h2": "近期计划",
     "idx-calendar-copy": "把计划写成事项列表，每件事只对应一个时间，不再按时间段打包很多内容。",
     "idx-calendar-viewall": "查看计划",
@@ -229,6 +234,10 @@ const translations = {
     "art-h2": "我的文章",
     "art-back": "返回首页",
     "art-tip": "以后新增文章时，只需要把新文件放进 articles 文件夹，并在数据文件里补一条记录。",
+    "notes-h2": "随笔",
+    "notes-back": "返回首页",
+    "notes-copy": "记录一闪而过的想法、日常观察，以及尚未长成文章的片段。",
+    "notes-empty": "第一篇随笔正在酝酿中。",
     "cwk-h2": "课程作业",
     "cwk-back": "返回首页",
     "cwk-copy": "这里集中展示我的课程作业与阶段成果，后续会按学期持续更新。",
@@ -351,6 +360,7 @@ const translations = {
     "meta-about": "Profile, experience, and long-term goals of Siyi Song.",
     "meta-projects": "Projects and technical practice by Siyi Song.",
     "meta-articles": "Articles, notes, and PDF archives by Siyi Song.",
+    "meta-notes": "Personal essays and day-to-day notes by Siyi Song.",
     "meta-coursework": "Coursework and study outcomes archived by Siyi Song.",
     "meta-gaokao": "Gaokao math solutions and PDF directory by Siyi Song.",
     "meta-running": "Running records, race results, and target calendar of Siyi Song.",
@@ -366,6 +376,7 @@ const translations = {
     "nav-about": "About",
     "nav-projects": "Projects",
     "nav-articles": "Writing",
+    "nav-notes": "Notes",
     "nav-skills": "Skills",
     "nav-calendar": "Plans",
     "nav-coursework": "Coursework",
@@ -390,6 +401,8 @@ const translations = {
     "idx-viewall": "View All",
     "idx-articles-h2": "Writing & Notes",
     "idx-articles-viewall": "View All",
+    "idx-notes-h2": "Notes",
+    "idx-notes-viewall": "View All",
     "idx-calendar-h2": "Plans",
     "idx-calendar-copy": "Write the plans as a list of items, with one item paired to one time instead of bundling many things into a time span.",
     "idx-calendar-viewall": "Open Plans",
@@ -559,6 +572,10 @@ const translations = {
     "art-h2": "Writing",
     "art-back": "Back to Home",
     "art-tip": "For future posts, drop a new file into the articles folder and add one record in the data file.",
+    "notes-h2": "Notes",
+    "notes-back": "Back to Home",
+    "notes-copy": "A place for passing ideas, daily observations, and fragments that have not yet become full essays.",
+    "notes-empty": "The first note is taking shape.",
     "cwk-h2": "Coursework",
     "cwk-back": "Back to Home",
     "cwk-copy": "This page collects my coursework and milestone outputs. It will be updated each semester.",
@@ -668,6 +685,7 @@ const pageMetaKeys = {
   "about.html": { title: "title-about", description: "meta-about" },
   "projects.html": { title: "title-projects", description: "meta-projects" },
   "articles.html": { title: "title-articles", description: "meta-articles" },
+  "notes.html": { title: "title-notes", description: "meta-notes" },
   "coursework.html": { title: "title-coursework", description: "meta-coursework" },
   "gaokao.html": { title: "title-gaokao", description: "meta-gaokao" },
   "running.html": { title: "title-running", description: "meta-running" },
@@ -1062,8 +1080,12 @@ function renderArticleCard(article) {
 
 function renderArticles() {
   const articles = Array.isArray(window.articleEntries) ? window.articleEntries : [];
+  const notes = Array.isArray(window.noteEntries) ? window.noteEntries : [];
   const homeList = document.getElementById("home-article-list");
+  const homeNotesList = document.getElementById("home-notes-list");
   const fullList = document.getElementById("article-list");
+  const notesList = document.getElementById("notes-list");
+  const notesEmpty = document.getElementById("notes-empty");
 
   if (homeList) {
     homeList.innerHTML = "";
@@ -1072,11 +1094,29 @@ function renderArticles() {
     });
   }
 
+  if (homeNotesList) {
+    homeNotesList.innerHTML = "";
+    notes.slice(0, Number(homeNotesList.dataset.limit || 1)).forEach((note) => {
+      homeNotesList.appendChild(renderArticleCard(note));
+    });
+  }
+
   if (fullList) {
     fullList.innerHTML = "";
     articles.forEach((article) => {
       fullList.appendChild(renderArticleCard(article));
     });
+  }
+
+  if (notesList) {
+    notesList.innerHTML = "";
+    notes.forEach((note) => {
+      notesList.appendChild(renderArticleCard(note));
+    });
+  }
+
+  if (notesEmpty) {
+    notesEmpty.hidden = notes.length > 0;
   }
 }
 
