@@ -19,9 +19,9 @@ window.runningEntries = [
     distanceKm: 21.0975,
     distanceText: { zh: "21.0975 km", en: "21.0975 km" },
     location: { zh: "云南省/楚雄彝族自治州/楚雄市", en: "Yunnan / Chuxiong Yi Autonomous Prefecture / Chuxiong" },
-    result: { zh: "计划中", en: "planned" },
+    result: { zh: "枪时2:05:41，净时2:02:08", en: "gun time 2:05:41, net time 2:02:08" },
     note: { zh: "中国田协A类赛事", en: "Chinese Athletics Association A-level Race" },
-    status: "planned",
+    status: "finished",
   },
   {
     id: "2026-linze-half",
