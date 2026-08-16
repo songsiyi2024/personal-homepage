@@ -1,19 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>前端样式笔记</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
-  <body>
-
+<html lang="zh-CN"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Mediator 到 Z3 的模型转换与性质验证工具案例研究" /><title>Mediator 到 Z3 案例研究 | 宋思逸</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="../styles.css" /></head><body>
 <!-- site-shell:header:start -->
     <header class="site-header">
       <a class="logo" href="../index.html" aria-label="返回首页" data-i18n-aria-label="logo-aria">SS</a>
@@ -48,32 +34,7 @@
       </nav>
     </header>
 <!-- site-shell:header:end -->
-
-    <main class="container">
-      <section class="hero section-reveal">
-        <p class="eyebrow">文章示例</p>
-        <h1><span>前端样式笔记</span></h1>
-        <p class="hero-copy">
-          这是第二篇本地文章示例，用来展示你可以在站内直接托管自己的笔记和文章文件。
-        </p>
-      </section>
-
-      <section class="about section-reveal">
-        <h2>我会怎么组织这些文件</h2>
-        <p>一种简单做法是按主题命名，例如 frontend-style-notes.html、project-retrospective.html、book-notes.html。</p>
-        <p>如果以后文章变多，还可以把 articles 文件夹再按年份或主题继续拆分，比如 articles/2026/ 或 articles/study/。</p>
-      </section>
-
-      <section class="projects section-reveal">
-        <h2>发布流程</h2>
-        <p>新增一个文章文件后，只需要在 articles.html 里再添加一张卡片，链接到新文件即可，不需要改脚本逻辑。</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="../articles.html">返回文章页</a>
-          <a class="btn btn-ghost" href="../index.html">返回首页</a>
-        </div>
-      </section>
-    </main>
-
+<main class="container"><section class="hero section-reveal"><p class="eyebrow">CASE STUDY · 2025.09–12</p><h1>Mediator 到 Z3 的模型转换与性质验证</h1><p class="hero-copy">两人课程项目。将 Mediator 模型转化为 Z3Py 约束，通过有界模型检查验证时序性质并生成反例轨迹。</p><div class="hero-cta"><a class="btn btn-primary" href="../docs/projects/mediator-to-z3-course-paper.pdf" target="_blank" rel="noopener noreferrer">查看课程论文 PDF</a><a class="btn btn-ghost" href="../projects.html">返回项目页</a></div></section><section class="about section-reveal"><h2>问题与职责</h2><p>目标是把领域模型与时序性质转成可由求解器处理的约束。我负责课程论文写作，并参与转换工具的实现思路设计。</p></section><section class="projects section-reveal"><div class="section-head"><h2>实现路径</h2></div><div class="project-grid article-grid"><article class="card"><h3>模型遍历</h3><p>以 Java 遍历 Mediator AST，提取类型、变量、初始状态和转移。</p></article><article class="card"><h3>约束编码</h3><p>将系统行为与 G/F/X/U 时序性质编码为时刻索引的 Z3Py 约束。</p></article><article class="card"><h3>边界处理</h3><p>支持复合类型递归扁平化、帧条件和有界整数安全检查。</p></article></div></section><section class="projects section-reveal"><div class="section-head"><h2>验证结果</h2></div><p class="hero-copy">在 40 步 Testbench 与 60 步医疗系统模型上完成验证，分别定位到第 21 步和第 60 步的性质反例。这个过程强调了编码语义、边界条件与反例可读性同等重要。</p></section></main>
 <!-- site-shell:footer:start -->
     <footer class="site-footer">
       <div class="footer-inner container">
@@ -89,8 +50,4 @@
         <p>© <span id="year"></span> <span data-i18n="global-footer">宋思逸。用心构建。</span></p>
       </div>
     </footer>
-<!-- site-shell:footer:end -->
-
-    <script src="../script.js"></script>
-  </body>
-</html>
+<!-- site-shell:footer:end --><script src="../script.js"></script></body></html>

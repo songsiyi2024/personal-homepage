@@ -37,6 +37,11 @@ function renderLink(item, prefix, className = "") {
   return `<a href="${prefix}${item.href}"${classAttribute} data-i18n="${item.key}">${item.label}</a>`;
 }
 
+function renderSearchLink(prefix) {
+  const item = siteConfig.search;
+  return `<a class="search-link" href="${prefix}${item.href}" aria-label="${item.label}" data-i18n-aria-label="${item.key}"><span aria-hidden="true"></span></a>`;
+}
+
 function renderHeader(prefix) {
   const primaryLinks = siteConfig.primaryNav
     .map((item) => `          ${renderLink(item, prefix)}`)
@@ -62,6 +67,7 @@ ${primaryLinks}
 ${archiveLinks}
           </div>
         </div>
+        ${renderSearchLink(prefix)}
         ${renderLink(siteConfig.contact, prefix, "pill")}
         <button id="lang-toggle" class="lang-toggle" type="button" data-i18n="lang-btn" data-i18n-aria-label="lang-aria">EN</button>
       </nav>

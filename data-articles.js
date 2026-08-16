@@ -2,6 +2,7 @@ window.articleEntries = [
   {
     id: "marathon-health-check-2026",
     featured: true,
+    category: "reading",
     type: "pdf",
     title: {
       zh: "路跑运动员赛前体检表",
@@ -26,6 +27,7 @@ window.articleEntries = [
   {
     id: "marathon-catalog-2026",
     featured: true,
+    category: "reading",
     type: "pdf",
     title: {
       zh: "关于公布2026年马拉松赛事目录的通知",
@@ -50,6 +52,7 @@ window.articleEntries = [
   {
     id: "spring-learning-review",
     featured: true,
+    category: "writing",
     type: "html",
     title: {
       zh: "春季学习总结",
@@ -70,6 +73,7 @@ window.articleEntries = [
   {
     id: "frontend-style-notes",
     featured: false,
+    category: "writing",
     type: "html",
     title: {
       zh: "前端样式笔记",

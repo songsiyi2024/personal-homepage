@@ -10,6 +10,8 @@ export const siteConfig = {
     { href: "articles.html", key: "nav-articles", label: "文章" },
   ],
   archiveNav: [
+    { href: "research.html", key: "nav-research", label: "研究" },
+    { href: "now.html", key: "nav-now", label: "Now" },
     { href: "calendar.html", key: "nav-calendar", label: "计划" },
     { href: "skills.html", key: "nav-skills", label: "技能" },
     { href: "coursework.html", key: "nav-coursework", label: "课程作业" },
@@ -18,6 +20,7 @@ export const siteConfig = {
     { href: "english-tests.html", key: "nav-english-tests", label: "英语测试记录" },
     { href: "notes.html", key: "nav-notes", label: "随笔" },
   ],
+  search: { href: "search.html", key: "nav-search", label: "搜索" },
   footerNav: [
     { href: "about.html", key: "nav-about", label: "关于我" },
     { href: "projects.html", key: "nav-projects", label: "项目" },

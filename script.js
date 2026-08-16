@@ -15,6 +15,9 @@ const translations = {
     "title-skills": "技能 | 宋思逸",
     "title-resume": "简历 | 宋思逸",
     "title-contact": "联系 | 宋思逸",
+    "title-research": "研究 | 宋思逸",
+    "title-now": "Now | 宋思逸",
+    "title-search": "搜索 | 宋思逸",
     "title-race-calendar": "路跑及越野赛事名单 | 宋思逸",
     "title-road-races": "路跑赛事名单 | 宋思逸",
     "title-trail-races": "越野赛事名单 | 宋思逸",
@@ -31,6 +34,9 @@ const translations = {
     "meta-skills": "宋思逸的技能栈、工具链与协作能力",
     "meta-resume": "宋思逸的网页版个人简历与下载版简历",
     "meta-contact": "联系宋思逸的邮箱与相关账号信息",
+    "meta-research": "宋思逸的研究兴趣、阅读与阶段性探索",
+    "meta-now": "宋思逸当前正在投入的事项",
+    "meta-search": "搜索宋思逸个人主页中的栏目、项目、文章和随笔",
     "meta-race-calendar": "基于路跑及越野赛赛历的赛事名单页面，支持按类别、地区、参与状态筛选并排序",
     "meta-road-races": "路跑赛事名单页面，支持按地区、项目、参与状态筛选，并按序号或日期排序",
     "meta-trail-races": "越野赛事名单页面，支持按地区、参与状态筛选，并按序号或日期排序",
@@ -39,6 +45,9 @@ const translations = {
     "nav-projects": "项目",
     "nav-articles": "文章",
     "nav-notes": "随笔",
+    "nav-research": "研究",
+    "nav-now": "Now",
+    "nav-search": "搜索",
     "nav-skills": "技能",
     "nav-calendar": "计划",
     "nav-coursework": "课程作业",
@@ -57,7 +66,7 @@ const translations = {
     "idx-cta-primary": "查看作品",
     "idx-cta-ghost": "合作联系",
     "idx-about-h2": "关于我",
-    "idx-about-p": "北京大学数学科学学院数学类本科生，兼修社会学，关注数学建模、数据分析、形式化验证与 AI 应用，希望用定量方法理解并解决真实问题。",
+    "idx-about-p": "北京大学数学科学学院数学类本科生，兼修社会学，关注数学建模、生物数学、数据分析、形式化验证与 AI 应用，希望用定量方法理解并解决真实问题。目前正在研究flow matching和discrete flow matching。",
     "idx-about-link": "查看关于我详情",
     "idx-projects-h2": "精选项目",
     "idx-viewall": "查看全部",
@@ -65,6 +74,14 @@ const translations = {
     "idx-articles-viewall": "查看全部",
     "idx-notes-h2": "随笔",
     "idx-notes-viewall": "查看全部",
+    "idx-research-h2": "研究",
+    "idx-research-link": "进入研究页",
+    "idx-research-title": "从理论到实验的持续探索",
+    "idx-research-copy": "围绕 Flow Matching、形式化验证与定量建模，记录正在阅读的问题、推导与小规模实验。",
+    "idx-now-h2": "Now",
+    "idx-now-link": "查看当前重点",
+    "idx-now-title": "此刻正在投入的事",
+    "idx-now-copy": "研究生成建模、完善个人知识档案，并保持跑步训练和复盘。",
     "idx-calendar-h2": "近期计划",
     "idx-calendar-copy": "把计划写成事项列表，每件事只对应一个时间，不再按时间段打包很多内容。",
     "idx-calendar-viewall": "查看计划",
@@ -170,7 +187,7 @@ const translations = {
     "race-col-cert": "认证",
     "race-col-status": "参与状态",
     "project-empty": "项目内容待补充。",
-    "abt-hero-copy": "北京大学数学科学学院数学类本科生，兼修社会学。我的兴趣横跨数学建模、数据分析、形式化验证与定量社会研究，也持续通过课程项目和竞赛探索这些方法的实际应用。",
+    "abt-hero-copy": "北京大学数学科学学院数学类本科生，兼修社会学。我的兴趣横跨数学建模、生物数学、数据分析、形式化验证与定量社会研究，也持续通过课程项目和竞赛探索这些方法的实际应用。目前正在研究flow matching和discrete flow matching。",
     "abt-eyebrow": "关于我",
     "abt-h1-prefix": "关于",
     "abt-cta-primary": "查看项目",
@@ -183,7 +200,7 @@ const translations = {
     "abt-resume-download-pdf": "下载 PDF 简历",
     "resume-eyebrow": "RESUME",
     "resume-h1": "个人简历",
-    "resume-hero-copy": "北京大学数学类本科生，兼修社会学；关注数学建模、数据分析、形式化验证与 AI 应用。",
+    "resume-hero-copy": "北京大学数学类本科生，兼修社会学；关注数学建模、生物数学、数据分析、形式化验证与 AI 应用。",
     "resume-download-pdf": "下载 PDF 简历",
     "resume-back-about": "返回关于我",
     "resume-basic-h2": "基本信息",
@@ -191,7 +208,7 @@ const translations = {
     "resume-email-label": "邮箱：",
     "resume-github-label": "GitHub：",
     "resume-focus-label": "方向：",
-    "resume-focus-value": "数学建模、数据分析、形式化验证、AI 应用、定量社会学",
+    "resume-focus-value": "数学建模、生物数学、数据分析、形式化验证、AI 应用、定量社会学",
     "resume-edu-h2": "教育背景",
     "resume-edu-1-time": "2024.09 - 至今",
     "resume-edu-1-school": "北京大学",
@@ -231,9 +248,47 @@ const translations = {
     "resume-skill-5": "中英文技术写作 / 团队协作",
     "prj-h2": "全部项目",
     "prj-back": "返回首页",
-    "art-h2": "我的文章",
+    "art-h2": "阅读与创作",
     "art-back": "返回首页",
-    "art-tip": "以后新增文章时，只需要把新文件放进 articles 文件夹，并在数据文件里补一条记录。",
+    "art-tip": "把外部资料与自己的文章分开归档；随笔仍保留独立入口。",
+    "art-reading-h2": "我的阅读",
+    "art-reading-copy": "收录正在参考的资料、通知和可长期查阅的文档。",
+    "art-writing-h2": "我的创作",
+    "art-writing-copy": "收录学习复盘、技术笔记、项目总结和已经成文的思考。",
+    "res-eyebrow": "RESEARCH",
+    "res-h1": "研究",
+    "res-copy": "记录我正在追问的问题、阅读路径，以及从理论走向实验的阶段性尝试。",
+    "res-current-h2": "当前方向",
+    "res-flow-title": "Flow Matching 与 Discrete Flow Matching",
+    "res-flow-copy": "当前集中理解连续与离散状态空间中的生成建模方法，关注概率路径、训练目标及采样过程之间的联系。",
+    "res-formal-title": "形式化验证",
+    "res-formal-copy": "通过模型转换、SMT 求解和有界模型检查，探索如何把系统性质转化为可验证的约束。",
+    "res-modeling-title": "定量建模",
+    "res-modeling-copy": "将统计学习、微分方程与领域知识结合，用可解释的模型理解真实系统。",
+    "res-practice-h2": "研究方式",
+    "res-practice-1-title": "阅读与推导",
+    "res-practice-1-copy": "从原始问题、符号和假设出发整理笔记，而不只记录结论。",
+    "res-practice-2-title": "复现与实验",
+    "res-practice-2-copy": "用小规模实验检验直觉，保留参数选择、失败案例与可重复的脚本。",
+    "res-practice-3-title": "公开复盘",
+    "res-practice-3-copy": "成熟的阅读笔记、项目总结和阶段性成果会逐步整理到“我的创作”中。",
+    "now-h1": "现在在做什么",
+    "now-copy": "这是一个会不定期更新的工作台，只保留此刻真正占据注意力的几件事。",
+    "now-focus-h2": "当前重点",
+    "now-1-title": "研究生成建模",
+    "now-1-copy": "继续学习 flow matching 与 discrete flow matching，整理关键概念和待验证的问题。",
+    "now-2-title": "完善个人知识档案",
+    "now-2-copy": "把项目、阅读、课程成果和个人记录整理成可以持续更新的长期页面。",
+    "now-3-title": "保持跑步训练",
+    "now-3-copy": "在训练与比赛之外，保留对身体感受、配速和恢复的简短记录。",
+    "search-h1": "站内搜索",
+    "search-copy": "搜索栏目、项目、我的阅读、我的创作和随笔。",
+    "search-label": "搜索关键词",
+    "search-placeholder": "输入关键词",
+    "search-results-h2": "搜索结果",
+    "search-empty": "输入关键词后开始搜索。",
+    "search-no-results": "没有找到相关内容。",
+    "search-open": "打开",
     "notes-h2": "随笔",
     "notes-back": "返回首页",
     "notes-copy": "记录一闪而过的想法、日常观察，以及尚未长成文章的片段。",
@@ -353,6 +408,9 @@ const translations = {
     "title-skills": "Skills | Siyi Song",
     "title-resume": "Resume | Siyi Song",
     "title-contact": "Contact | Siyi Song",
+    "title-research": "Research | Siyi Song",
+    "title-now": "Now | Siyi Song",
+    "title-search": "Search | Siyi Song",
     "title-race-calendar": "Road & Trail Race List | Siyi Song",
     "title-road-races": "Road Race List | Siyi Song",
     "title-trail-races": "Trail Race List | Siyi Song",
@@ -369,6 +427,9 @@ const translations = {
     "meta-skills": "Skills, toolchains, and collaboration abilities of Siyi Song.",
     "meta-resume": "Web resume and downloadable resume file of Siyi Song.",
     "meta-contact": "Email and contact information for Siyi Song.",
+    "meta-research": "Research interests, reading, and work in progress by Siyi Song.",
+    "meta-now": "What Siyi Song is currently working on.",
+    "meta-search": "Search sections, projects, writing, and notes on Siyi Song's personal site.",
     "meta-race-calendar": "Race list based on the road and trail schedule, with filtering and sorting by type, region, and participation.",
     "meta-road-races": "Road race list with filters for region, type, participation, and sorting by serial number or date.",
     "meta-trail-races": "Trail race list with filters for region, participation, and sorting by serial number or date.",
@@ -377,6 +438,9 @@ const translations = {
     "nav-projects": "Projects",
     "nav-articles": "Writing",
     "nav-notes": "Notes",
+    "nav-research": "Research",
+    "nav-now": "Now",
+    "nav-search": "Search",
     "nav-skills": "Skills",
     "nav-calendar": "Plans",
     "nav-coursework": "Coursework",
@@ -388,6 +452,46 @@ const translations = {
     "nav-core-label": "Primary navigation",
     "nav-more-label": "More sections",
     "nav-footer-label": "Footer navigation",
+    "art-h2": "Reading & Writing",
+    "art-tip": "Keep reference material and original work separate; notes retain their own home.",
+    "art-reading-h2": "My Reading",
+    "art-reading-copy": "Reference materials, notices, and documents worth keeping close at hand.",
+    "art-writing-h2": "My Writing",
+    "art-writing-copy": "Study reviews, technical notes, project summaries, and ideas developed into complete pieces.",
+    "res-eyebrow": "RESEARCH",
+    "res-h1": "Research",
+    "res-copy": "Questions I am pursuing, paths through the literature, and attempts to move from theory to experiments.",
+    "res-current-h2": "Current Directions",
+    "res-flow-title": "Flow Matching & Discrete Flow Matching",
+    "res-flow-copy": "Studying generative modeling in continuous and discrete state spaces, with attention to probability paths, objectives, and sampling.",
+    "res-formal-title": "Formal Verification",
+    "res-formal-copy": "Exploring how model translation, SMT solving, and bounded model checking turn system properties into verifiable constraints.",
+    "res-modeling-title": "Quantitative Modeling",
+    "res-modeling-copy": "Combining statistical learning, differential equations, and domain knowledge to understand real systems with interpretable models.",
+    "res-practice-h2": "How I Work",
+    "res-practice-1-title": "Reading & Derivation",
+    "res-practice-1-copy": "Starting from original questions, notation, and assumptions rather than recording conclusions alone.",
+    "res-practice-2-title": "Reproduction & Experiments",
+    "res-practice-2-copy": "Testing intuitions with small experiments and keeping parameter choices, failed cases, and reproducible scripts.",
+    "res-practice-3-title": "Public Reflection",
+    "res-practice-3-copy": "Mature reading notes, project summaries, and incremental results will gradually move into My Writing.",
+    "now-h1": "What I Am Doing Now",
+    "now-copy": "A periodically updated workbench for the few things that actually hold my attention right now.",
+    "now-focus-h2": "Current Focus",
+    "now-1-title": "Generative Modeling",
+    "now-1-copy": "Learning flow matching and discrete flow matching while organizing the key concepts and open questions.",
+    "now-2-title": "Building a Knowledge Archive",
+    "now-2-copy": "Turning projects, reading, coursework, and personal records into durable pages that can keep evolving.",
+    "now-3-title": "Running Training",
+    "now-3-copy": "Keeping short records of physical feedback, pace, and recovery alongside training and races.",
+    "search-h1": "Site Search",
+    "search-copy": "Search sections, projects, reading, writing, and notes.",
+    "search-label": "Search terms",
+    "search-placeholder": "Enter keywords",
+    "search-results-h2": "Results",
+    "search-empty": "Enter keywords to start searching.",
+    "search-no-results": "No matching content found.",
+    "search-open": "Open",
     "lang-btn": "中文",
     "lang-aria": "切换到中文",
     "menu-aria": "Open menu",
@@ -395,7 +499,7 @@ const translations = {
     "idx-cta-primary": "View Works",
     "idx-cta-ghost": "Get in Touch",
     "idx-about-h2": "About",
-    "idx-about-p": "I study Mathematics at Peking University and pursue a double major in Sociology. My interests include mathematical modeling, data analysis, formal verification, and AI applications, with an emphasis on quantitative approaches to real-world problems.",
+    "idx-about-p": "I study Mathematics at Peking University and pursue a double major in Sociology. My interests include mathematical modeling, biomathematics, data analysis, formal verification, and AI applications, with an emphasis on quantitative approaches to real-world problems. Recently I have been studying and working on flow matching and discrete flow matching.",
     "idx-about-link": "Read More About Me",
     "idx-projects-h2": "Featured Projects",
     "idx-viewall": "View All",
@@ -403,6 +507,14 @@ const translations = {
     "idx-articles-viewall": "View All",
     "idx-notes-h2": "Notes",
     "idx-notes-viewall": "View All",
+    "idx-research-h2": "Research",
+    "idx-research-link": "Explore Research",
+    "idx-research-title": "An Ongoing Path from Theory to Experiments",
+    "idx-research-copy": "A record of questions, derivations, and small experiments around flow matching, formal verification, and quantitative modeling.",
+    "idx-now-h2": "Now",
+    "idx-now-link": "See Current Focus",
+    "idx-now-title": "What Holds My Attention Now",
+    "idx-now-copy": "Studying generative modeling, building a personal knowledge archive, and maintaining running training and reflection.",
     "idx-calendar-h2": "Plans",
     "idx-calendar-copy": "Write the plans as a list of items, with one item paired to one time instead of bundling many things into a time span.",
     "idx-calendar-viewall": "Open Plans",
@@ -508,7 +620,7 @@ const translations = {
     "race-col-cert": "Certification",
     "race-col-status": "Status",
     "project-empty": "Project content to be added.",
-    "abt-hero-copy": "I study Mathematics at Peking University and pursue a double major in Sociology. My interests span mathematical modeling, data analysis, formal verification, and quantitative social research, which I explore through coursework and competitions.",
+    "abt-hero-copy": "I study Mathematics at Peking University and pursue a double major in Sociology. My interests span mathematical modeling, biomathematics, data analysis, formal verification, and quantitative social research, which I explore through coursework and competitions. Recently I have been studying and working on flow matching and discrete flow matching.",
     "abt-eyebrow": "ABOUT ME",
     "abt-h1-prefix": "About",
     "abt-cta-primary": "View Projects",
@@ -521,7 +633,7 @@ const translations = {
     "abt-resume-download-pdf": "Download PDF Resume",
     "resume-eyebrow": "RESUME",
     "resume-h1": "Resume",
-    "resume-hero-copy": "Mathematics undergraduate and Sociology double-major student at Peking University, focused on mathematical modeling, data analysis, formal verification, and AI applications.",
+    "resume-hero-copy": "Mathematics undergraduate and Sociology double-major student at Peking University, focused on mathematical modeling, biomathematics, data analysis, formal verification, and AI applications.",
     "resume-download-pdf": "Download PDF Resume",
     "resume-back-about": "Back to About",
     "resume-basic-h2": "Profile",
@@ -529,7 +641,7 @@ const translations = {
     "resume-email-label": "Email:",
     "resume-github-label": "GitHub:",
     "resume-focus-label": "Focus:",
-    "resume-focus-value": "Mathematical modeling, data analysis, formal verification, AI applications, quantitative sociology",
+    "resume-focus-value": "Mathematical modeling, biomathematics, data analysis, formal verification, AI applications, quantitative sociology",
     "resume-edu-h2": "Education & Learning",
     "resume-edu-1-time": "Sep 2024 - Present",
     "resume-edu-1-school": "Peking University",
@@ -694,6 +806,9 @@ const pageMetaKeys = {
   "skills.html": { title: "title-skills", description: "meta-skills" },
   "resume.html": { title: "title-resume", description: "meta-resume" },
   "contact.html": { title: "title-contact", description: "meta-contact" },
+  "research.html": { title: "title-research", description: "meta-research" },
+  "now.html": { title: "title-now", description: "meta-now" },
+  "search.html": { title: "title-search", description: "meta-search" },
   "race-calendar.html": { title: "title-race-calendar", description: "meta-race-calendar" },
   "road-races.html": { title: "title-road-races", description: "meta-road-races" },
   "trail-races.html": { title: "title-trail-races", description: "meta-trail-races" },
@@ -1083,7 +1198,8 @@ function renderArticles() {
   const notes = Array.isArray(window.noteEntries) ? window.noteEntries : [];
   const homeList = document.getElementById("home-article-list");
   const homeNotesList = document.getElementById("home-notes-list");
-  const fullList = document.getElementById("article-list");
+  const readingList = document.getElementById("reading-list");
+  const writingList = document.getElementById("writing-list");
   const notesList = document.getElementById("notes-list");
   const notesEmpty = document.getElementById("notes-empty");
 
@@ -1101,10 +1217,17 @@ function renderArticles() {
     });
   }
 
-  if (fullList) {
-    fullList.innerHTML = "";
-    articles.forEach((article) => {
-      fullList.appendChild(renderArticleCard(article));
+  if (readingList) {
+    readingList.innerHTML = "";
+    articles.filter((article) => article.category === "reading").forEach((article) => {
+      readingList.appendChild(renderArticleCard(article));
+    });
+  }
+
+  if (writingList) {
+    writingList.innerHTML = "";
+    articles.filter((article) => article.category !== "reading").forEach((article) => {
+      writingList.appendChild(renderArticleCard(article));
     });
   }
 
@@ -1373,6 +1496,52 @@ function renderDynamicContent() {
   renderRunning();
   renderEnglishTests();
   renderCalendar();
+  initSiteSearch();
+}
+
+function initSiteSearch() {
+  const input = document.getElementById("site-search-input");
+  const results = document.getElementById("site-search-results");
+  const count = document.getElementById("site-search-count");
+  if (!input || !results || input.dataset.ready) return;
+
+  const staticItems = [
+    ["研究", "research.html", "研究兴趣、Flow Matching、形式化验证与定量建模"],
+    ["Now", "now.html", "当前正在投入的事项"],
+    ["课程作业", "coursework.html", "课程成果与学习档案"],
+    ["高考解答", "gaokao.html", "高考数学题目解答"],
+    ["跑步记录", "running.html", "赛事结果和训练目标"],
+    ["英语测试记录", "english-tests.html", "英语考试与成绩记录"],
+  ].map(([title, href, description]) => ({ title, href, description, kind: "栏目" }));
+  const entryItems = [
+    ...(window.projectEntries || []).map((entry) => ({ title: getLocalizedValue(entry.title), href: "projects.html", description: getLocalizedValue(entry.description), kind: "项目" })),
+    ...(window.articleEntries || []).map((entry) => ({ title: getLocalizedValue(entry.title), href: entry.href, description: getLocalizedValue(entry.listDescription || entry.description), kind: entry.category === "reading" ? "阅读" : "创作" })),
+    ...(window.noteEntries || []).map((entry) => ({ title: getLocalizedValue(entry.title), href: entry.href, description: getLocalizedValue(entry.listDescription || entry.description), kind: "随笔" })),
+  ];
+  const items = [...staticItems, ...entryItems];
+  const render = () => {
+    const query = input.value.trim().toLocaleLowerCase();
+    const matched = query ? items.filter((item) => `${item.title} ${item.description} ${item.kind}`.toLocaleLowerCase().includes(query)) : [];
+    results.innerHTML = "";
+    count.textContent = query ? String(matched.length) : "";
+    if (!query || !matched.length) {
+      results.appendChild(createEl("p", "hero-copy", t(query ? "search-no-results" : "search-empty")));
+      return;
+    }
+    matched.forEach((item) => {
+      const card = createEl("article", "card article-card");
+      const headline = createEl("div", "article-headline");
+      headline.append(createEl("h3", "", item.title), createEl("span", "meta-badge", item.kind));
+      const open = createEl("a", "btn btn-primary", t("search-open"));
+      open.href = item.href;
+      card.append(headline, createEl("p", "", item.description), createEl("div", "article-actions"));
+      card.lastElementChild.appendChild(open);
+      results.appendChild(card);
+    });
+  };
+  input.dataset.ready = "true";
+  input.addEventListener("input", render);
+  render();
 }
 
 function updateCurrentNavState() {

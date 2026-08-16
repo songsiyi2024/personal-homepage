@@ -1,19 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>前端样式笔记</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
-  <body>
-
+<html lang="zh-CN"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="MCM 2026 智能手机电池耗电建模项目案例研究" /><title>MCM 2026 A 题案例研究 | 宋思逸</title><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" /><link rel="stylesheet" href="../styles.css" /></head><body>
 <!-- site-shell:header:start -->
     <header class="site-header">
       <a class="logo" href="../index.html" aria-label="返回首页" data-i18n-aria-label="logo-aria">SS</a>
@@ -48,32 +34,7 @@
       </nav>
     </header>
 <!-- site-shell:header:end -->
-
-    <main class="container">
-      <section class="hero section-reveal">
-        <p class="eyebrow">文章示例</p>
-        <h1><span>前端样式笔记</span></h1>
-        <p class="hero-copy">
-          这是第二篇本地文章示例，用来展示你可以在站内直接托管自己的笔记和文章文件。
-        </p>
-      </section>
-
-      <section class="about section-reveal">
-        <h2>我会怎么组织这些文件</h2>
-        <p>一种简单做法是按主题命名，例如 frontend-style-notes.html、project-retrospective.html、book-notes.html。</p>
-        <p>如果以后文章变多，还可以把 articles 文件夹再按年份或主题继续拆分，比如 articles/2026/ 或 articles/study/。</p>
-      </section>
-
-      <section class="projects section-reveal">
-        <h2>发布流程</h2>
-        <p>新增一个文章文件后，只需要在 articles.html 里再添加一张卡片，链接到新文件即可，不需要改脚本逻辑。</p>
-        <div class="hero-cta">
-          <a class="btn btn-primary" href="../articles.html">返回文章页</a>
-          <a class="btn btn-ghost" href="../index.html">返回首页</a>
-        </div>
-      </section>
-    </main>
-
+<main class="container"><section class="hero section-reveal"><p class="eyebrow">CASE STUDY · 2026.01</p><h1>智能手机电池耗电建模</h1><p class="hero-copy">MCM 2026 A 题三人团队项目。项目构建融合用户行为与电化学机理的连续时间模型，用于预测 SOC 与剩余续航时间。</p><div class="hero-cta"><a class="btn btn-primary" href="../docs/projects/mcm-2026-smartphone-battery.pdf" target="_blank" rel="noopener noreferrer">查看论文 PDF</a><a class="btn btn-ghost" href="../projects.html">返回项目页</a></div></section><section class="about section-reveal"><h2>问题与职责</h2><p>团队需要在用户行为与电池物理机制之间建立可解释的预测模型。我主要负责论文撰写、模型改进思路的提出，并完成部分数据处理和图表绘制。</p></section><section class="projects section-reveal"><div class="section-head"><h2>方法</h2></div><div class="project-grid article-grid"><article class="card"><h3>行为层</h3><p>使用 Ridge Regression 分析屏幕、处理器、网络与后台任务等因素对耗电的影响。</p></article><article class="card"><h3>机理层</h3><p>结合 Weibull 阻抗修正、二阶 Thevenin 等效电路和 SOH 耦合，描述非线性放电与老化。</p></article><article class="card"><h3>检验层</h3><p>通过测试集评估与敏感性分析，比较预测表现并识别关键耗电驱动因素。</p></article></div></section><section class="projects section-reveal"><div class="section-head"><h2>结果与复盘</h2></div><p class="hero-copy">测试集 $R^2$ 达 0.943，中高耗电场景 MAPE 低于 10%。敏感性分析显示，屏幕使用时间和处理器负载是主要驱动因素。这个项目也让我更重视统计模型与领域机理的边界和衔接方式。</p></section></main>
 <!-- site-shell:footer:start -->
     <footer class="site-footer">
       <div class="footer-inner container">
@@ -89,8 +50,4 @@
         <p>© <span id="year"></span> <span data-i18n="global-footer">宋思逸。用心构建。</span></p>
       </div>
     </footer>
-<!-- site-shell:footer:end -->
-
-    <script src="../script.js"></script>
-  </body>
-</html>
+<!-- site-shell:footer:end --><script src="../script.js"></script></body></html>

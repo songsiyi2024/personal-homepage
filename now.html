@@ -3,18 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="宋思逸 的文章与笔记" />
-    <title data-i18n="title-articles">文章 | 宋思逸</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="description" content="宋思逸当前正在投入的事项" />
+    <title data-i18n="title-now">Now | 宋思逸</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
 <!-- site-shell:header:start -->
     <header class="site-header">
       <a class="logo" href="index.html" aria-label="返回首页" data-i18n-aria-label="logo-aria">SS</a>
@@ -49,29 +44,21 @@
       </nav>
     </header>
 <!-- site-shell:header:end -->
-
     <main class="container">
+      <section class="hero section-reveal">
+        <p class="eyebrow">NOW</p>
+        <h1 data-i18n="now-h1">现在在做什么</h1>
+        <p class="hero-copy" data-i18n="now-copy">这是一个会不定期更新的工作台，只保留此刻真正占据注意力的几件事。</p>
+      </section>
       <section class="projects section-reveal">
-        <div class="section-head">
-          <h1 data-i18n="art-h2">阅读与创作</h1>
-          <a href="index.html" class="text-link" data-i18n="art-back">返回首页</a>
+        <div class="section-head"><h2 data-i18n="now-focus-h2">当前重点</h2><span class="meta-badge">2026.08</span></div>
+        <div class="project-grid article-grid">
+          <article class="card"><h3 data-i18n="now-1-title">研究生成建模</h3><p data-i18n="now-1-copy">继续学习 flow matching 与 discrete flow matching，整理关键概念和待验证的问题。</p></article>
+          <article class="card"><h3 data-i18n="now-2-title">完善个人知识档案</h3><p data-i18n="now-2-copy">把项目、阅读、课程成果和个人记录整理成可以持续更新的长期页面。</p></article>
+          <article class="card"><h3 data-i18n="now-3-title">保持跑步训练</h3><p data-i18n="now-3-copy">在训练与比赛之外，保留对身体感受、配速和恢复的简短记录。</p></article>
         </div>
-        <p class="hero-copy" data-i18n="art-tip">
-          把外部资料与自己的文章分开归档；随笔仍保留独立入口。
-        </p>
-        <section class="content-group">
-          <h2 data-i18n="art-reading-h2">我的阅读</h2>
-          <p class="section-copy" data-i18n="art-reading-copy">收录正在参考的资料、通知和可长期查阅的文档。</p>
-          <div class="project-grid article-grid" id="reading-list"></div>
-        </section>
-        <section class="content-group">
-          <h2 data-i18n="art-writing-h2">我的创作</h2>
-          <p class="section-copy" data-i18n="art-writing-copy">收录学习复盘、技术笔记、项目总结和已经成文的思考。</p>
-          <div class="project-grid article-grid" id="writing-list"></div>
-        </section>
       </section>
     </main>
-
 <!-- site-shell:footer:start -->
     <footer class="site-footer">
       <div class="footer-inner container">
@@ -88,12 +75,6 @@
       </div>
     </footer>
 <!-- site-shell:footer:end -->
-
-    <script src="data-projects.js"></script>
-    <script src="data-articles.js"></script>
-    <script src="data-running.js"></script>
-    <script src="data-english-tests.js"></script>
-    <script src="data-calendar.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

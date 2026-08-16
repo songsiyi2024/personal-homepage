@@ -25,6 +25,10 @@ window.projectEntries = [
     tags: ["Java", "Z3Py", "SMT", "Bounded Model Checking"],
     links: [
       {
+        href: "projects/mediator-z3.html",
+        label: { zh: "查看案例研究", en: "View case study" },
+      },
+      {
         href: "docs/projects/mediator-to-z3-course-paper.pdf",
         label: { zh: "查看课程论文 PDF", en: "View course paper PDF" },
         newTab: true,
@@ -56,6 +60,10 @@ window.projectEntries = [
     },
     tags: ["Python", "Ridge Regression", "ODE", "Sensitivity Analysis"],
     links: [
+      {
+        href: "projects/mcm-battery.html",
+        label: { zh: "查看案例研究", en: "View case study" },
+      },
       {
         href: "docs/projects/mcm-2026-smartphone-battery.pdf",
         label: { zh: "查看论文 PDF", en: "View paper PDF" },
