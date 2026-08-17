@@ -1,5 +1,34 @@
 window.courseworkCourses = [
   {
+    id: "cultural-critique-in-film-and-television",
+    title: {
+      zh: "影视文化与批评",
+      en: "Cultural Critique in Film and Television",
+    },
+    subtitle: {
+      zh: "2026 暑期学校",
+      en: "Summer School 2026",
+    },
+    description: {
+      zh: "26暑-张慧瑜（长聘副教授）-新闻与传播学院-作业",
+      en: "26 Summer-Zhang Huiyu (Associate Professor) - School of Journalism and Communication - Homework.",
+    },
+    entries: [
+      {
+        title: "2026 Summer Cultural Critique in Film and Television Homework Reading",
+        file: "cultural-critique-in-film-and-television/reading.pdf",
+      },
+      {
+        title: "2026 Summer Cultural Critique in Film and Television Homework Fiction",
+        file: "cultural-critique-in-film-and-television/fiction.pdf",
+      },
+      {
+        title: "2026 Summer Cultural Critique in Film and Television Homework Film",
+        file: "cultural-critique-in-film-and-television/film.pdf",
+      },
+    ],
+  },
+  {
     id: "computational-systems-biology",
     title: {
       zh: "计算系统生物学",
@@ -318,6 +347,188 @@ window.courseworkCourses = [
       {
         title: "2026 Spring Introduction to Social Work Homework Final",
         file: "introduction-to-social-work/final.pdf",
+      },
+    ],
+  },
+  {
+    id: "analytical-techniques-of-data",
+    title: {
+      zh: "数据分析技术",
+      en: "Analytical Techniques of Data",
+    },
+    subtitle: {
+      zh: "2026 春季学期",
+      en: "Spring 2026",
+    },
+    description: {
+      zh: "26春-范新光（长聘副教授）-社会学系-作业",
+      en: "26 Spring-Fan Xinguang (Associate Professor) - Department of Sociology - Homework.",
+    },
+    entries: [
+      {
+        title: "2026 Spring Analytical Techniques of Data Homework 1",
+        file: "analytical-techniques-of-data/hw1.zip",
+      },
+      {
+        title: "2026 Spring Analytical Techniques of Data Homework 2",
+        file: "analytical-techniques-of-data/hw2.zip",
+      },
+      {
+        title: "2026 Spring Analytical Techniques of Data Homework 3",
+        file: "analytical-techniques-of-data/hw3.zip",
+      },
+    ],
+  },
+  {
+    id: "the-history-of-modern-chinese-thought",
+    title: {
+      zh: "中国近现代思想史",
+      en: "The History of Modern Chinese Thought",
+    },
+    subtitle: {
+      zh: "2026 春季学期",
+      en: "Spring 2026",
+    },
+    description: {
+      zh: "26春-欧阳哲生（教授）-历史学系-作业",
+      en: "26 Spring-Ouyang Zhesheng (Professor) - Department of History - Homework.",
+    },
+    entries: [
+      {
+        title: "2026 Spring The History of Modern Chinese Thought Homework Article",
+        file: "the-history-of-modern-chinese-thought/article.pdf",
+      },
+    ],
+  },
+  {
+    id: "programming-techniques-and-methodology",
+    title: {
+      zh: "程序设计技术与方法",
+      en: "Programming Techniques and Methodology",
+    },
+    subtitle: {
+      zh: "2025 秋季学期",
+      en: "Fall 2025",
+    },
+    description: {
+      zh: "25秋-孙猛（教授）-数学科学学院-作业",
+      en: "25 Fall-Sun Meng (Professor) - School of Mathematical Sciences - Homework.",
+    },
+    entries: [
+      {
+        title: "2025 Fall Programming Techniques and Methodology Presentation",
+        file: "programming-techniques-and-methodology/presentation.pdf",
+      },
+      {
+        title: "2025 Fall Programming Techniques and Methodology Article",
+        file: "programming-techniques-and-methodology/article.pdf",
+      },
+    ],
+  },
+  {
+    id: "western-sociology-theory-I",
+    title: {
+      zh: "国外社会学学说（上）",
+      en: "Western Sociology Theory I",
+    },
+    subtitle: {
+      zh: "2025 秋季学期",
+      en: "Fall 2025",
+    },
+    description: {
+      zh: "25秋-孙飞宇（教授）-社会学系-作业",
+      en: "25 Fall-Sun Feiyu (Professor) - Department of Sociology - Homework.",
+    },
+    entries: [
+      {
+        title: "2025 Fall Western Sociology Theory I Homework Reading",
+        file: "western-sociology-theory-I/reading.pdf",
+      },
+    ],
+  },
+  {
+    id: "numerical-methods-B",
+    title: {
+      zh: "计算方法(B)",
+      en: "Numerical Methods (B)",
+    },
+    subtitle: {
+      zh: "2025 秋季学期",
+      en: "Fall 2025",
+    },
+    description: {
+      zh: "25秋-张磊（教授）-数学科学学院-作业。参考解答由助教刘宇扬提供",
+      en: "25 Fall-Zhang Lei (Professor) - School of Mathematical Sciences - Homework. The reference solutions are provided by teaching assistant Liu Yuyang.",
+    },
+    entries: [
+      {
+        title: "2025 Fall Numerical Methods (B) Homework Solution 1",
+        file: "numerical-methods-B/solution 1.pdf",
+      },
+      {
+        title: "2025 Fall Numerical Methods (B) Homework Solution 2",
+        file: "numerical-methods-B/solution 2.pdf",
+      },
+      {
+        title: "2025 Fall Numerical Methods (B) Homework Solution 3",
+        file: "numerical-methods-B/solution 3.pdf",
+      },
+      {
+        title: "2025 Fall Numerical Methods (B) Homework Report 1",
+        file: "numerical-methods-B/report 1.pdf",
+      },
+      {
+        title: "2025 Fall Numerical Methods (B) Homework Report 2",
+        file: "numerical-methods-B/report 2.pdf",
+      },
+      {
+        title: "2025 Fall Numerical Methods (B) Homework Report 3",
+        file: "numerical-methods-B/report 3.pdf",
+      },
+      {
+        title: "2025 Fall Numerical Methods (B) Homework Report 4",
+        file: "numerical-methods-B/report 4.pdf",
+      },
+      {
+        title: "2025 Fall Numerical Methods (B) Homework Report 5",
+        file: "numerical-methods-B/report 5.pdf",
+      },
+      {
+        title: "2025 Fall Numerical Methods (B) Homework Report 6",
+        file: "numerical-methods-B/report 6.pdf",
+      },
+      {
+        title: "2025 Fall Numerical Methods (B) Homework Report 7",
+        file: "numerical-methods-B/report 7.pdf",
+      },
+      {
+        title: "2025 Fall Numerical Methods (B) Homework Report 8",
+        file: "numerical-methods-B/report 8.pdf",
+      },
+      {
+        title: "2025 Fall Numerical Methods (B) Homework Report 9",
+        file: "numerical-methods-B/report 9.pdf",
+      },
+    ],
+  },
+  {
+    id: "introduction-to-sociology",
+    title: {
+      zh: "社会学概论",
+      en: "Introduction to Sociology",
+    },
+    subtitle: {
+      zh: "2025 秋季学期",
+      en: "Fall 2025",
+    },
+    description: {
+      zh: "25秋-刘爱玉（教授）-社会学系-作业",
+      en: "25 Fall-Liu Aiyu (Professor) - Department of Sociology - Homework.",
+    },
+    entries: [
+      {
+        title: "2025 Fall Introduction to Sociology Homework Reading",
+        file: "introduction-to-sociology/reading.pdf",
       },
     ],
   },
