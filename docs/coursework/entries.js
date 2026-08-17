@@ -10,8 +10,8 @@ window.courseworkCourses = [
       en: "Spring 2026",
     },
     description: {
-      zh: "课程作业",
-      en: "Coursework assignments.",
+      zh: "26春-张磊（教授）-数学科学学院-课程作业",
+      en: "26 Spring-Zhang Lei (Professor) - School of Mathematical Sciences - Coursework assignments.",
     },
     entries: [
       {
@@ -79,8 +79,8 @@ window.courseworkCourses = [
       en: "Spring 2026",
     },
     description: {
-      zh: "作业",
-      en: "Homework",
+      zh: "26春-李林芳（助理教授）-中国语言文学系-作业",
+      en: "26 Spring-Li Linfang (Assistant Professor) - Department of Chinese Language and Literature - Homework.",
     },
     entries: [
       {
@@ -100,8 +100,8 @@ window.courseworkCourses = [
       en: "Spring 2026",
     },
     description: {
-      zh: "作业",
-      en: "Homework",
+      zh: "26春-牟克典（副教授）-数学科学学院-作业",
+      en: "26 Spring-Mou Kedian (Associate Professor) - School of Mathematical Sciences - Homework.",
     },
     entries: [
       {
@@ -181,13 +181,17 @@ window.courseworkCourses = [
       en: "Spring 2026",
     },
     description: {
-      zh: "期中作业",
-      en: "Midterm Homework",
+      zh: "26春-王娟（教学副教授）-社会学系-期中作业",
+      en: "26 Spring-Wang Juan (Teaching Associate Professor) - Department of Sociology - Midterm Homework.",
     },
     entries: [
       {
         title: "2026 Spring Ethnicity and Society Homework",
         file: "ethnicity-and-society/midterm-homework.pdf",
+      },
+      {
+        title: "2026 Spring Ethnicity and Society Homework Article",
+        file: "ethnicity-and-society/midterm-homework-article.pdf",
       },
     ],
   },
@@ -202,8 +206,8 @@ window.courseworkCourses = [
       en: "Spring 2026",
     },
     description: {
-      zh: "作业与解答。作业来自刘保平老师，解答来自助教张与乐",
-      en: "Homework and Solutions. Homework is from Professor Liu Baoping, and solutions are from Teaching Assistant Zhang Yule.",
+      zh: "26春-刘保平（长聘副教授）-数学科学学院-作业与解答。作业来自刘保平老师，解答来自助教张与乐",
+      en: "26 Spring-Liu Baoping (Tenured Associate Professor) - School of Mathematical Sciences - Homework and Solutions. Homework is from Professor Liu Baoping, and solutions are from Teaching Assistant Zhang Yule.",
     },
     entries: [
       {
@@ -285,6 +289,35 @@ window.courseworkCourses = [
       {
         title: "2026 Spring Ordinary Differential Equations Solution 10",
         file: "ordinary-differential-equations/Solution 10.pdf",
+      },
+    ],
+  },
+  {
+    id: "introduction-to-social-work",
+    title: {
+      zh: "社会工作概论",
+      en: "Introduction to Social Work",
+    },
+    subtitle: {
+      zh: "2026 春季学期",
+      en: "Spring 2026",
+    },
+    description: {
+      zh: "26春-熊跃根（教授）-社会学系-作业",
+      en: "26 Spring-Xiong Yuegen (Professor) - Department of Sociology - Homework.",
+    },
+    entries: [
+      {
+        title: "2026 Spring Introduction to Social Work Homework Reading",
+        file: "introduction-to-social-work/reading.pdf",
+      },
+      {
+        title: "2026 Spring Introduction to Social Work Homework Film",
+        file: "introduction-to-social-work/film.pdf",
+      },
+      {
+        title: "2026 Spring Introduction to Social Work Homework Final",
+        file: "introduction-to-social-work/final.pdf",
       },
     ],
   },
