@@ -1,77 +1,46 @@
-# 宋思逸的个人主页
+# Personal Homepage
 
-这是一个使用原生 HTML、CSS 和 JavaScript 构建的个人主页，用于集中展示个人介绍、项目、文章、研究与课程资料，也记录近期计划、跑步和英语测试等内容。
+我的个人网站，用来整理和展示学习、研究、项目、写作与生活记录。
 
-网站不依赖前端框架或第三方构建服务，可以直接部署到任意静态网站托管平台。页面支持中英文切换、站内搜索和响应式布局。
+网站围绕数学建模、生物数学、数据分析、形式化验证与 AI 应用展开，也收录课程资料、跑步记录和阶段性计划。整个项目使用原生 HTML、CSS 和 JavaScript 构建，保持简单、轻量，并便于长期维护。
 
-## 本地运行
+## Features
 
-请先安装 [Node.js](https://nodejs.org/)，然后在仓库根目录运行：
+- 响应式页面，适配桌面端与移动端
+- 中英文界面切换
+- 项目、文章、研究和课程资料展示
+- 站内搜索与数据驱动的内容渲染
+- 无前端框架、无第三方运行时依赖
+
+## Tech Stack
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Node.js（仅用于本地预览和仓库检查）
+
+## Local Preview
 
 ```bash
+git clone https://github.com/songsiyi2024/personal-homepage.git
+cd personal-homepage
 npm run dev
 ```
 
-浏览器访问 <http://127.0.0.1:8000> 即可预览。项目没有第三方 npm 依赖，因此无需先运行 `npm install`。
+打开 <http://127.0.0.1:8000> 即可在本地查看网站。
 
-## 常用命令
-
-```bash
-# 启动本地预览服务器
-npm run dev
-
-# 根据配置同步所有页面的导航和页脚
-npm run build
-
-# 检查页面结构、本地资源引用和 JavaScript 语法
-npm run check
-
-# 同步公共页面结构并执行完整检查
-npm run validate
-```
-
-> `npm run build` 会改写所有 HTML 文件中 `site-shell` 标记之间的导航和页脚。请通过 `site.config.mjs` 修改这些公共区域，不要直接编辑自动生成的内容。
-
-## 内容维护
-
-主要内容采用数据与页面分离的方式维护：
-
-| 内容 | 数据文件 |
-| --- | --- |
-| 项目 | `data-projects.js` |
-| 文章 | `data-articles.js` |
-| 随笔 | `data-notes.js` |
-| 近期计划 | `data-calendar.js` |
-| 跑步记录 | `data-running.js` |
-| 英语测试记录 | `data-english-tests.js` |
-| 路跑与越野赛事 | `data-race-calendar.js` |
-| 课程作业 | `docs/coursework/entries.js` |
-| 高考数学资料 | `docs/gaokao-math/entries.js` |
-
-全站导航、页脚和品牌配置位于 `site.config.mjs`。更具体的编辑约定与新增随笔流程请参阅 [MAINTENANCE.md](MAINTENANCE.md)。
-
-## 项目结构
+## Project Structure
 
 ```text
 .
-├── index.html              # 首页
-├── *.html                  # 各内容栏目页面
-├── styles.css              # 全站样式
-├── script.js               # 翻译、交互、搜索与内容渲染
-├── data-*.js               # 各栏目结构化数据
-├── articles/               # 独立文章与相关资料
-├── projects/               # 独立项目介绍页
-├── docs/                   # 课程、项目和高考数学文档
-├── site.config.mjs         # 公共导航与页脚配置
-└── tools/                  # 本地服务器、页面同步和检查脚本
+├── index.html          # 首页
+├── styles.css          # 全站样式
+├── script.js           # 页面交互与内容渲染
+├── data-*.js           # 网站内容数据
+├── articles/           # 文章页面
+├── projects/           # 项目页面
+├── docs/               # 课程与项目资料
+└── tools/              # 本地开发与检查脚本
 ```
 
-## 发布
-
-发布前建议运行：
-
-```bash
-npm run validate
-```
-
-检查通过后，将仓库根目录作为静态站点目录部署即可。服务器应以 `index.html` 作为入口，并保留现有目录结构，以确保页面、脚本和文档链接正常工作。
+更多维护说明见 [MAINTENANCE.md](MAINTENANCE.md)。
