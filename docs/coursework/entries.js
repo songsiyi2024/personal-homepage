@@ -191,4 +191,101 @@ window.courseworkCourses = [
       },
     ],
   },
+  {
+    id: "ordinary-differential-equations",
+    title: {
+      zh: "常微分方程",
+      en: "Ordinary Differential Equations",
+    },
+    subtitle: {
+      zh: "2026 春季学期",
+      en: "Spring 2026",
+    },
+    description: {
+      zh: "作业与解答。作业来自刘保平老师，解答来自助教张与乐",
+      en: "Homework and Solutions. Homework is from Professor Liu Baoping, and solutions are from Teaching Assistant Zhang Yule.",
+    },
+    entries: [
+      {
+        title: "2026 Spring Ordinary Differential Equations Homework 1",
+        file: "ordinary-differential-equations/Homework 1.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Solution 1",
+        file: "ordinary-differential-equations/Solution 1.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Homework 2",
+        file: "ordinary-differential-equations/Homework 2.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Solution 2",
+        file: "ordinary-differential-equations/Solution 2.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Homework 3",
+        file: "ordinary-differential-equations/Homework 3.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Solution 3",
+        file: "ordinary-differential-equations/Solution 3.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Homework 4",
+        file: "ordinary-differential-equations/Homework 4.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Solution 4",
+        file: "ordinary-differential-equations/Solution 4.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Homework 5",
+        file: "ordinary-differential-equations/Homework 5.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Solution 5",
+        file: "ordinary-differential-equations/Solution 5.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Homework 6",
+        file: "ordinary-differential-equations/Homework 6.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Solution 6",
+        file: "ordinary-differential-equations/Solution 6.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Homework 7",
+        file: "ordinary-differential-equations/Homework 7.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Solution 7",
+        file: "ordinary-differential-equations/Solution 7.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Homework 8",
+        file: "ordinary-differential-equations/Homework 8.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Solution 8",
+        file: "ordinary-differential-equations/Solution 8.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Homework 9",
+        file: "ordinary-differential-equations/Homework 9.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Solution 9",
+        file: "ordinary-differential-equations/Solution 9.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Homework 10",
+        file: "ordinary-differential-equations/Homework 10.pdf",
+      },
+      {
+        title: "2026 Spring Ordinary Differential Equations Solution 10",
+        file: "ordinary-differential-equations/Solution 10.pdf",
+      },
+    ],
+  },
 ];
