@@ -9,6 +9,7 @@ window.runningEntries = [
     location: { zh: "浙江省/杭州市/淳安县", en: "Zhejiang / Hangzhou / Chun'an" },
     result: { zh: "计划中", en: "planned" },
     note: { zh: "中国田协A类赛事", en: "Chinese Athletics Association A-level Race" },
+    status: "planned",
   },
   {
     id: "2026-xiangyang-half",
@@ -20,6 +21,7 @@ window.runningEntries = [
     location: { zh: "湖北省/襄阳市", en: "Hubei / Xiangyang" },
     result: { zh: "计划中", en: "planned" },
     note: { zh: "中国田协A类赛事", en: "Chinese Athletics Association A-level Race" },
+    status: "planned",
   },
   {
     id: "2026-tianjin-tuanbolake-half",

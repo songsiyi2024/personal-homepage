@@ -115,6 +115,7 @@ const translations = {
     "idx-running-overview-desc": "现在先放一个可编辑模板，后续你只要把赛事名称、日期、项目和成绩替换掉，就能一直累积自己的跑步档案。",
     "running-stat-finished": "累计参赛",
     "running-stat-longest": "最长距离",
+    "running-stat-total": "总距离",
     "running-stat-next": "下一目标",
     "running-no-goal": "待补充",
     "idx-running-date-label": "日期",
@@ -548,6 +549,7 @@ const translations = {
     "idx-running-overview-desc": "This starts as an editable template. Replace the race name, date, distance, and result whenever you complete a new event.",
     "running-stat-finished": "Races Finished",
     "running-stat-longest": "Longest Distance",
+    "running-stat-total": "Total Distance",
     "running-stat-next": "Next Goal",
     "running-no-goal": "To be added",
     "idx-running-date-label": "Date",
@@ -1364,10 +1366,15 @@ function renderRunningCard(race) {
   return card;
 }
 
+function formatRunningDistance(distance) {
+  return Number(distance.toFixed(4)).toString();
+}
+
 function renderRunningStats() {
   const entries = Array.isArray(window.runningEntries) ? window.runningEntries : [];
-  const finished = entries.filter((item) => String(item.status || "finished").toLowerCase() === "finished");
-  const longest = entries.reduce((max, item) => Math.max(max, Number(item.distanceKm) || 0), 0);
+  const finished = entries.filter((item) => String(item.status || "").toLowerCase() === "finished");
+  const longest = finished.reduce((max, item) => Math.max(max, Number(item.distanceKm) || 0), 0);
+  const totalDistance = entries.reduce((sum, item) => sum + (Number(item.distanceKm) || 0), 0);
   const nextGoal = getNearestPlannedEntry(entries);
   const statItems = document.querySelectorAll(".running-overview:not(.english-test-overview) .running-stat[data-stat]");
 
@@ -1383,7 +1390,12 @@ function renderRunningStats() {
 
     if (stat === "longest") {
       label.textContent = t("running-stat-longest");
-      value.textContent = longest ? `${longest}km` : t("running-no-goal");
+      value.textContent = longest ? `${formatRunningDistance(longest)}km` : t("running-no-goal");
+    }
+
+    if (stat === "total") {
+      label.textContent = t("running-stat-total");
+      value.textContent = totalDistance ? `${formatRunningDistance(totalDistance)}km` : t("running-no-goal");
     }
 
     if (stat === "next") {
