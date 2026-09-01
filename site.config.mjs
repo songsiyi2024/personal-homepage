@@ -18,7 +18,6 @@ export const siteConfig = {
     { href: "gaokao.html", key: "nav-gaokao", label: "高考解答" },
     { href: "running.html", key: "nav-running", label: "跑步记录" },
     { href: "english-tests.html", key: "nav-english-tests", label: "英语测试记录" },
-    { href: "notes.html", key: "nav-notes", label: "随笔" },
   ],
   search: { href: "search.html", key: "nav-search", label: "搜索" },
   footerNav: [

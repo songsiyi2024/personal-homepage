@@ -34,23 +34,6 @@ window.calendarEntries = [
     category: "bookmarks",
   },
   {
-    order: 3,
-    time: {
-      zh: "2026 年 6 月上旬",
-      en: "Early June 2026",
-    },
-    title: {
-      zh: "写出随笔栏目的第一篇内容",
-      en: "Write the first piece for the essays section",
-    },
-    summary: {
-      zh: "先用一篇更短、更自由的文字把随笔栏目真正开出来。",
-      en: "Open the essays section with one shorter and more freeform piece of writing.",
-    },
-    status: "planned",
-    category: "writing",
-  },
-  {
     order: 4,
     time: {
       zh: "2026 年 6 月下旬",

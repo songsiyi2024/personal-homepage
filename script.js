@@ -6,7 +6,6 @@ const translations = {
     "title-about": "关于 | 宋思逸",
     "title-projects": "项目 | 宋思逸",
     "title-articles": "文章 | 宋思逸",
-    "title-notes": "随笔 | 宋思逸",
     "title-coursework": "课程作业 | 宋思逸",
     "title-gaokao": "高考解答 | 宋思逸",
     "title-running": "跑步记录 | 宋思逸",
@@ -25,7 +24,6 @@ const translations = {
     "meta-about": "关于宋思逸的个人简介、经历和长期目标",
     "meta-projects": "宋思逸的项目作品与技术实践",
     "meta-articles": "宋思逸的文章、笔记和 PDF 资料归档",
-    "meta-notes": "宋思逸的个人随笔与日常记录",
     "meta-coursework": "宋思逸的课程作业与学习成果归档",
     "meta-gaokao": "宋思逸整理的高考数学解答与 PDF 目录",
     "meta-running": "宋思逸的跑步记录、赛事结果和目标赛历",
@@ -36,7 +34,7 @@ const translations = {
     "meta-contact": "联系宋思逸的邮箱与相关账号信息",
     "meta-research": "宋思逸的研究兴趣、阅读与阶段性探索",
     "meta-now": "宋思逸当前正在投入的事项",
-    "meta-search": "搜索宋思逸个人主页中的栏目、项目、文章和随笔",
+    "meta-search": "搜索宋思逸个人主页中的栏目、项目和文章",
     "meta-race-calendar": "基于路跑及越野赛赛历的赛事名单页面，支持按类别、地区、参与状态筛选并排序",
     "meta-road-races": "路跑赛事名单页面，支持按地区、项目、参与状态筛选，并按序号或日期排序",
     "meta-trail-races": "越野赛事名单页面，支持按地区、参与状态筛选，并按序号或日期排序",
@@ -44,7 +42,6 @@ const translations = {
     "nav-about": "关于我",
     "nav-projects": "项目",
     "nav-articles": "文章",
-    "nav-notes": "随笔",
     "nav-research": "研究",
     "nav-now": "Now",
     "nav-search": "搜索",
@@ -72,8 +69,6 @@ const translations = {
     "idx-viewall": "查看全部",
     "idx-articles-h2": "文章与笔记",
     "idx-articles-viewall": "查看全部",
-    "idx-notes-h2": "随笔",
-    "idx-notes-viewall": "查看全部",
     "idx-research-h2": "研究",
     "idx-research-link": "进入研究页",
     "idx-research-title": "从理论到实验的持续探索",
@@ -251,7 +246,7 @@ const translations = {
     "prj-back": "返回首页",
     "art-h2": "阅读与创作",
     "art-back": "返回首页",
-    "art-tip": "把外部资料与自己的文章分开归档；随笔仍保留独立入口。",
+    "art-tip": "把外部资料与自己的文章分开归档。",
     "art-reading-h2": "我的阅读",
     "art-reading-copy": "收录正在参考的资料、通知和可长期查阅的文档。",
     "art-writing-h2": "我的创作",
@@ -283,17 +278,13 @@ const translations = {
     "now-3-title": "保持跑步训练",
     "now-3-copy": "在训练与比赛之外，保留对身体感受、配速和恢复的简短记录。",
     "search-h1": "站内搜索",
-    "search-copy": "搜索栏目、项目、我的阅读、我的创作和随笔。",
+    "search-copy": "搜索栏目、项目、我的阅读和我的创作。",
     "search-label": "搜索关键词",
     "search-placeholder": "输入关键词",
     "search-results-h2": "搜索结果",
     "search-empty": "输入关键词后开始搜索。",
     "search-no-results": "没有找到相关内容。",
     "search-open": "打开",
-    "notes-h2": "随笔",
-    "notes-back": "返回首页",
-    "notes-copy": "记录一闪而过的想法、日常观察，以及尚未长成文章的片段。",
-    "notes-empty": "第一篇随笔正在酝酿中。",
     "cwk-h2": "课程作业",
     "cwk-back": "返回首页",
     "cwk-copy": "这里集中展示我的课程作业与阶段成果，后续会按学期持续更新。",
@@ -419,7 +410,6 @@ const translations = {
     "meta-about": "Profile, experience, and long-term goals of Siyi Song.",
     "meta-projects": "Projects and technical practice by Siyi Song.",
     "meta-articles": "Articles, notes, and PDF archives by Siyi Song.",
-    "meta-notes": "Personal essays and day-to-day notes by Siyi Song.",
     "meta-coursework": "Coursework and study outcomes archived by Siyi Song.",
     "meta-gaokao": "Gaokao math solutions and PDF directory by Siyi Song.",
     "meta-running": "Running records, race results, and target calendar of Siyi Song.",
@@ -430,7 +420,7 @@ const translations = {
     "meta-contact": "Email and contact information for Siyi Song.",
     "meta-research": "Research interests, reading, and work in progress by Siyi Song.",
     "meta-now": "What Siyi Song is currently working on.",
-    "meta-search": "Search sections, projects, writing, and notes on Siyi Song's personal site.",
+    "meta-search": "Search sections, projects, and writing on Siyi Song's personal site.",
     "meta-race-calendar": "Race list based on the road and trail schedule, with filtering and sorting by type, region, and participation.",
     "meta-road-races": "Road race list with filters for region, type, participation, and sorting by serial number or date.",
     "meta-trail-races": "Trail race list with filters for region, participation, and sorting by serial number or date.",
@@ -438,7 +428,6 @@ const translations = {
     "nav-about": "About",
     "nav-projects": "Projects",
     "nav-articles": "Writing",
-    "nav-notes": "Notes",
     "nav-research": "Research",
     "nav-now": "Now",
     "nav-search": "Search",
@@ -454,7 +443,7 @@ const translations = {
     "nav-more-label": "More sections",
     "nav-footer-label": "Footer navigation",
     "art-h2": "Reading & Writing",
-    "art-tip": "Keep reference material and original work separate; notes retain their own home.",
+    "art-tip": "Keep reference material and original work separate.",
     "art-reading-h2": "My Reading",
     "art-reading-copy": "Reference materials, notices, and documents worth keeping close at hand.",
     "art-writing-h2": "My Writing",
@@ -486,7 +475,7 @@ const translations = {
     "now-3-title": "Running Training",
     "now-3-copy": "Keeping short records of physical feedback, pace, and recovery alongside training and races.",
     "search-h1": "Site Search",
-    "search-copy": "Search sections, projects, reading, writing, and notes.",
+    "search-copy": "Search sections, projects, reading, and writing.",
     "search-label": "Search terms",
     "search-placeholder": "Enter keywords",
     "search-results-h2": "Results",
@@ -506,8 +495,6 @@ const translations = {
     "idx-viewall": "View All",
     "idx-articles-h2": "Writing & Notes",
     "idx-articles-viewall": "View All",
-    "idx-notes-h2": "Notes",
-    "idx-notes-viewall": "View All",
     "idx-research-h2": "Research",
     "idx-research-link": "Explore Research",
     "idx-research-title": "An Ongoing Path from Theory to Experiments",
@@ -686,10 +673,6 @@ const translations = {
     "art-h2": "Writing",
     "art-back": "Back to Home",
     "art-tip": "For future posts, drop a new file into the articles folder and add one record in the data file.",
-    "notes-h2": "Notes",
-    "notes-back": "Back to Home",
-    "notes-copy": "A place for passing ideas, daily observations, and fragments that have not yet become full essays.",
-    "notes-empty": "The first note is taking shape.",
     "cwk-h2": "Coursework",
     "cwk-back": "Back to Home",
     "cwk-copy": "This page collects my coursework and milestone outputs. It will be updated each semester.",
@@ -799,7 +782,6 @@ const pageMetaKeys = {
   "about.html": { title: "title-about", description: "meta-about" },
   "projects.html": { title: "title-projects", description: "meta-projects" },
   "articles.html": { title: "title-articles", description: "meta-articles" },
-  "notes.html": { title: "title-notes", description: "meta-notes" },
   "coursework.html": { title: "title-coursework", description: "meta-coursework" },
   "gaokao.html": { title: "title-gaokao", description: "meta-gaokao" },
   "running.html": { title: "title-running", description: "meta-running" },
@@ -1197,25 +1179,14 @@ function renderArticleCard(article) {
 
 function renderArticles() {
   const articles = Array.isArray(window.articleEntries) ? window.articleEntries : [];
-  const notes = Array.isArray(window.noteEntries) ? window.noteEntries : [];
   const homeList = document.getElementById("home-article-list");
-  const homeNotesList = document.getElementById("home-notes-list");
   const readingList = document.getElementById("reading-list");
   const writingList = document.getElementById("writing-list");
-  const notesList = document.getElementById("notes-list");
-  const notesEmpty = document.getElementById("notes-empty");
 
   if (homeList) {
     homeList.innerHTML = "";
     articles.filter((item) => item.featured).slice(0, Number(homeList.dataset.limit || 2)).forEach((article) => {
       homeList.appendChild(renderArticleCard(article));
-    });
-  }
-
-  if (homeNotesList) {
-    homeNotesList.innerHTML = "";
-    notes.slice(0, Number(homeNotesList.dataset.limit || 1)).forEach((note) => {
-      homeNotesList.appendChild(renderArticleCard(note));
     });
   }
 
@@ -1233,16 +1204,6 @@ function renderArticles() {
     });
   }
 
-  if (notesList) {
-    notesList.innerHTML = "";
-    notes.forEach((note) => {
-      notesList.appendChild(renderArticleCard(note));
-    });
-  }
-
-  if (notesEmpty) {
-    notesEmpty.hidden = notes.length > 0;
-  }
 }
 
 function renderCourseworkCard(course) {
@@ -1528,7 +1489,6 @@ function initSiteSearch() {
   const entryItems = [
     ...(window.projectEntries || []).map((entry) => ({ title: getLocalizedValue(entry.title), href: "projects.html", description: getLocalizedValue(entry.description), kind: "项目" })),
     ...(window.articleEntries || []).map((entry) => ({ title: getLocalizedValue(entry.title), href: entry.href, description: getLocalizedValue(entry.listDescription || entry.description), kind: entry.category === "reading" ? "阅读" : "创作" })),
-    ...(window.noteEntries || []).map((entry) => ({ title: getLocalizedValue(entry.title), href: entry.href, description: getLocalizedValue(entry.listDescription || entry.description), kind: "随笔" })),
   ];
   const items = [...staticItems, ...entryItems];
   const render = () => {

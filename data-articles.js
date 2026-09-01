@@ -59,12 +59,12 @@ window.articleEntries = [
       en: "Spring Learning Review",
     },
     description: {
-      zh: "一篇放在站内的独立文章页面，适合写复盘、随笔或项目总结。",
-      en: "A standalone on-site article page for reflections, essays, or project retrospectives.",
+      zh: "一篇放在站内的独立文章页面，适合写学习复盘或项目总结。",
+      en: "A standalone on-site article page for study reviews or project retrospectives.",
     },
     listDescription: {
-      zh: "这是一篇站内 HTML 文章示例，适合放学习复盘、项目总结或随笔。",
-      en: "A sample on-site HTML article for study notes, retrospectives, or essays.",
+      zh: "这是一篇站内 HTML 文章示例，适合放学习复盘或项目总结。",
+      en: "A sample on-site HTML article for study notes or retrospectives.",
     },
     publishedAt: "2026-04-22",
     href: "articles/spring-learning-review.html",
