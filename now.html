@@ -29,7 +29,6 @@
           <div class="more-menu" id="more-menu">
             <a href="research.html" data-i18n="nav-research">研究</a>
             <a href="now.html" data-i18n="nav-now">Now</a>
-            <a href="calendar.html" data-i18n="nav-calendar">计划</a>
             <a href="skills.html" data-i18n="nav-skills">技能</a>
             <a href="coursework.html" data-i18n="nav-coursework">课程作业</a>
             <a href="gaokao.html" data-i18n="nav-gaokao">高考解答</a>
@@ -50,11 +49,35 @@
         <p class="hero-copy" data-i18n="now-copy">这是一个会不定期更新的工作台，只保留此刻真正占据注意力的几件事。</p>
       </section>
       <section class="projects section-reveal">
-        <div class="section-head"><h2 data-i18n="now-focus-h2">当前重点</h2><span class="meta-badge">2026.08</span></div>
+        <div class="section-head"><h2 data-i18n="now-focus-h2">当前重点</h2><span class="meta-badge">2026.09</span></div>
         <div class="project-grid article-grid">
           <article class="card"><h3 data-i18n="now-1-title">研究生成建模</h3><p data-i18n="now-1-copy">继续学习 flow matching 与 discrete flow matching，整理关键概念和待验证的问题。</p></article>
           <article class="card"><h3 data-i18n="now-2-title">完善个人知识档案</h3><p data-i18n="now-2-copy">把项目、阅读、课程成果和个人记录整理成可以持续更新的长期页面。</p></article>
           <article class="card"><h3 data-i18n="now-3-title">保持跑步训练</h3><p data-i18n="now-3-copy">在训练与比赛之外，保留对身体感受、配速和恢复的简短记录。</p></article>
+        </div>
+      </section>
+
+      <section class="projects section-reveal">
+        <div class="section-head">
+          <h2 data-i18n="now-schedule-h2">日程</h2>
+        </div>
+        <p class="section-copy" data-i18n="now-schedule-copy">把接下来准备推进的事项和已经完成的事情放在同一个页面中，持续更新。</p>
+        <div class="now-schedule-grid">
+          <section class="now-schedule-column" aria-labelledby="now-schedule-planned-title">
+            <div class="now-schedule-column-head">
+              <h3 id="now-schedule-planned-title" data-i18n="now-schedule-planned-h3">计划中</h3>
+              <span class="meta-badge" data-schedule-count="planned">0</span>
+            </div>
+            <div class="calendar-plan-list" id="now-calendar-planned-list"></div>
+          </section>
+
+          <section class="now-schedule-column" aria-labelledby="now-schedule-completed-title">
+            <div class="now-schedule-column-head">
+              <h3 id="now-schedule-completed-title" data-i18n="now-schedule-completed-h3">已完成</h3>
+              <span class="meta-badge" data-schedule-count="completed">0</span>
+            </div>
+            <div class="calendar-plan-list" id="now-calendar-completed-list"></div>
+          </section>
         </div>
       </section>
     </main>
@@ -74,6 +97,7 @@
       </div>
     </footer>
 <!-- site-shell:footer:end -->
+    <script src="data-calendar.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

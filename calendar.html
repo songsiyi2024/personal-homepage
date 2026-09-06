@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="宋思逸 的近期计划与阶段安排" />
-    <title data-i18n="title-calendar">Calendar | 宋思逸</title>
+    <meta name="description" content="宋思逸的日程，记录计划中的事项和已经完成的事情" />
+    <title data-i18n="title-calendar">日程 | 宋思逸</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,7 +34,6 @@
           <div class="more-menu" id="more-menu">
             <a href="research.html" data-i18n="nav-research">研究</a>
             <a href="now.html" data-i18n="nav-now">Now</a>
-            <a href="calendar.html" data-i18n="nav-calendar">计划</a>
             <a href="skills.html" data-i18n="nav-skills">技能</a>
             <a href="coursework.html" data-i18n="nav-coursework">课程作业</a>
             <a href="gaokao.html" data-i18n="nav-gaokao">高考解答</a>
@@ -50,46 +49,13 @@
 <!-- site-shell:header:end -->
 
     <main class="container">
-      <section class="calendar-page section-reveal">
-        <div class="section-head running-head">
-          <div>
-            <h1 data-i18n="cal-h2">近期计划</h1>
-            <p class="hero-copy" data-i18n="cal-copy">
-              这里不放很细的日历，只列未来一段时间里我想推进的几件大事、对应时间和当前进度。
-            </p>
-          </div>
-          <a href="index.html" class="text-link" data-i18n="cal-back">返回首页</a>
-        </div>
-
-        <div class="calendar-layout">
-          <article class="card calendar-summary">
-            <p class="running-kicker" data-i18n="cal-summary-kicker">近况概览</p>
-            <h3 data-i18n="cal-summary-title">把未来一段时间最重要的几件事收成一页</h3>
-            <p data-i18n="cal-summary-desc">
-              重点是保留方向感，而不是管理细节。等事情真正做完后，再把值得留下的部分转入 Timeline 或对应栏目。
-            </p>
-            <div class="calendar-stat-grid">
-              <div class="calendar-stat" data-stat="planned">
-                <span data-i18n="cal-stat-planned">待进行</span>
-                <strong>0</strong>
-              </div>
-              <div class="calendar-stat" data-stat="in-progress">
-                <span data-i18n="cal-stat-doing">进行中</span>
-                <strong>0</strong>
-              </div>
-              <div class="calendar-stat" data-stat="done">
-                <span data-i18n="cal-stat-done">已完成</span>
-                <strong>0</strong>
-              </div>
-            </div>
-            <div class="calendar-legend" aria-label="状态图例" data-i18n-aria-label="cal-legend-aria">
-              <span class="calendar-legend-item"><i class="status-dot planned"></i><span data-i18n="cal-status-planned">计划中</span></span>
-              <span class="calendar-legend-item"><i class="status-dot in-progress"></i><span data-i18n="cal-status-doing">进行中</span></span>
-              <span class="calendar-legend-item"><i class="status-dot done"></i><span data-i18n="cal-status-done">已完成</span></span>
-            </div>
-          </article>
-
-          <div class="calendar-plan-list" id="calendar-plan-list"></div>
+      <section class="hero section-reveal">
+        <p class="eyebrow">SCHEDULE</p>
+        <h1 data-i18n="cal-redirect-h1">日程已并入 Now</h1>
+        <p class="hero-copy" data-i18n="cal-redirect-copy">计划中的事项和已经完成的事情现在统一放在 Now 页面中。</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="now.html" data-i18n="cal-redirect-link">打开 Now 日程</a>
+          <a class="btn btn-ghost" href="index.html" data-i18n="cal-back">返回首页</a>
         </div>
       </section>
     </main>

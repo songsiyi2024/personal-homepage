@@ -37,7 +37,6 @@
           <div class="more-menu" id="more-menu">
             <a href="research.html" data-i18n="nav-research">研究</a>
             <a href="now.html" data-i18n="nav-now">Now</a>
-            <a href="calendar.html" data-i18n="nav-calendar">计划</a>
             <a href="skills.html" data-i18n="nav-skills">技能</a>
             <a href="coursework.html" data-i18n="nav-coursework">课程作业</a>
             <a href="gaokao.html" data-i18n="nav-gaokao">高考解答</a>
@@ -45,6 +44,7 @@
             <a href="english-tests.html" data-i18n="nav-english-tests">英语测试记录</a>
           </div>
         </div>
+        <a class="search-link" href="search.html" aria-label="搜索" data-i18n-aria-label="nav-search"><span aria-hidden="true"></span></a>
         <a href="contact.html" class="pill" data-i18n="nav-contact">联系我</a>
         <button id="lang-toggle" class="lang-toggle" type="button" data-i18n="lang-btn" data-i18n-aria-label="lang-aria">EN</button>
       </nav>
@@ -117,40 +117,18 @@
         </div>
       </section>
 
-      <section id="calendar" class="projects container section-reveal">
-        <div class="section-head running-head">
-          <div>
-            <h2 data-i18n="idx-calendar-h2">近期计划</h2>
-            <p class="section-copy" data-i18n="idx-calendar-copy">
-              不做很细的日历，只保留未来一段时间里想推进的几件大事和对应时间。
-            </p>
-          </div>
-          <div class="running-head-actions">
-            <a href="calendar.html" class="text-link" data-i18n="idx-calendar-viewall">查看计划</a>
-          </div>
-        </div>
-
-        <div class="calendar-home-grid">
-          <article class="card calendar-home-copy">
-            <p class="running-kicker" data-i18n="idx-calendar-kicker">近期节奏</p>
-            <h3 data-i18n="idx-calendar-title">把接下来真正重要的几件事先摆清楚</h3>
-            <p data-i18n="idx-calendar-desc">
-              这里展示的是高层计划，不追求具体到某一天，而是把方向、时间和进度说清楚。
-            </p>
-          </article>
-          <div class="calendar-upcoming-list" id="home-calendar-list" data-limit="2"></div>
-        </div>
-      </section>
-
       <section id="skills" class="skills container section-reveal">
-        <h2 data-i18n="idx-skills-h2">技能栈</h2>
+        <div class="section-head">
+          <h2 data-i18n="idx-skills-h2">技能栈</h2>
+          <a href="skills.html" class="text-link" data-i18n="idx-skills-viewall">查看详细技能</a>
+        </div>
         <div class="skill-list">
-          <span data-i18n="idx-skill-1">前端开发</span>
-          <span data-i18n="idx-skill-2">后端开发</span>
-          <span data-i18n="idx-skill-3">数据分析</span>
-          <span data-i18n="idx-skill-4">产品思维</span>
-          <span data-i18n="idx-skill-5">英文协作</span>
-          <span data-i18n="idx-skill-6">AI 应用</span>
+          <span data-i18n="idx-skill-1">Python / 数据处理 / 数值计算</span>
+          <span data-i18n="idx-skill-2">数学建模 / 微分方程</span>
+          <span data-i18n="idx-skill-3">回归分析 / 敏感性分析</span>
+          <span data-i18n="idx-skill-4">Java / AST / DSL 转换</span>
+          <span data-i18n="idx-skill-5">Z3 / SMT / 有界模型检查</span>
+          <span data-i18n="idx-skill-6">技术写作 / 学术表达 / 团队协作</span>
         </div>
       </section>
       </div>
@@ -196,16 +174,20 @@
             <p class="running-kicker" data-i18n="idx-running-kicker">年度概览</p>
             <h3 data-i18n="idx-running-overview-title">把比赛经历整理成自己的赛历</h3>
             <p data-i18n="idx-running-overview-desc">
-              现在先放一个可编辑模板，后续你只要把赛事名称、日期、项目和成绩替换掉，就能一直累积自己的跑步档案。
+              当前统计只计算已完赛赛事；详细结果与训练档案见跑步记录。
             </p>
             <div class="running-stat-grid">
               <div class="running-stat" data-stat="finished">
                 <span>累计参赛</span>
-                <strong>待更新</strong>
+                <strong>7场</strong>
               </div>
               <div class="running-stat" data-stat="longest">
                 <span>最长距离</span>
-                <strong>待更新</strong>
+                <strong>21.0975km</strong>
+              </div>
+              <div class="running-stat" data-stat="total">
+                <span>总距离</span>
+                <strong>128.29km</strong>
               </div>
               <div class="running-stat" data-stat="next">
                 <span>下一目标</span>
@@ -236,12 +218,12 @@
             <p class="running-kicker" data-i18n="idx-engtest-kicker">阶段概览</p>
             <h3 data-i18n="idx-engtest-overview-title">把每一次英语测试整理成连续档案</h3>
             <p data-i18n="idx-engtest-overview-desc">
-              现在先放一个可编辑模板，后续你只要补充考试名称、时间、分数和备注，就能持续累积自己的英语学习记录。
+              当前记录按考试时间整理；详细分数和备注见英语测试记录。
             </p>
             <div class="running-stat-grid">
               <div class="running-stat" data-stat="finished">
                 <span>累计完成</span>
-                <strong>待更新</strong>
+                <strong>12次</strong>
               </div>
               <div class="running-stat" data-stat="next">
                 <span>下一目标</span>

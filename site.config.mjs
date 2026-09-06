@@ -12,7 +12,6 @@ export const siteConfig = {
   archiveNav: [
     { href: "research.html", key: "nav-research", label: "研究" },
     { href: "now.html", key: "nav-now", label: "Now" },
-    { href: "calendar.html", key: "nav-calendar", label: "计划" },
     { href: "skills.html", key: "nav-skills", label: "技能" },
     { href: "coursework.html", key: "nav-coursework", label: "课程作业" },
     { href: "gaokao.html", key: "nav-gaokao", label: "高考解答" },

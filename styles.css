@@ -841,6 +841,32 @@ h1 span[data-i18n="name-full"] {
   align-items: start;
 }
 
+.now-schedule-grid {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.now-schedule-column {
+  display: grid;
+  gap: 14px;
+}
+
+.now-schedule-column-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.now-schedule-column-head h3 {
+  margin: 0;
+}
+
 .calendar-home-copy,
 .calendar-summary {
   display: flex;

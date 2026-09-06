@@ -10,7 +10,7 @@ const translations = {
     "title-gaokao": "高考解答 | 宋思逸",
     "title-running": "跑步记录 | 宋思逸",
     "title-english-tests": "英语测试记录 | 宋思逸",
-    "title-calendar": "近期计划 | 宋思逸",
+    "title-calendar": "日程 | 宋思逸",
     "title-skills": "技能 | 宋思逸",
     "title-resume": "简历 | 宋思逸",
     "title-contact": "联系 | 宋思逸",
@@ -28,7 +28,7 @@ const translations = {
     "meta-gaokao": "宋思逸整理的高考数学解答与 PDF 目录",
     "meta-running": "宋思逸的跑步记录、赛事结果和目标赛历",
     "meta-english-tests": "宋思逸的英语测试记录、阶段成绩和目标考试档案",
-    "meta-calendar": "宋思逸未来一段时间的高层计划，记录较重要的事情、时间和进度",
+    "meta-calendar": "宋思逸的日程，记录计划中的事项和已经完成的事情",
     "meta-skills": "宋思逸的技能栈、工具链与协作能力",
     "meta-resume": "宋思逸的网页版个人简历与下载版简历",
     "meta-contact": "联系宋思逸的邮箱与相关账号信息",
@@ -46,7 +46,7 @@ const translations = {
     "nav-now": "Now",
     "nav-search": "搜索",
     "nav-skills": "技能",
-    "nav-calendar": "计划",
+    "nav-calendar": "日程",
     "nav-coursework": "课程作业",
     "nav-gaokao": "高考解答",
     "nav-running": "跑步记录",
@@ -77,9 +77,9 @@ const translations = {
     "idx-now-link": "查看当前重点",
     "idx-now-title": "此刻正在投入的事",
     "idx-now-copy": "研究生成建模、完善个人知识档案，并保持跑步训练和复盘。",
-    "idx-calendar-h2": "近期计划",
+    "idx-calendar-h2": "日程",
     "idx-calendar-copy": "把计划写成事项列表，每件事只对应一个时间，不再按时间段打包很多内容。",
-    "idx-calendar-viewall": "查看计划",
+    "idx-calendar-viewall": "查看日程",
     "idx-calendar-kicker": "近期节奏",
     "idx-calendar-title": "把接下来真正重要的几件事先摆清楚",
     "idx-calendar-desc": "这里展示的是单条事项式计划，每一条只写一件事、一个时间和当前进度。",
@@ -96,18 +96,19 @@ const translations = {
     "idx-gaokao-a-desc": "按年份和题号整理高考数学题解答 PDF。",
     "idx-gaokao-a-link": "进入栏目",
     "idx-skills-h2": "技能栈",
-    "idx-skill-1": "前端开发",
-    "idx-skill-2": "后端开发",
-    "idx-skill-3": "数据分析",
-    "idx-skill-4": "产品思维",
-    "idx-skill-5": "英文协作",
-    "idx-skill-6": "AI 应用",
+    "idx-skills-viewall": "查看详细技能",
+    "idx-skill-1": "Python / 数据处理 / 数值计算",
+    "idx-skill-2": "数学建模 / 微分方程",
+    "idx-skill-3": "回归分析 / 敏感性分析",
+    "idx-skill-4": "Java / AST / DSL 转换",
+    "idx-skill-5": "Z3 / SMT / 有界模型检查",
+    "idx-skill-6": "技术写作 / 学术表达 / 团队协作",
     "idx-running-h2": "跑步记录",
     "idx-running-copy": "用这个版块记录自己跑过的比赛、完赛成绩，以及下一次想挑战的目标。",
     "idx-running-viewall": "查看全部",
     "idx-running-kicker": "年度概览",
     "idx-running-overview-title": "把比赛经历整理成自己的赛历",
-    "idx-running-overview-desc": "现在先放一个可编辑模板，后续你只要把赛事名称、日期、项目和成绩替换掉，就能一直累积自己的跑步档案。",
+    "idx-running-overview-desc": "当前统计只计算已完赛赛事；详细结果与训练档案见跑步记录。",
     "running-stat-finished": "累计参赛",
     "running-stat-longest": "最长距离",
     "running-stat-total": "总距离",
@@ -122,7 +123,7 @@ const translations = {
     "idx-engtest-viewall": "查看全部",
     "idx-engtest-kicker": "阶段概览",
     "idx-engtest-overview-title": "把每一次英语测试整理成连续档案",
-    "idx-engtest-overview-desc": "现在先放一个可编辑模板，后续你只要补充考试名称、时间、分数和备注，就能持续累积自己的英语学习记录。",
+    "idx-engtest-overview-desc": "当前记录按考试时间整理；详细分数和备注见英语测试记录。",
     "engtest-stat-finished": "累计完成",
     "engtest-stat-best": "最高分",
     "engtest-stat-next": "下一目标",
@@ -300,6 +301,13 @@ const translations = {
     "now-2-copy": "把项目、阅读、课程成果和个人记录整理成可以持续更新的长期页面。",
     "now-3-title": "保持跑步训练",
     "now-3-copy": "在训练与比赛之外，保留对身体感受、配速和恢复的简短记录。",
+    "now-schedule-h2": "日程",
+    "now-schedule-copy": "把接下来准备推进的事项和已经完成的事情放在同一个页面中，持续更新。",
+    "now-schedule-planned-h3": "计划中",
+    "now-schedule-completed-h3": "已完成",
+    "now-schedule-empty-planned": "暂无计划中的事项。",
+    "now-schedule-empty-completed": "暂无已完成事项。",
+    "now-schedule-count-unit": "项",
     "search-h1": "站内搜索",
     "search-copy": "搜索栏目、项目、我的阅读和我的创作。",
     "search-label": "搜索关键词",
@@ -403,9 +411,12 @@ const translations = {
     "engtest-copy": "这个页面集中展示你的英语测试记录。后续只需要继续补充新的测试卡片，就能把它维护成长期可追踪的成绩档案。",
     "engtest-overview-title": "把每一次英语测试沉淀成连续记录",
     "engtest-overview-desc": "你可以把已完成的考试、正在准备的目标测试和每次测试后的复盘都放在这里，形成清晰的英语学习时间线。",
-    "cal-h2": "近期计划",
+    "cal-h2": "日程",
     "cal-back": "返回首页",
     "cal-copy": "这里按事项来列计划。每一条只对应一件事、一个时间，以及它现在的进度。",
+    "cal-redirect-h1": "日程已并入 Now",
+    "cal-redirect-copy": "计划中的事项和已经完成的事情现在统一放在 Now 页面中。",
+    "cal-redirect-link": "打开 Now 日程",
     "cal-summary-kicker": "近况概览",
     "cal-summary-title": "把接下来要做的事收成一串清楚的单项列表",
     "cal-summary-desc": "重点不是覆盖完整时间表，而是让每条计划都足够单一清楚。做完之后，再把值得留下的部分转入 Timeline 或对应栏目。",
@@ -440,7 +451,7 @@ const translations = {
     "title-gaokao": "Gaokao Solutions | Siyi Song",
     "title-running": "Running | Siyi Song",
     "title-english-tests": "English Test Log | Siyi Song",
-    "title-calendar": "Plans | Siyi Song",
+    "title-calendar": "Schedule | Siyi Song",
     "title-skills": "Skills | Siyi Song",
     "title-resume": "Resume | Siyi Song",
     "title-contact": "Contact | Siyi Song",
@@ -458,7 +469,7 @@ const translations = {
     "meta-gaokao": "Gaokao math solutions and PDF directory by Siyi Song.",
     "meta-running": "Running records, race results, and target calendar of Siyi Song.",
     "meta-english-tests": "English test records, score progress, and target exam archive of Siyi Song.",
-    "meta-calendar": "A high-level plans page for the next stretch of work, focused on bigger items, timing, and progress.",
+    "meta-calendar": "Siyi Song's schedule of planned and completed items.",
     "meta-skills": "Skills, toolchains, and collaboration abilities of Siyi Song.",
     "meta-resume": "Web resume and downloadable resume file of Siyi Song.",
     "meta-contact": "Email and contact information for Siyi Song.",
@@ -476,7 +487,7 @@ const translations = {
     "nav-now": "Now",
     "nav-search": "Search",
     "nav-skills": "Skills",
-    "nav-calendar": "Plans",
+    "nav-calendar": "Schedule",
     "nav-coursework": "Coursework",
     "nav-gaokao": "Gaokao Solutions",
     "nav-running": "Running",
@@ -518,6 +529,13 @@ const translations = {
     "now-2-copy": "Turning projects, reading, coursework, and personal records into durable pages that can keep evolving.",
     "now-3-title": "Running Training",
     "now-3-copy": "Keeping short records of physical feedback, pace, and recovery alongside training and races.",
+    "now-schedule-h2": "Schedule",
+    "now-schedule-copy": "Keep upcoming plans and completed items together on one page and update them over time.",
+    "now-schedule-planned-h3": "Planned",
+    "now-schedule-completed-h3": "Completed",
+    "now-schedule-empty-planned": "No planned items yet.",
+    "now-schedule-empty-completed": "No completed items yet.",
+    "now-schedule-count-unit": "items",
     "search-h1": "Site Search",
     "search-copy": "Search sections, projects, reading, and writing.",
     "search-label": "Search terms",
@@ -547,9 +565,9 @@ const translations = {
     "idx-now-link": "See Current Focus",
     "idx-now-title": "What Holds My Attention Now",
     "idx-now-copy": "Studying generative modeling, building a personal knowledge archive, and maintaining running training and reflection.",
-    "idx-calendar-h2": "Plans",
+    "idx-calendar-h2": "Schedule",
     "idx-calendar-copy": "Write the plans as a list of items, with one item paired to one time instead of bundling many things into a time span.",
-    "idx-calendar-viewall": "Open Plans",
+    "idx-calendar-viewall": "Open Schedule",
     "idx-calendar-kicker": "Current Rhythm",
     "idx-calendar-title": "Make the next important things visible first",
     "idx-calendar-desc": "This area now uses single-item planning: each row keeps one thing, one time, and one progress state.",
@@ -566,18 +584,19 @@ const translations = {
     "idx-gaokao-a-desc": "Organized by year and problem number in PDF format.",
     "idx-gaokao-a-link": "Open Section",
     "idx-skills-h2": "Skills",
-    "idx-skill-1": "Frontend Dev",
-    "idx-skill-2": "Backend Dev",
-    "idx-skill-3": "Data Analysis",
-    "idx-skill-4": "Product Thinking",
-    "idx-skill-5": "English Collab",
-    "idx-skill-6": "AI Application",
+    "idx-skills-viewall": "View Detailed Skills",
+    "idx-skill-1": "Python / data processing / numerical computing",
+    "idx-skill-2": "Mathematical modeling / differential equations",
+    "idx-skill-3": "Regression / sensitivity analysis",
+    "idx-skill-4": "Java / AST / DSL translation",
+    "idx-skill-5": "Z3 / SMT / bounded model checking",
+    "idx-skill-6": "Technical writing / academic communication / teamwork",
     "idx-running-h2": "Running Log",
     "idx-running-copy": "Use this section to track the races you've run, your finish results, and the next target you want to chase.",
     "idx-running-viewall": "View All",
     "idx-running-kicker": "Season Overview",
     "idx-running-overview-title": "Turn race memories into a personal event archive",
-    "idx-running-overview-desc": "This starts as an editable template. Replace the race name, date, distance, and result whenever you complete a new event.",
+    "idx-running-overview-desc": "Current statistics count completed races only; see the running log for detailed results and training records.",
     "running-stat-finished": "Races Finished",
     "running-stat-longest": "Longest Distance",
     "running-stat-total": "Total Distance",
@@ -592,7 +611,7 @@ const translations = {
     "idx-engtest-viewall": "View All",
     "idx-engtest-kicker": "Progress Snapshot",
     "idx-engtest-overview-title": "Turn every English test into a continuous archive",
-    "idx-engtest-overview-desc": "This starts as an editable template. Add the exam name, date, score, and notes to keep a steady learning record over time.",
+    "idx-engtest-overview-desc": "Current records are organized by test date; see the English test log for detailed scores and notes.",
     "engtest-stat-finished": "Completed",
     "engtest-stat-best": "Best Score",
     "engtest-stat-next": "Next Goal",
@@ -835,9 +854,12 @@ const translations = {
     "engtest-copy": "This page gathers your English test history in one place. Keep adding new test cards here and it becomes a long-term archive of your score progress.",
     "engtest-overview-title": "Turn every English test into a long-term record",
     "engtest-overview-desc": "Use this page for completed exams, upcoming target tests, and the notes you want to keep after each result.",
-    "cal-h2": "Plans",
+    "cal-h2": "Schedule",
     "cal-back": "Back to Home",
     "cal-copy": "This page lists plans as items. Each row maps to one thing, one time, and its current progress.",
+    "cal-redirect-h1": "Schedule Moved to Now",
+    "cal-redirect-copy": "Upcoming plans and completed items now live together on the Now page.",
+    "cal-redirect-link": "Open Now Schedule",
     "cal-summary-kicker": "Snapshot",
     "cal-summary-title": "Keep the next plans as a clear list of single items",
     "cal-summary-desc": "The point is not to cover a full schedule, but to keep each plan narrow and readable. Once something is finished, it can move into the timeline or the relevant section.",
@@ -1143,10 +1165,29 @@ function renderCalendarPlanCard(entry) {
   return card;
 }
 
+function renderCalendarEntryList(list, entries, emptyKey) {
+  if (!list) {
+    return;
+  }
+
+  list.innerHTML = "";
+
+  if (!entries.length) {
+    list.appendChild(createEl("article", "card calendar-preview-empty", t(emptyKey)));
+    return;
+  }
+
+  entries.forEach((entry) => {
+    list.appendChild(renderCalendarPlanCard(entry));
+  });
+}
+
 function renderCalendar() {
   const entries = getCalendarEntries();
   const homeList = document.getElementById("home-calendar-list");
   const planList = document.getElementById("calendar-plan-list");
+  const nowPlannedList = document.getElementById("now-calendar-planned-list");
+  const nowCompletedList = document.getElementById("now-calendar-completed-list");
 
   if (homeList) {
     homeList.innerHTML = "";
@@ -1162,15 +1203,20 @@ function renderCalendar() {
   }
 
   if (planList) {
-    planList.innerHTML = "";
+    renderCalendarEntryList(planList, entries, "cal-empty");
+  }
 
-    if (!entries.length) {
-      planList.appendChild(createEl("article", "card calendar-preview-empty", t("cal-empty")));
-    } else {
-      entries.forEach((entry) => {
-        planList.appendChild(renderCalendarPlanCard(entry));
-      });
-    }
+  if (nowPlannedList || nowCompletedList) {
+    const plannedEntries = entries.filter((entry) => entry.status !== "done");
+    const completedEntries = entries.filter((entry) => entry.status === "done");
+
+    renderCalendarEntryList(nowPlannedList, plannedEntries, "now-schedule-empty-planned");
+    renderCalendarEntryList(nowCompletedList, completedEntries, "now-schedule-empty-completed");
+
+    document.querySelectorAll("[data-schedule-count]").forEach((item) => {
+      const count = item.dataset.scheduleCount === "completed" ? completedEntries.length : plannedEntries.length;
+      item.textContent = currentLang === "zh" ? `${count}${t("now-schedule-count-unit")}` : `${count} ${t("now-schedule-count-unit")}`;
+    });
   }
 
   renderCalendarStats(entries);
