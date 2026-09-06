@@ -966,14 +966,20 @@ h1 span[data-i18n="name-full"] {
 
 .in-progress,
 .status-in-progress {
-  background: rgba(62, 117, 105, 0.15);
-  color: var(--brand-2);
+  background: rgba(79, 111, 147, 0.16);
+  color: #4f6f93;
+}
+
+.preparing,
+.status-preparing {
+  background: rgba(183, 95, 68, 0.22);
+  color: var(--brand);
 }
 
 .done,
 .status-done {
-  background: rgba(17, 32, 41, 0.12);
-  color: var(--ink);
+  background: rgba(62, 117, 105, 0.18);
+  color: var(--brand-2);
 }
 
 .calendar-status {
@@ -1004,14 +1010,6 @@ h1 span[data-i18n="name-full"] {
 
 .calendar-plan-card p {
   margin: 0;
-}
-
-.calendar-plan-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 14px;
-  color: var(--ink-soft);
-  font-size: 0.9rem;
 }
 
 .calendar-month-title {

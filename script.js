@@ -60,6 +60,7 @@ const translations = {
     "lang-aria": "Switch to English",
     "menu-aria": "打开菜单",
     "logo-aria": "返回首页",
+    "idx-cta-resume": "我的简历",
     "idx-cta-primary": "查看作品",
     "idx-cta-ghost": "合作联系",
     "idx-about-h2": "关于我",
@@ -424,6 +425,7 @@ const translations = {
     "cal-stat-doing": "进行中",
     "cal-stat-done": "已完成",
     "cal-status-planned": "计划中",
+    "cal-status-preparing": "准备中",
     "cal-status-doing": "进行中",
     "cal-status-done": "已完成",
     "cal-empty": "现在还没有列出新的计划。",
@@ -431,15 +433,7 @@ const translations = {
     "cal-upcoming-empty": "最近还没有新的计划。",
     "cal-upcoming-label": "近期重点",
     "cal-label-time": "时间",
-    "cal-label-category": "类型",
     "cal-label-summary": "说明",
-    "cal-category-website": "网站",
-    "cal-category-bookmarks": "收藏",
-    "cal-category-writing": "写作",
-    "cal-category-timeline": "时间线",
-    "cal-category-running": "跑步",
-    "cal-category-study": "学习",
-    "cal-category-exam": "考试",
   },
   en: {
     "name-full": "Siyi Song",
@@ -548,6 +542,7 @@ const translations = {
     "lang-aria": "切换到中文",
     "menu-aria": "Open menu",
     "logo-aria": "Back to Home",
+    "idx-cta-resume": "My Resume",
     "idx-cta-primary": "View Works",
     "idx-cta-ghost": "Get in Touch",
     "idx-about-h2": "About",
@@ -867,6 +862,7 @@ const translations = {
     "cal-stat-doing": "In Progress",
     "cal-stat-done": "Done",
     "cal-status-planned": "Planned",
+    "cal-status-preparing": "Preparing",
     "cal-status-doing": "In Progress",
     "cal-status-done": "Done",
     "cal-empty": "No new plans are listed yet.",
@@ -874,15 +870,7 @@ const translations = {
     "cal-upcoming-empty": "No current priorities yet.",
     "cal-upcoming-label": "Current Focus",
     "cal-label-time": "Timing",
-    "cal-label-category": "Category",
     "cal-label-summary": "Notes",
-    "cal-category-website": "Website",
-    "cal-category-bookmarks": "Bookmarks",
-    "cal-category-writing": "Writing",
-    "cal-category-timeline": "Timeline",
-    "cal-category-running": "Running",
-    "cal-category-study": "Study",
-    "cal-category-exam": "Exam",
   },
 };
 
@@ -1075,13 +1063,24 @@ function getNearestPlannedEntry(entries) {
 }
 
 function getCalendarEntries() {
-  return Array.isArray(window.calendarEntries)
-    ? [...window.calendarEntries].sort((left, right) => Number(left.order || 0) - Number(right.order || 0))
-    : [];
+  return Array.isArray(window.calendarEntries) ? sortCalendarEntries(window.calendarEntries) : [];
 }
 
-function getCategoryLabel(category) {
-  return t(`cal-category-${category}`);
+function sortCalendarEntries(entries, direction = "asc") {
+  const multiplier = direction === "desc" ? -1 : 1;
+
+  return [...entries].sort((left, right) => {
+    const leftTimestamp = parseEntryDate(left.sortDate)?.getTime() ?? null;
+    const rightTimestamp = parseEntryDate(right.sortDate)?.getTime() ?? null;
+
+    if (leftTimestamp !== rightTimestamp) {
+      if (leftTimestamp === null) return 1;
+      if (rightTimestamp === null) return -1;
+      return (leftTimestamp - rightTimestamp) * multiplier;
+    }
+
+    return Number(left.order || 0) - Number(right.order || 0);
+  });
 }
 
 function buildMonthMatrix(monthKey, entries) {
@@ -1124,16 +1123,15 @@ function renderCalendarPreviewCard(entry) {
   const time = createEl("span", "meta-badge", getLocalizedValue(entry.time));
   const status = createEl("span", `calendar-status status-${entry.status}`, t(`cal-status-${entry.status === "in-progress" ? "doing" : entry.status}`));
   const title = createEl("h3", "", getLocalizedValue(entry.title));
-  const meta = createEl("p", "calendar-preview-meta", `${t("cal-label-category")} · ${getCategoryLabel(entry.category)}`);
 
   top.append(time, status);
-  card.append(top, title, meta);
+  card.append(top, title);
   return card;
 }
 
 function renderCalendarStats(entries) {
   const counts = {
-    planned: entries.filter((entry) => entry.status === "planned").length,
+    planned: entries.filter((entry) => entry.status === "planned" || entry.status === "preparing").length,
     "in-progress": entries.filter((entry) => entry.status === "in-progress").length,
     done: entries.filter((entry) => entry.status === "done").length,
   };
@@ -1153,15 +1151,9 @@ function renderCalendarPlanCard(entry) {
   const status = createEl("span", `calendar-status status-${entry.status}`, t(`cal-status-${entry.status === "in-progress" ? "doing" : entry.status}`));
   const title = createEl("h3", "", getLocalizedValue(entry.title));
   const summary = createEl("p", "", getLocalizedValue(entry.summary));
-  const meta = createEl("div", "calendar-plan-meta");
-
-  meta.append(
-    createEl("span", "", `${t("cal-label-category")} · ${getCategoryLabel(entry.category)}`),
-    createEl("span", "", `${t("cal-label-time")} · ${getLocalizedValue(entry.time)}`)
-  );
 
   top.append(time, status);
-  card.append(top, title, summary, meta);
+  card.append(top, title, summary);
   return card;
 }
 
@@ -1207,8 +1199,8 @@ function renderCalendar() {
   }
 
   if (nowPlannedList || nowCompletedList) {
-    const plannedEntries = entries.filter((entry) => entry.status !== "done");
-    const completedEntries = entries.filter((entry) => entry.status === "done");
+    const plannedEntries = sortCalendarEntries(entries.filter((entry) => entry.status !== "done"), "asc");
+    const completedEntries = sortCalendarEntries(entries.filter((entry) => entry.status === "done"), "desc");
 
     renderCalendarEntryList(nowPlannedList, plannedEntries, "now-schedule-empty-planned");
     renderCalendarEntryList(nowCompletedList, completedEntries, "now-schedule-empty-completed");
