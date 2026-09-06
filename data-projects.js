@@ -33,6 +33,11 @@ window.projectEntries = [
         label: { zh: "查看课程论文 PDF", en: "View course paper PDF" },
         newTab: true,
       },
+      {
+        href: "https://github.com/tanzc628/mediator_z3pytranslation",
+        label: { zh: "查看 GitHub 协作仓库", en: "View collaborative GitHub repository" },
+        newTab: true,
+      },
     ],
   },
   {

@@ -33,6 +33,17 @@ window.englishTestEntries = [
     status: "finished",
   },
   {
+    id: "2026-gre-jan",
+    type: { zh: "GRE" , en: "GRE" },
+    title: { zh: "GRE考试", en: "GRE" },
+    date: "2026.1.23",
+    location: { zh: "北京市/朝阳区", en: "Chaoyang, Beijing" },
+    scoreText: { zh: "327/4.0", en: "327/4.0" },
+    score: 327,
+    note: { zh: "157+170+4.0", en: "157+170+4.0" },
+    status: "finished",
+  },
+  {
     id: "2025-cet6-dec",
     type: { zh: "大学英语六级", en: "CET-6" },
     title: { zh: "2025年12月全国大学英语六级考试", en: "CET-6 December 2025" },
