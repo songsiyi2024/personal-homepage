@@ -43,9 +43,9 @@ window.runningEntries = [
     distanceKm: 42.195,
     distanceText: { zh: "42.195 km", en: "42.195 km" },
     location: { zh: "内蒙古自治区/呼和浩特市/赛罕区", en: "Inner Mongolia / Hohhot / Saihan" },
-    result: { zh: "计划中", en: "planned" },
+    result: { zh: "枪时5:04:28，净时5:04:18", en: "gun time 5:04:28, net time 5:04:18" },
     note: { zh: "中国田协C类赛事", en: "Chinese Athletics Association C-level Race" },
-    status: "planned",
+    status: "finished",
   },
   {
     id: "2026-chuxiong-half",
