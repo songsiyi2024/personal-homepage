@@ -1,5 +1,17 @@
 window.runningEntries = [
   {
+    id: "2026-guangzhou-full",
+    type: { zh: "全程马拉松", en: "Marathon" },
+    title: { zh: "2026广州马拉松", en: "2026 Guangzhou Marathon" },
+    date: { zh: "2026.12.20", en: "2026.12.20" },
+    distanceKm: 42.195,
+    distanceText: { zh: "42.195 km", en: "42.195 km" },
+    location: { zh: "广东省/广州市/天河区", en: "Guangdong / Guangzhou / Tianhe" },
+    result: { zh: "计划中", en: "planned" },
+    note: { zh: "世界田联金标赛事，中国田协A类赛事", en: "World Athletics Gold Label Race, Chinese Athletics Association A-level Race" },
+    status: "planned",
+  },
+  {
     id: "2026-qiandaohu-full",
     type: { zh: "全程马拉松", en: "Marathon" },
     title: { zh: "2026千岛湖马拉松", en: "2026 Qiandao Lake Marathon" },
