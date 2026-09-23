@@ -8,7 +8,7 @@ window.runningEntries = [
     distanceText: { zh: "42.195 km", en: "42.195 km" },
     location: { zh: "广东省/广州市/天河区", en: "Guangdong / Guangzhou / Tianhe" },
     result: { zh: "计划中", en: "planned" },
-    note: { zh: "世界田联金标赛事，中国田协A类赛事", en: "World Athletics Gold Label Race, Chinese Athletics Association A-level Race" },
+    note: { zh: "世界田联金标赛事，中国马拉松大满贯赛事，中国田协A类赛事", en: "World Athletics Gold Label Race, Chinese Marathon Grand Slam Race, Chinese Athletics Association A-level Race" },
     status: "planned",
   },
   {
@@ -56,7 +56,7 @@ window.runningEntries = [
     distanceText: { zh: "42.195 km", en: "42.195 km" },
     location: { zh: "内蒙古自治区/呼和浩特市/赛罕区", en: "Inner Mongolia / Hohhot / Saihan" },
     result: { zh: "枪时5:04:28，净时5:04:18", en: "gun time 5:04:28, net time 5:04:18" },
-    note: { zh: "中国田协C类赛事", en: "Chinese Athletics Association C-level Race" },
+    note: { zh: "中国田协C类赛事，首全马，PB", en: "Chinese Athletics Association C-level Race, First Marathon, PB" },
     status: "finished",
   },
   {
