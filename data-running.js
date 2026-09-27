@@ -43,9 +43,9 @@ window.runningEntries = [
     distanceKm: 21.0975,
     distanceText: { zh: "21.0975 km", en: "21.0975 km" },
     location: { zh: "天津市/静海区", en: "Tianjin / Jinghai" },
-    result: { zh: "计划中", en: "planned" },
+    result: { zh: "枪时2:01:18，净时1:59:14", en: "gun time 2:01:18, net time 1:59:14" },
     note: { zh: "中国田协A类赛事", en: "Chinese Athletics Association A-level Race" },
-    status: "planned",
+    status: "finished",
   },
   {
     id :"2026-huhehaote-full",
