@@ -24,6 +24,18 @@ window.runningEntries = [
     status: "planned",
   },
   {
+    id: "2026-tianmulake-half",
+    type: { zh: "半程马拉松", en: "Half Marathon" },
+    title: { zh: "2026天目湖马拉松", en: "2026 Tianmu Lake Marathon" },
+    date: { zh: "2026.11.15", en: "2026.11.15" },
+    distanceKm: 21.0975,
+    distanceText: { zh: "21.0975 km", en: "21.0975 km" },
+    location: { zh: "江苏省/常州市/溧阳市", en: "Jiangsu / Changzhou / Liyang" },
+    result: { zh: "计划中", en: "planned" },
+    note: { zh: "中国田协A类赛事", en: "Chinese Athletics Association A-level Race" },
+    status: "planned",
+  },
+  {
     id: "2026-xiangyang-half",
     type: { zh: "半程马拉松", en: "Half Marathon" },
     title: { zh: "2026襄阳马拉松", en: "2026 Xiangyang Marathon" },
