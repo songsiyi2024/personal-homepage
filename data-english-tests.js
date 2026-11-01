@@ -1,5 +1,16 @@
 window.englishTestEntries = [
   {
+    id: "2026-wsk-nov",
+    type: { zh: "WSK", en: "WSK" },
+    title: { zh: "2026年11月WSK英语水平考试", en: "WSK English 2026" },
+    date: "2026.11.8",
+    location: { zh: "北京市/海淀区", en: "Haidian, Beijing" },
+    scoreText: { zh: "N/A", en: "N/A" },
+    score: null,
+    note: {},
+    status: "planned",
+  },
+  {
     id: "2026-catti-june",
     type: { zh: "CATTI", en: "CATTI" },
     title: { zh: "2026年CATTI英语二级笔译", en: "CATTI Level 2 English Translation June 2026" },
