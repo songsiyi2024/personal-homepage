@@ -19,9 +19,9 @@ window.runningEntries = [
     distanceKm: 42.195,
     distanceText: { zh: "42.195 km", en: "42.195 km" },
     location: { zh: "浙江省/杭州市/淳安县", en: "Zhejiang / Hangzhou / Chun'an" },
-    result: { zh: "计划中", en: "planned" },
+    result: { zh: "DNS", en: "DNS" },
     note: { zh: "中国田协A类赛事", en: "Chinese Athletics Association A-level Race" },
-    status: "planned",
+    status: "dns",
   },
   {
     id: "2026-tianmulake-half",
@@ -31,9 +31,9 @@ window.runningEntries = [
     distanceKm: 21.0975,
     distanceText: { zh: "21.0975 km", en: "21.0975 km" },
     location: { zh: "江苏省/常州市/溧阳市", en: "Jiangsu / Changzhou / Liyang" },
-    result: { zh: "计划中", en: "planned" },
-    note: { zh: "中国田协A类赛事", en: "Chinese Athletics Association A-level Race" },
-    status: "planned",
+    result: { zh: "枪时1:48:09，净时1:46:42", en: "gun time 1:48:09, net time 1:46:42" },
+    note: { zh: "中国田协A类赛事，PB", en: "Chinese Athletics Association A-level Race, PB" },
+    status: "finished",
   },
   {
     id: "2026-xiangyang-half",
@@ -44,7 +44,7 @@ window.runningEntries = [
     distanceText: { zh: "21.0975 km", en: "21.0975 km" },
     location: { zh: "湖北省/襄阳市/樊城区", en: "Hubei / Xiangyang / Fancheng" },
     result: { zh: "枪时1:53:03，净时1:50:01", en: "gun time 1:53:03, net time 1:50:01" },
-    note: { zh: "中国田协A类赛事", en: "Chinese Athletics Association A-level Race" },
+    note: { zh: "中国田协A类赛事，PB", en: "Chinese Athletics Association A-level Race, PB" },
     status: "finished",
   },
   {
@@ -56,7 +56,7 @@ window.runningEntries = [
     distanceText: { zh: "21.0975 km", en: "21.0975 km" },
     location: { zh: "天津市/静海区", en: "Tianjin / Jinghai" },
     result: { zh: "枪时2:01:18，净时1:59:14", en: "gun time 2:01:18, net time 1:59:14" },
-    note: { zh: "中国田协A类赛事，PB", en: "Chinese Athletics Association A-level Race, PB" },
+    note: { zh: "中国田协A类赛事", en: "Chinese Athletics Association A-level Race" },
     status: "finished",
   },
   {

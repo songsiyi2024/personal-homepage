@@ -1,5 +1,16 @@
 window.englishTestEntries = [
   {
+    id: "2026-cet6-dec",
+    type: { zh: "大学英语六级", en: "CET-6" },
+    title: { zh: "2026年12月全国大学英语六级考试", en: "CET-6 December 2026" },
+    date: "2026.12.12",
+    location: { zh: "北京市/海淀区", en: "Haidian, Beijing" },
+    scoreText: { zh: "N/A", en: "N/A" },
+    score: null,
+    note: { zh: "", en: "" },
+    status: "planned",
+  },
+  {
     id: "2026-wsk-nov",
     type: { zh: "WSK", en: "WSK" },
     title: { zh: "2026年11月WSK英语水平考试", en: "WSK English 2026" },
@@ -8,7 +19,7 @@ window.englishTestEntries = [
     scoreText: { zh: "N/A", en: "N/A" },
     score: null,
     note: {},
-    status: "planned",
+    status: "finished",
   },
   {
     id: "2026-catti-june",
